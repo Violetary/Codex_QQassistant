@@ -1,0 +1,48 @@
+# Visual Studio / IDE 本地状态：窗口布局、索引、个人工作区设置，不需要上传。
+.vs/
+.vscode/
+.idea/
+
+# Python 运行缓存：解释器自动生成，可随时重新生成。
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python 虚拟环境：本机依赖安装目录体积大，按 pyproject.toml 重新安装即可。
+.venv/
+venv/
+env/
+ENV/
+
+# 打包和构建产物：由构建命令生成，不作为源码提交。
+build/
+dist/
+*.egg-info/
+
+# 本地环境变量和密钥：可能包含账号、Token、Cookie、API Key，禁止上传。
+.env
+.env.*
+*.pem
+*.key
+*.token
+
+# 真实本地配置：保留 *.example.json 作为示例，实际账号/数据源配置不上传。
+config/*.json
+!config/*.example.json
+
+# 运行缓存数据：查询结果缓存，可由程序重新获取或生成。
+data/cache/
+
+# 运行输出：机器人生成的图片、日志和临时结果不上传。
+outputs/
+logs/
+*.log
+
+# 系统临时文件：由 Windows/macOS 或编辑器自动生成。
+Thumbs.db
+Desktop.ini
+.DS_Store
+*~

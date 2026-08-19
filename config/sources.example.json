@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "name": "example-json-source",
+      "url_template": "https://example.com/rock-pets/{pet_name}.json",
+      "timeout_seconds": 8
+    }
+  ]
+}
