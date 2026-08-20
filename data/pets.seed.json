@@ -1,21 +1,21 @@
 {
   "meta": {
     "source": "roco_egg_master + user big-body xls reference",
-    "family_count": 112,
-    "form_count": 442,
-    "egg_count": 112,
-    "target_form_count": 442,
+    "family_count": 178,
+    "form_count": 609,
+    "egg_count": 176,
+    "target_form_count": 0,
     "notes": "Every form name is indexed as an alias. Egg rows are included as extra body stages and do not count toward form_count.",
     "pvp": {
-      "matched_family_count": 112,
+      "matched_family_count": 178,
       "source": "data/pvp.recommendations.json",
       "method": "rules-v1"
     },
     "body_sync": {
       "source": "BWiki 洛克王国手游 WIKI MediaWiki API",
-      "checked_form_count": 442,
-      "updated_field_count": 1,
-      "missing_page_count": 17
+      "checked_form_count": 609,
+      "updated_field_count": 0,
+      "missing_page_count": 15
     }
   },
   "pets": [
@@ -405,6 +405,7 @@
       ],
       "aliases": [
         "鸭吉吉",
+        "鸭吉吉国王",
         "鸭吉吉国王（急急急鸭）",
         "鸭吉吉国王（燃了鸭）",
         "鸭吉吉国王（等一等鸭）",
@@ -1468,6 +1469,7 @@
         "爬爬"
       ],
       "aliases": [
+        "化蝶",
         "化蝶（喵喵的样子）",
         "化蝶（奇丽花的样子）",
         "化蝶（平常的样子）",
@@ -1747,6 +1749,7 @@
         "晶石蜗（西瓜碧玺的样子）",
         "矿晶虫",
         "矿晶虫蛋",
+        "钻石蜗",
         "钻石蜗（星彩榴石的样子）",
         "钻石蜗（火山琉璃的样子）",
         "钻石蜗（烧蓝黄金的样子）",
@@ -2802,6 +2805,7 @@
         "蹦蹦花"
       ],
       "aliases": [
+        "蹦蹦果",
         "蹦蹦果（彩玉球形态）",
         "蹦蹦果（海神球形态）",
         "蹦蹦果（短毛球形态）",
@@ -4688,6 +4692,7 @@
         "旋叶虫蛋",
         "旋叶虫（枯叶的样子）",
         "旋叶虫（金黄的样子）",
+        "暮风隐者",
         "暮风隐者（枯叶的样子）",
         "暮风隐者（金黄的样子）",
         "蓬叶虫",
@@ -6795,6 +6800,7 @@
         "棋棋"
       ],
       "aliases": [
+        "棋契陛下",
         "棋契陛下（白棋棋祈督分支）",
         "棋契陛下（白棋棋绮后分支）",
         "棋契陛下（白棋棋骑士分支）",
@@ -6807,12 +6813,16 @@
         "棋棋蛋",
         "棋棋（白子）",
         "棋棋（黑子）",
+        "棋祈督",
         "棋祈督（白子）",
         "棋祈督（黑子）",
+        "棋绮后",
         "棋绮后（白子）",
         "棋绮后（黑子）",
+        "棋骑士",
         "棋骑士（白子）",
         "棋骑士（黑子）",
+        "棋齐垒",
         "棋齐垒（白子）",
         "棋齐垒（黑子）"
       ],
@@ -8376,6 +8386,7 @@
         "圣代甜甜（樱桃巧克力口味）"
       ],
       "aliases": [
+        "圣代甜甜",
         "圣代甜甜（杨桃巧克力口味）",
         "圣代甜甜（杨桃抹茶口味）",
         "圣代甜甜（杨桃草莓口味）",
@@ -8387,6 +8398,7 @@
         "圣代甜甜（蓝莓草莓口味）",
         "脆筒甜甜",
         "脆筒甜甜蛋",
+        "香草甜甜",
         "香草甜甜（杨桃饰品）",
         "香草甜甜（樱桃饰品）",
         "香草甜甜（蓝莓饰品）"
@@ -9761,16 +9773,19 @@
       "source": "local-seed",
       "evolution_chain": [
         "地鼠",
-        "地鼠（枯水期的样子）",
-        "遁鼠（枯水期的样子）",
-        "遁地鼠（枯水期的样子）",
-        "地鼠（储水时的样子）"
+        "遁鼠",
+        "遁地鼠"
       ],
       "aliases": [
         "地鼠",
+        "地鼠蛋",
         "地鼠（储水时的样子）",
         "地鼠（枯水期的样子）",
+        "遁地鼠",
+        "遁地鼠（储水时的样子）",
         "遁地鼠（枯水期的样子）",
+        "遁鼠",
+        "遁鼠（储水时的样子）",
         "遁鼠（枯水期的样子）"
       ],
       "pvp": {
@@ -9854,6 +9869,4400 @@
           "weight_range": "3.8-5.13",
           "big_body_range": "5.1034",
           "small_body_range": "3.8266"
+        },
+        {
+          "form_id": 278,
+          "name": "遁鼠（储水时的样子）",
+          "types": [
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "0.48-0.69",
+          "weight_range": "5.42-6.82",
+          "big_body_range": "6.792",
+          "small_body_range": "5.448"
+        },
+        {
+          "form_id": 279,
+          "name": "遁地鼠（储水时的样子）",
+          "types": [
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "0.64-0.92",
+          "weight_range": "9.4-11.5",
+          "big_body_range": "11.458",
+          "small_body_range": "9.442"
+        }
+      ]
+    },
+    {
+      "family_id": 280,
+      "name": "墨鱿士",
+      "source": "local-seed",
+      "evolution_chain": [
+        "墨鱿士"
+      ],
+      "aliases": [
+        "墨鱿士",
+        "墨鱿士蛋",
+        "混乱鱿彩",
+        "秩序鱿墨"
+      ],
+      "pvp": {
+        "nature": "固执 / 平和",
+        "attributes": "物攻、精力、物防",
+        "notes": "核心形态：混乱鱿彩 判断依据：物攻向，六维最高项为 物防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "墨鱿士蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "海洋组、软体组",
+          "height_range": "0.15-0.19",
+          "weight_range": "1.138-2.008",
+          "big_body_range": "1.9906",
+          "small_body_range": "1.1554"
+        },
+        {
+          "form_id": 280,
+          "name": "墨鱿士",
+          "types": [
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组、软体组",
+          "height_range": "0.35-0.46",
+          "weight_range": "3.25-5.02",
+          "big_body_range": "4.9846",
+          "small_body_range": "3.2854"
+        },
+        {
+          "form_id": 281,
+          "name": "混乱鱿彩",
+          "types": [
+            "幽",
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组、软体组",
+          "height_range": "1.36-1.54",
+          "weight_range": "36.9-48.2",
+          "big_body_range": "47.974",
+          "small_body_range": "37.126"
+        },
+        {
+          "form_id": 282,
+          "name": "秩序鱿墨",
+          "types": [
+            "幽",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组、软体组",
+          "height_range": "1.59-1.72",
+          "weight_range": "45.6-60.1",
+          "big_body_range": "59.81",
+          "small_body_range": "45.89"
+        }
+      ]
+    },
+    {
+      "family_id": 283,
+      "name": "小甲虫",
+      "source": "local-seed",
+      "evolution_chain": [
+        "小甲虫",
+        "铠甲虫"
+      ],
+      "aliases": [
+        "小甲虫",
+        "小甲虫蛋",
+        "铠甲虫"
+      ],
+      "pvp": {
+        "nature": "悠闲 / 紧张",
+        "attributes": "物防、精力、速度",
+        "notes": "核心形态：铠甲虫 判断依据：耐久向，六维最高项为 精力(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "小甲虫蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "昆虫组、天空组",
+          "height_range": "0.2-0.28",
+          "weight_range": "2.275-3.36",
+          "big_body_range": "3.3383",
+          "small_body_range": "2.2967"
+        },
+        {
+          "form_id": 283,
+          "name": "小甲虫",
+          "types": [
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、天空组",
+          "height_range": "0.48-0.68",
+          "weight_range": "6.5-8.4",
+          "big_body_range": "8.362",
+          "small_body_range": "6.538"
+        },
+        {
+          "form_id": 284,
+          "name": "铠甲虫",
+          "types": [
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、天空组",
+          "height_range": "1.17-1.68",
+          "weight_range": "83-96",
+          "big_body_range": "95.74",
+          "small_body_range": "83.26"
+        }
+      ]
+    },
+    {
+      "family_id": 285,
+      "name": "圣剑侍从",
+      "source": "local-seed",
+      "evolution_chain": [
+        "圣剑侍从",
+        "圣剑-X"
+      ],
+      "aliases": [
+        "圣剑-X",
+        "圣剑侍从",
+        "圣剑侍从蛋",
+        "圣剑骑士"
+      ],
+      "pvp": {
+        "nature": "悠闲 / 紧张",
+        "attributes": "物防、精力",
+        "notes": "核心形态：圣剑骑士 判断依据：耐久向，六维最高项为 精力(187)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "圣剑侍从蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "机械组、巨灵组",
+          "height_range": "0.4-0.49",
+          "weight_range": "40.495-69.44",
+          "big_body_range": "68.8611",
+          "small_body_range": "41.0739"
+        },
+        {
+          "form_id": 285,
+          "name": "圣剑侍从",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "机械组、巨灵组",
+          "height_range": "0.94-1.18",
+          "weight_range": "115.7-173.6",
+          "big_body_range": "172.442",
+          "small_body_range": "116.858"
+        },
+        {
+          "form_id": 286,
+          "name": "圣剑-X",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "机械组、巨灵组",
+          "height_range": "1.83-2.07",
+          "weight_range": "481-658",
+          "big_body_range": "654.46",
+          "small_body_range": "484.54"
+        },
+        {
+          "form_id": 286,
+          "name": "圣剑骑士",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "2.44-2.92",
+          "weight_range": "865-1100",
+          "big_body_range": "1095.3",
+          "small_body_range": "869.7"
+        }
+      ]
+    },
+    {
+      "family_id": 287,
+      "name": "吸泥鸥",
+      "source": "local-seed",
+      "evolution_chain": [
+        "吸泥鸥",
+        "泥吼牙"
+      ],
+      "aliases": [
+        "吸泥鸥",
+        "吸泥鸥蛋",
+        "泥吼牙",
+        "淤泥乌泽"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：淤泥乌泽 判断依据：物攻向，六维最高项为 物攻(138)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "吸泥鸥蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "天空组、两栖组",
+          "height_range": "0.23-0.29",
+          "weight_range": "3.325-5",
+          "big_body_range": "4.9665",
+          "small_body_range": "3.3585"
+        },
+        {
+          "form_id": 287,
+          "name": "吸泥鸥",
+          "types": [
+            "地",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、两栖组",
+          "height_range": "0.55-0.71",
+          "weight_range": "9.5-12.5",
+          "big_body_range": "12.44",
+          "small_body_range": "9.56"
+        },
+        {
+          "form_id": 288,
+          "name": "泥吼牙",
+          "types": [
+            "地",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、两栖组",
+          "height_range": "1.05-1.45",
+          "weight_range": "21.5-32.5",
+          "big_body_range": "32.28",
+          "small_body_range": "21.72"
+        },
+        {
+          "form_id": 288,
+          "name": "淤泥乌泽",
+          "types": [
+            "地",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.63-1.9",
+          "weight_range": "64.3-93",
+          "big_body_range": "92.426",
+          "small_body_range": "64.874"
+        }
+      ]
+    },
+    {
+      "family_id": 289,
+      "name": "大头骨龙",
+      "source": "local-seed",
+      "evolution_chain": [
+        "大头骨龙",
+        "寂灭骨龙"
+      ],
+      "aliases": [
+        "大头骨龙",
+        "大头骨龙蛋",
+        "寂灭骨龙"
+      ],
+      "pvp": {
+        "nature": "固执 / 平和",
+        "attributes": "物攻、精力、物防",
+        "notes": "核心形态：寂灭骨龙 判断依据：物攻向，六维最高项为 物攻(137)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "大头骨龙蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "龙组、巨灵组",
+          "height_range": "0.36-0.42",
+          "weight_range": "6.51-13.4",
+          "big_body_range": "13.2622",
+          "small_body_range": "6.6478"
+        },
+        {
+          "form_id": 289,
+          "name": "大头骨龙",
+          "types": [
+            "龙",
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "龙组、巨灵组",
+          "height_range": "0.85-1",
+          "weight_range": "18.6-33.5",
+          "big_body_range": "33.202",
+          "small_body_range": "18.898"
+        },
+        {
+          "form_id": 290,
+          "name": "寂灭骨龙",
+          "types": [
+            "龙",
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "龙组、巨灵组",
+          "height_range": "2.25-2.45",
+          "weight_range": "85.7-105",
+          "big_body_range": "104.614",
+          "small_body_range": "86.086"
+        }
+      ]
+    },
+    {
+      "family_id": 291,
+      "name": "厉毒小萝",
+      "source": "local-seed",
+      "evolution_chain": [
+        "厉毒小萝",
+        "厉毒修萝"
+      ],
+      "aliases": [
+        "厉毒修萝",
+        "厉毒小萝",
+        "厉毒小萝蛋"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：厉毒修萝 判断依据：物攻向，六维最高项为 速度(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "厉毒小萝蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "拟人组、天空组",
+          "height_range": "0.23-0.27",
+          "weight_range": "3.056-5.968",
+          "big_body_range": "5.9098",
+          "small_body_range": "3.1142"
+        },
+        {
+          "form_id": 291,
+          "name": "厉毒小萝",
+          "types": [
+            "毒",
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "拟人组、天空组",
+          "height_range": "0.55-0.65",
+          "weight_range": "8.73-14.92",
+          "big_body_range": "14.7962",
+          "small_body_range": "8.8538"
+        },
+        {
+          "form_id": 292,
+          "name": "厉毒修萝",
+          "types": [
+            "毒",
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "拟人组、天空组",
+          "height_range": "1.45-1.55",
+          "weight_range": "33.75-41.6",
+          "big_body_range": "41.443",
+          "small_body_range": "33.907"
+        }
+      ]
+    },
+    {
+      "family_id": 293,
+      "name": "小帕尔",
+      "source": "local-seed",
+      "evolution_chain": [
+        "小帕尔",
+        "帕尔萨斯",
+        "龙息帕尔"
+      ],
+      "aliases": [
+        "小帕尔",
+        "小帕尔蛋",
+        "帕尔萨斯",
+        "龙息帕尔"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：龙息帕尔 判断依据：物攻向，六维最高项为 物防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "小帕尔蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.27-0.38",
+          "weight_range": "3.29-5.44",
+          "big_body_range": "5.397",
+          "small_body_range": "3.333"
+        },
+        {
+          "form_id": 293,
+          "name": "小帕尔",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.64-0.92",
+          "weight_range": "9.4-13.6",
+          "big_body_range": "13.516",
+          "small_body_range": "9.484"
+        },
+        {
+          "form_id": 294,
+          "name": "帕尔萨斯",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.33-1.58",
+          "weight_range": "46.5-61.5",
+          "big_body_range": "61.2",
+          "small_body_range": "46.8"
+        },
+        {
+          "form_id": 295,
+          "name": "龙息帕尔",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.93-2.4",
+          "weight_range": "96.5-115",
+          "big_body_range": "114.63",
+          "small_body_range": "96.87"
+        }
+      ]
+    },
+    {
+      "family_id": 296,
+      "name": "毛头小蛛",
+      "source": "local-seed",
+      "evolution_chain": [
+        "毛头小蛛"
+      ],
+      "aliases": [
+        "捕尘长绒",
+        "毛头小蛛",
+        "毛头小蛛蛋",
+        "食尘短绒"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：食尘短绒 判断依据：物攻向，六维最高项为 速度(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "毛头小蛛蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "昆虫组、妖精组",
+          "height_range": "0.13-0.19",
+          "weight_range": "0.333-0.62",
+          "big_body_range": "0.6143",
+          "small_body_range": "0.3387"
+        },
+        {
+          "form_id": 296,
+          "name": "毛头小蛛",
+          "types": [
+            "虫",
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、妖精组",
+          "height_range": "0.3-0.45",
+          "weight_range": "0.95-2",
+          "big_body_range": "1.979",
+          "small_body_range": "0.971"
+        },
+        {
+          "form_id": 297,
+          "name": "捕尘长绒",
+          "types": [
+            "虫",
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、妖精组",
+          "height_range": "1.15-1.45",
+          "weight_range": "2.35-4.19",
+          "big_body_range": "4.1532",
+          "small_body_range": "2.3868"
+        },
+        {
+          "form_id": 298,
+          "name": "食尘短绒",
+          "types": [
+            "虫",
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、妖精组",
+          "height_range": "0.76-0.9",
+          "weight_range": "2.65-5.15",
+          "big_body_range": "5.1",
+          "small_body_range": "2.7"
+        }
+      ]
+    },
+    {
+      "family_id": 299,
+      "name": "画精灵",
+      "source": "local-seed",
+      "evolution_chain": [
+        "画精灵",
+        "画像守护"
+      ],
+      "aliases": [
+        "画像守护",
+        "画精灵",
+        "画精灵蛋",
+        "画间沉铁兽",
+        "画间法师手"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：画间法师手 判断依据：魔攻向，六维最高项为 魔攻(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "画精灵蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.12-0.16",
+          "weight_range": "0.347-0.608",
+          "big_body_range": "0.6028",
+          "small_body_range": "0.3522"
+        },
+        {
+          "form_id": 299,
+          "name": "画精灵",
+          "types": [
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.28-0.38",
+          "weight_range": "0.99-2.21",
+          "big_body_range": "2.1856",
+          "small_body_range": "1.0144"
+        },
+        {
+          "form_id": 300,
+          "name": "画像守护",
+          "types": [
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.49-0.6",
+          "weight_range": "5.85-6.9",
+          "big_body_range": "6.879",
+          "small_body_range": "5.871"
+        },
+        {
+          "form_id": 301,
+          "name": "画间法师手",
+          "types": [
+            "普通",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "2.08-2.45",
+          "weight_range": "46.05-58.1",
+          "big_body_range": "57.859",
+          "small_body_range": "46.291"
+        },
+        {
+          "form_id": 302,
+          "name": "画间沉铁兽",
+          "types": [
+            "普通",
+            "武"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "1.75-1.92",
+          "weight_range": "75.7-88.02",
+          "big_body_range": "87.7736",
+          "small_body_range": "75.9464"
+        }
+      ]
+    },
+    {
+      "family_id": 303,
+      "name": "书魔虫",
+      "source": "local-seed",
+      "evolution_chain": [
+        "书魔虫",
+        "书卷守护"
+      ],
+      "aliases": [
+        "书卷守护",
+        "书魔虫",
+        "书魔虫蛋",
+        "古卷匣魔像",
+        "古卷执政官"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：古卷执政官 判断依据：双攻/高速向，六维最高项为 魔防(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "书魔虫蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.13-0.17",
+          "weight_range": "0.798-1.544",
+          "big_body_range": "1.5291",
+          "small_body_range": "0.8129"
+        },
+        {
+          "form_id": 303,
+          "name": "书魔虫",
+          "types": [
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.3-0.41",
+          "weight_range": "2.28-3.86",
+          "big_body_range": "3.8284",
+          "small_body_range": "2.3116"
+        },
+        {
+          "form_id": 304,
+          "name": "书卷守护",
+          "types": [
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.82-1.01",
+          "weight_range": "9.8-14.8",
+          "big_body_range": "14.7",
+          "small_body_range": "9.9"
+        },
+        {
+          "form_id": 305,
+          "name": "古卷执政官",
+          "types": [
+            "普通",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "1.91-2.21",
+          "weight_range": "98.8-135.5",
+          "big_body_range": "134.766",
+          "small_body_range": "99.534"
+        },
+        {
+          "form_id": 306,
+          "name": "古卷匣魔像",
+          "types": [
+            "普通",
+            "武"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "1.87-2.15",
+          "weight_range": "119.5-180.5",
+          "big_body_range": "179.28",
+          "small_body_range": "120.72"
+        }
+      ]
+    },
+    {
+      "family_id": 307,
+      "name": "绒绒",
+      "source": "local-seed",
+      "evolution_chain": [
+        "绒绒",
+        "小绒茧",
+        "绒仙子"
+      ],
+      "aliases": [
+        "小绒茧",
+        "绒仙子",
+        "绒绒",
+        "绒绒蛋"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：绒仙子 判断依据：双攻/高速向，六维最高项为 魔防(133)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "绒绒蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.12-0.15",
+          "weight_range": "0.35-1",
+          "big_body_range": "0.987",
+          "small_body_range": "0.363"
+        },
+        {
+          "form_id": 307,
+          "name": "绒绒",
+          "types": [
+            "光",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.29-0.35",
+          "weight_range": "1-2.5",
+          "big_body_range": "2.47",
+          "small_body_range": "1.03"
+        },
+        {
+          "form_id": 308,
+          "name": "小绒茧",
+          "types": [
+            "光",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.59-0.84",
+          "weight_range": "7.6-9.2",
+          "big_body_range": "9.168",
+          "small_body_range": "7.632"
+        },
+        {
+          "form_id": 309,
+          "name": "绒仙子",
+          "types": [
+            "光",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.25-1.65",
+          "weight_range": "37.5-42.8",
+          "big_body_range": "42.694",
+          "small_body_range": "37.606"
+        }
+      ]
+    },
+    {
+      "family_id": 310,
+      "name": "犀角鸟",
+      "source": "local-seed",
+      "evolution_chain": [
+        "犀角鸟",
+        "光纤兽",
+        "疾光千兽"
+      ],
+      "aliases": [
+        "光纤兽",
+        "犀角鸟",
+        "犀角鸟蛋",
+        "疾光千兽"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：疾光千兽 判断依据：物攻向，六维最高项为 物攻(146)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "犀角鸟蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.14-0.17",
+          "weight_range": "3.36-4.6",
+          "big_body_range": "4.5752",
+          "small_body_range": "3.3848"
+        },
+        {
+          "form_id": 310,
+          "name": "犀角鸟",
+          "types": [
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.32-0.4",
+          "weight_range": "9.6-11.5",
+          "big_body_range": "11.462",
+          "small_body_range": "9.638"
+        },
+        {
+          "form_id": 311,
+          "name": "光纤兽",
+          "types": [
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.7-0.85",
+          "weight_range": "31.5-37.8",
+          "big_body_range": "37.674",
+          "small_body_range": "31.626"
+        },
+        {
+          "form_id": 312,
+          "name": "疾光千兽",
+          "types": [
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.75-2.1",
+          "weight_range": "112.9-165",
+          "big_body_range": "163.958",
+          "small_body_range": "113.942"
+        }
+      ]
+    },
+    {
+      "family_id": 313,
+      "name": "果冻",
+      "source": "local-seed",
+      "evolution_chain": [
+        "果冻"
+      ],
+      "aliases": [
+        "抹茶布丁",
+        "果冻",
+        "果冻蛋",
+        "椰浆布丁",
+        "熔岩布丁"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：熔岩布丁 判断依据：物攻向，六维最高项为 精力(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "果冻蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "海洋组、魔力组",
+          "height_range": "0.13-0.15",
+          "weight_range": "1.523-2.24",
+          "big_body_range": "2.2257",
+          "small_body_range": "1.5373"
+        },
+        {
+          "form_id": 313,
+          "name": "果冻",
+          "types": [
+            "水"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组、魔力组",
+          "height_range": "0.3-0.36",
+          "weight_range": "4.35-5.6",
+          "big_body_range": "5.575",
+          "small_body_range": "4.375"
+        },
+        {
+          "form_id": 314,
+          "name": "抹茶布丁",
+          "types": [
+            "水",
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组、魔力组",
+          "height_range": "0.39-0.51",
+          "weight_range": "6.21-7.9",
+          "big_body_range": "7.8662",
+          "small_body_range": "6.2438"
+        },
+        {
+          "form_id": 315,
+          "name": "椰浆布丁",
+          "types": [
+            "水",
+            "冰"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组",
+          "height_range": "0.39-0.51",
+          "weight_range": "6.21-7.9",
+          "big_body_range": "7.8662",
+          "small_body_range": "6.2438"
+        },
+        {
+          "form_id": 316,
+          "name": "熔岩布丁",
+          "types": [
+            "水",
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组",
+          "height_range": "0.39-0.51",
+          "weight_range": "6.21-7.9",
+          "big_body_range": "7.8662",
+          "small_body_range": "6.2438"
+        }
+      ]
+    },
+    {
+      "family_id": 317,
+      "name": "星尘虫",
+      "source": "local-seed",
+      "evolution_chain": [
+        "星尘虫",
+        "落星虫",
+        "陨星虫"
+      ],
+      "aliases": [
+        "星尘虫",
+        "星尘虫蛋",
+        "落星虫",
+        "陨星虫"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：陨星虫 判断依据：魔攻向，六维最高项为 速度(100)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "星尘虫蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "昆虫组",
+          "height_range": "0.06-0.08",
+          "weight_range": "0.263-0.34",
+          "big_body_range": "0.3385",
+          "small_body_range": "0.2645"
+        },
+        {
+          "form_id": 317,
+          "name": "星尘虫",
+          "types": [
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组",
+          "height_range": "0.15-0.2",
+          "weight_range": "0.45-1.4",
+          "big_body_range": "1.381",
+          "small_body_range": "0.469"
+        },
+        {
+          "form_id": 318,
+          "name": "落星虫",
+          "types": [
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组",
+          "height_range": "0.35-0.4",
+          "weight_range": "1.25-2.25",
+          "big_body_range": "2.23",
+          "small_body_range": "1.27"
+        },
+        {
+          "form_id": 319,
+          "name": "陨星虫",
+          "types": [
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组",
+          "height_range": "0.65-0.8",
+          "weight_range": "5.6-6.8",
+          "big_body_range": "6.776",
+          "small_body_range": "5.624"
+        }
+      ]
+    },
+    {
+      "family_id": 320,
+      "name": "双灯鱼",
+      "source": "local-seed",
+      "evolution_chain": [
+        "双灯鱼",
+        "利灯鱼"
+      ],
+      "aliases": [
+        "利灯鱼",
+        "双灯鱼",
+        "双灯鱼蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：利灯鱼 判断依据：魔攻向，六维最高项为 魔攻(138)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "双灯鱼蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "海洋组",
+          "height_range": "0.21-0.3",
+          "weight_range": "5.215-7.12",
+          "big_body_range": "7.0819",
+          "small_body_range": "5.2531"
+        },
+        {
+          "form_id": 320,
+          "name": "双灯鱼",
+          "types": [
+            "水",
+            "电"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组",
+          "height_range": "0.5-0.72",
+          "weight_range": "14.9-17.8",
+          "big_body_range": "17.742",
+          "small_body_range": "14.958"
+        },
+        {
+          "form_id": 321,
+          "name": "利灯鱼",
+          "types": [
+            "水",
+            "电"
+          ],
+          "is_egg": false,
+          "egg_group": "海洋组",
+          "height_range": "0.62-0.89",
+          "weight_range": "26.8-31.5",
+          "big_body_range": "31.406",
+          "small_body_range": "26.894"
+        }
+      ]
+    },
+    {
+      "family_id": 322,
+      "name": "月牙雪熊",
+      "source": "local-seed",
+      "evolution_chain": [
+        "月牙雪熊"
+      ],
+      "aliases": [
+        "月牙雪熊",
+        "月牙雪熊蛋"
+      ],
+      "pvp": {
+        "nature": "悠闲 / 紧张",
+        "attributes": "物防、精力、速度",
+        "notes": "核心形态：月牙雪熊 判断依据：耐久向，六维最高项为 物防(141)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "月牙雪熊蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组、巨灵组",
+          "height_range": "0.53-0.6",
+          "weight_range": "26.775-37",
+          "big_body_range": "36.7955",
+          "small_body_range": "26.9795"
+        },
+        {
+          "form_id": 322,
+          "name": "月牙雪熊",
+          "types": [
+            "冰",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、巨灵组",
+          "height_range": "1.25-1.45",
+          "weight_range": "76.5-92.5",
+          "big_body_range": "92.18",
+          "small_body_range": "76.82"
+        }
+      ]
+    },
+    {
+      "family_id": 323,
+      "name": "嗜光嗡嗡",
+      "source": "local-seed",
+      "evolution_chain": [
+        "嗜光嗡嗡",
+        "窃光蚊"
+      ],
+      "aliases": [
+        "嗜光嗡嗡",
+        "嗜光嗡嗡蛋",
+        "窃光蚊"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：窃光蚊 判断依据：双攻/高速向，六维最高项为 魔防(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "嗜光嗡嗡蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "昆虫组",
+          "height_range": "0.1-0.13",
+          "weight_range": "0.511-1.22",
+          "big_body_range": "1.2058",
+          "small_body_range": "0.5252"
+        },
+        {
+          "form_id": 323,
+          "name": "嗜光嗡嗡",
+          "types": [
+            "恶",
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组",
+          "height_range": "0.24-0.32",
+          "weight_range": "1.46-3.05",
+          "big_body_range": "3.0182",
+          "small_body_range": "1.4918"
+        },
+        {
+          "form_id": 324,
+          "name": "窃光蚊",
+          "types": [
+            "恶",
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组",
+          "height_range": "0.53-0.66",
+          "weight_range": "7.05-9.62",
+          "big_body_range": "9.5686",
+          "small_body_range": "7.1014"
+        }
+      ]
+    },
+    {
+      "family_id": 325,
+      "name": "柴渣虫",
+      "source": "local-seed",
+      "evolution_chain": [
+        "柴渣虫",
+        "燃薪虫"
+      ],
+      "aliases": [
+        "柴渣虫",
+        "柴渣虫蛋",
+        "燃薪虫"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：燃薪虫 判断依据：物攻向，六维最高项为 精力(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "柴渣虫蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "昆虫组、植物组",
+          "height_range": "0.19-0.23",
+          "weight_range": "5.075-7.44",
+          "big_body_range": "7.3927",
+          "small_body_range": "5.1223"
+        },
+        {
+          "form_id": 325,
+          "name": "柴渣虫",
+          "types": [
+            "火",
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、植物组",
+          "height_range": "0.45-0.55",
+          "weight_range": "14.5-18.6",
+          "big_body_range": "18.518",
+          "small_body_range": "14.582"
+        },
+        {
+          "form_id": 326,
+          "name": "燃薪虫",
+          "types": [
+            "火",
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、植物组",
+          "height_range": "1.1-1.25",
+          "weight_range": "72.5-87.5",
+          "big_body_range": "87.2",
+          "small_body_range": "72.8"
+        }
+      ]
+    },
+    {
+      "family_id": 327,
+      "name": "空空颅",
+      "source": "local-seed",
+      "evolution_chain": [
+        "空空颅",
+        "夜宿颅",
+        "夜枭"
+      ],
+      "aliases": [
+        "夜宿颅",
+        "夜枭",
+        "暗夜颅主",
+        "空空颅",
+        "空空颅蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：暗夜颅主 判断依据：魔攻向，六维最高项为 精力(117)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "空空颅蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "魔力组、巨灵组",
+          "height_range": "0.18-0.25",
+          "weight_range": "1.96-3.48",
+          "big_body_range": "3.4496",
+          "small_body_range": "1.9904"
+        },
+        {
+          "form_id": 327,
+          "name": "空空颅",
+          "types": [
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "魔力组、巨灵组",
+          "height_range": "0.43-0.61",
+          "weight_range": "5.6-8.7",
+          "big_body_range": "8.638",
+          "small_body_range": "5.662"
+        },
+        {
+          "form_id": 328,
+          "name": "夜宿颅",
+          "types": [
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "魔力组、巨灵组",
+          "height_range": "0.82-1.18",
+          "weight_range": "27.6-34.3",
+          "big_body_range": "34.166",
+          "small_body_range": "27.734"
+        },
+        {
+          "form_id": 329,
+          "name": "夜枭",
+          "types": [
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "魔力组、巨灵组",
+          "height_range": "1.45-2.07",
+          "weight_range": "58.6-66.5",
+          "big_body_range": "66.342",
+          "small_body_range": "58.758"
+        },
+        {
+          "form_id": 329,
+          "name": "暗夜颅主",
+          "types": [
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "2.34-3.01",
+          "weight_range": "96.6-150",
+          "big_body_range": "148.932",
+          "small_body_range": "97.668"
+        }
+      ]
+    },
+    {
+      "family_id": 330,
+      "name": "粉粉星",
+      "source": "local-seed",
+      "evolution_chain": [
+        "粉粉星",
+        "小皮球"
+      ],
+      "aliases": [
+        "小皮球",
+        "粉粉星",
+        "粉粉星蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：小皮球 判断依据：魔攻向，六维最高项为 魔攻(127)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "粉粉星蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、软体组",
+          "height_range": "0.23-0.32",
+          "weight_range": "0.735-1.2",
+          "big_body_range": "1.1907",
+          "small_body_range": "0.7443"
+        },
+        {
+          "form_id": 330,
+          "name": "粉粉星",
+          "types": [
+            "电",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、软体组",
+          "height_range": "0.53-0.76",
+          "weight_range": "2.1-3",
+          "big_body_range": "2.982",
+          "small_body_range": "2.118"
+        },
+        {
+          "form_id": 331,
+          "name": "小皮球",
+          "types": [
+            "电",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、软体组",
+          "height_range": "0.7-1",
+          "weight_range": "6.4-8.12",
+          "big_body_range": "8.0856",
+          "small_body_range": "6.4344"
+        }
+      ]
+    },
+    {
+      "family_id": 332,
+      "name": "贝瑟",
+      "source": "local-seed",
+      "evolution_chain": [
+        "贝瑟",
+        "贝加尔",
+        "贝古斯"
+      ],
+      "aliases": [
+        "贝加尔",
+        "贝古斯",
+        "贝瑟",
+        "贝瑟蛋"
+      ],
+      "pvp": {
+        "nature": "狂妄 / 紧张",
+        "attributes": "魔防、精力、物防",
+        "notes": "核心形态：贝古斯 判断依据：耐久向，六维最高项为 魔防(163)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "贝瑟蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "机械组",
+          "height_range": "0.24-0.34",
+          "weight_range": "8.575-13.84",
+          "big_body_range": "13.7347",
+          "small_body_range": "8.6803"
+        },
+        {
+          "form_id": 332,
+          "name": "贝瑟",
+          "types": [
+            "机械",
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "机械组",
+          "height_range": "0.57-0.82",
+          "weight_range": "24.5-34.6",
+          "big_body_range": "34.398",
+          "small_body_range": "24.702"
+        },
+        {
+          "form_id": 333,
+          "name": "贝加尔",
+          "types": [
+            "机械",
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "机械组",
+          "height_range": "0.9-1.2",
+          "weight_range": "87.6-97.5",
+          "big_body_range": "97.302",
+          "small_body_range": "87.798"
+        },
+        {
+          "form_id": 334,
+          "name": "贝古斯",
+          "types": [
+            "机械",
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "机械组",
+          "height_range": "1.55-1.8",
+          "weight_range": "248-286",
+          "big_body_range": "285.24",
+          "small_body_range": "248.76"
+        }
+      ]
+    },
+    {
+      "family_id": 335,
+      "name": "粉星仔",
+      "source": "local-seed",
+      "evolution_chain": [
+        "粉星仔"
+      ],
+      "aliases": [
+        "粉星仔",
+        "粉星仔蛋",
+        "粉耳星兔",
+        "落陨星兔"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：粉耳星兔 判断依据：魔攻向，六维最高项为 魔攻(148)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "粉星仔蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、天空组",
+          "height_range": "0.17-0.21",
+          "weight_range": "3.43-5.12",
+          "big_body_range": "5.0862",
+          "small_body_range": "3.4638"
+        },
+        {
+          "form_id": 335,
+          "name": "粉星仔",
+          "types": [
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、天空组",
+          "height_range": "0.39-0.5",
+          "weight_range": "9.8-12.8",
+          "big_body_range": "12.74",
+          "small_body_range": "9.86"
+        },
+        {
+          "form_id": 336,
+          "name": "粉耳星兔",
+          "types": [
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、天空组",
+          "height_range": "0.55-0.75",
+          "weight_range": "16.82-23.81",
+          "big_body_range": "23.6702",
+          "small_body_range": "16.9598"
+        },
+        {
+          "form_id": 337,
+          "name": "落陨星兔",
+          "types": [
+            "幻",
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、天空组",
+          "height_range": "0.55-0.75",
+          "weight_range": "16.82-23.81",
+          "big_body_range": "23.6702",
+          "small_body_range": "16.9598"
+        }
+      ]
+    },
+    {
+      "family_id": 338,
+      "name": "布瓜蝌",
+      "source": "local-seed",
+      "evolution_chain": [
+        "布瓜蝌",
+        "上岸蛙"
+      ],
+      "aliases": [
+        "上岸蛙",
+        "布瓜蝌",
+        "布瓜蝌蛋"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：上岸蛙 判断依据：物攻向，六维最高项为 速度(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "布瓜蝌蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "两栖组",
+          "height_range": "0.14-0.21",
+          "weight_range": "0.298-0.42",
+          "big_body_range": "0.4176",
+          "small_body_range": "0.3004"
+        },
+        {
+          "form_id": 338,
+          "name": "布瓜蝌",
+          "types": [
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "两栖组",
+          "height_range": "0.32-0.51",
+          "weight_range": "0.45-1.65",
+          "big_body_range": "1.626",
+          "small_body_range": "0.474"
+        },
+        {
+          "form_id": 339,
+          "name": "上岸蛙",
+          "types": [
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "两栖组",
+          "height_range": "0.65-0.87",
+          "weight_range": "5.8-8.1",
+          "big_body_range": "8.054",
+          "small_body_range": "5.846"
+        }
+      ]
+    },
+    {
+      "family_id": 340,
+      "name": "火红尾",
+      "source": "local-seed",
+      "evolution_chain": [
+        "火红尾",
+        "雅丹鬃"
+      ],
+      "aliases": [
+        "火红尾",
+        "火红尾蛋",
+        "雅丹鬃"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：雅丹鬃 判断依据：魔攻向，六维最高项为 魔攻(162)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "火红尾蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组",
+          "height_range": "0.4-0.61",
+          "weight_range": "8.016-15.92",
+          "big_body_range": "15.7619",
+          "small_body_range": "8.1741"
+        },
+        {
+          "form_id": 340,
+          "name": "火红尾",
+          "types": [
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "0.72-0.98",
+          "weight_range": "17.5-30.5",
+          "big_body_range": "30.24",
+          "small_body_range": "17.76"
+        },
+        {
+          "form_id": 341,
+          "name": "雅丹鬃",
+          "types": [
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "1.7-2.06",
+          "weight_range": "49.5-71.2",
+          "big_body_range": "70.766",
+          "small_body_range": "49.934"
+        }
+      ]
+    },
+    {
+      "family_id": 342,
+      "name": "春团",
+      "source": "local-seed",
+      "evolution_chain": [
+        "春团",
+        "春兔",
+        "春花兔"
+      ],
+      "aliases": [
+        "春兔",
+        "春团",
+        "春团蛋",
+        "春花兔"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：春花兔 判断依据：双攻/高速向，六维最高项为 速度(105)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "春团蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组、妖精组",
+          "height_range": "0.15-0.21",
+          "weight_range": "1.44-7.35",
+          "big_body_range": "7.2318",
+          "small_body_range": "1.5582"
+        },
+        {
+          "form_id": 342,
+          "name": "春团",
+          "types": [
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、妖精组",
+          "height_range": "0.35-0.51",
+          "weight_range": "2.1-3.6",
+          "big_body_range": "3.57",
+          "small_body_range": "2.13"
+        },
+        {
+          "form_id": 343,
+          "name": "春兔",
+          "types": [
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、妖精组",
+          "height_range": "0.61-0.87",
+          "weight_range": "6.8-8.5",
+          "big_body_range": "8.466",
+          "small_body_range": "6.834"
+        },
+        {
+          "form_id": 344,
+          "name": "春花兔",
+          "types": [
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、妖精组",
+          "height_range": "0.85-1.15",
+          "weight_range": "18.5-33.5",
+          "big_body_range": "33.2",
+          "small_body_range": "18.8"
+        }
+      ]
+    },
+    {
+      "family_id": 345,
+      "name": "幽星光",
+      "source": "local-seed",
+      "evolution_chain": [
+        "幽星光",
+        "曜星光",
+        "暮星辰"
+      ],
+      "aliases": [
+        "幽星光",
+        "幽星光蛋",
+        "暮星辰",
+        "曜星光"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：暮星辰 判断依据：魔攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "幽星光蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.17-0.23",
+          "weight_range": "0.21-0.48",
+          "big_body_range": "0.4746",
+          "small_body_range": "0.2154"
+        },
+        {
+          "form_id": 345,
+          "name": "幽星光",
+          "types": [
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.4-0.55",
+          "weight_range": "0.6-1.65",
+          "big_body_range": "1.629",
+          "small_body_range": "0.621"
+        },
+        {
+          "form_id": 346,
+          "name": "曜星光",
+          "types": [
+            "幻",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "0.88-1.05",
+          "weight_range": "3-4.5",
+          "big_body_range": "4.47",
+          "small_body_range": "3.03"
+        },
+        {
+          "form_id": 347,
+          "name": "暮星辰",
+          "types": [
+            "幻",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、巨灵组",
+          "height_range": "1.85-2.05",
+          "weight_range": "7.5-10.5",
+          "big_body_range": "10.44",
+          "small_body_range": "7.56"
+        }
+      ]
+    },
+    {
+      "family_id": 348,
+      "name": "钨丝贝贝",
+      "source": "local-seed",
+      "evolution_chain": [
+        "钨丝贝贝",
+        "辉光幕机",
+        "机幕方舟"
+      ],
+      "aliases": [
+        "机幕方舟",
+        "辉光幕机",
+        "钨丝贝贝",
+        "钨丝贝贝蛋"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：机幕方舟 判断依据：双攻/高速向，六维最高项为 物防(130)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "钨丝贝贝蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.23-0.3",
+          "weight_range": "3.395-5.92",
+          "big_body_range": "5.8695",
+          "small_body_range": "3.4455"
+        },
+        {
+          "form_id": 348,
+          "name": "钨丝贝贝",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.54-0.73",
+          "weight_range": "9.7-14.8",
+          "big_body_range": "14.698",
+          "small_body_range": "9.802"
+        },
+        {
+          "form_id": 349,
+          "name": "辉光幕机",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.03-1.41",
+          "weight_range": "31.5-57.6",
+          "big_body_range": "57.078",
+          "small_body_range": "32.022"
+        },
+        {
+          "form_id": 350,
+          "name": "机幕方舟",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.68-2.01",
+          "weight_range": "128-237",
+          "big_body_range": "234.82",
+          "small_body_range": "130.18"
+        }
+      ]
+    },
+    {
+      "family_id": 351,
+      "name": "凡雀",
+      "source": "local-seed",
+      "evolution_chain": [
+        "凡雀",
+        "紫翎鹰",
+        "凡鹰"
+      ],
+      "aliases": [
+        "凡雀",
+        "凡雀蛋",
+        "凡鹰",
+        "紫翎鹰"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：凡鹰 判断依据：双攻/高速向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "凡雀蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.15-0.21",
+          "weight_range": "1.078-2.4",
+          "big_body_range": "2.3736",
+          "small_body_range": "1.1044"
+        },
+        {
+          "form_id": 351,
+          "name": "凡雀",
+          "types": [
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.35-0.5",
+          "weight_range": "3.08-6",
+          "big_body_range": "5.9416",
+          "small_body_range": "3.1384"
+        },
+        {
+          "form_id": 352,
+          "name": "紫翎鹰",
+          "types": [
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.65-0.85",
+          "weight_range": "13.04-20.5",
+          "big_body_range": "20.3508",
+          "small_body_range": "13.1892"
+        },
+        {
+          "form_id": 353,
+          "name": "凡鹰",
+          "types": [
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.64-2.23",
+          "weight_range": "46.35-68.27",
+          "big_body_range": "67.8316",
+          "small_body_range": "46.7884"
+        }
+      ]
+    },
+    {
+      "family_id": 354,
+      "name": "小雪人",
+      "source": "local-seed",
+      "evolution_chain": [
+        "小雪人",
+        "雪怪"
+      ],
+      "aliases": [
+        "小雪人",
+        "小雪人蛋",
+        "雪怪"
+      ],
+      "pvp": {
+        "nature": "狂妄 / 紧张",
+        "attributes": "魔防、精力、速度",
+        "notes": "核心形态：雪怪 判断依据：耐久向，六维最高项为 魔防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "小雪人蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.32-0.39",
+          "weight_range": "15.155-35",
+          "big_body_range": "34.6031",
+          "small_body_range": "15.5519"
+        },
+        {
+          "form_id": 354,
+          "name": "小雪人",
+          "types": [
+            "冰"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.75-0.94",
+          "weight_range": "43.3-87.5",
+          "big_body_range": "86.616",
+          "small_body_range": "44.184"
+        },
+        {
+          "form_id": 355,
+          "name": "雪怪",
+          "types": [
+            "冰"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.75-2.33",
+          "weight_range": "120-187.4",
+          "big_body_range": "186.052",
+          "small_body_range": "121.348"
+        }
+      ]
+    },
+    {
+      "family_id": 356,
+      "name": "爆焰仔",
+      "source": "local-seed",
+      "evolution_chain": [
+        "爆焰仔",
+        "爆焰喷喷"
+      ],
+      "aliases": [
+        "爆焰仔",
+        "爆焰仔蛋",
+        "爆焰喷喷"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：爆焰喷喷 判断依据：物攻向，六维最高项为 物防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "爆焰仔蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.28-0.35",
+          "weight_range": "7.35-15.4",
+          "big_body_range": "15.239",
+          "small_body_range": "7.511"
+        },
+        {
+          "form_id": 356,
+          "name": "爆焰仔",
+          "types": [
+            "火",
+            "龙"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.65-0.85",
+          "weight_range": "21-38.5",
+          "big_body_range": "38.15",
+          "small_body_range": "21.35"
+        },
+        {
+          "form_id": 357,
+          "name": "爆焰喷喷",
+          "types": [
+            "火",
+            "龙"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.65-1.81",
+          "weight_range": "47.5-69.5",
+          "big_body_range": "69.06",
+          "small_body_range": "47.94"
+        }
+      ]
+    },
+    {
+      "family_id": 358,
+      "name": "猴麦仔",
+      "source": "local-seed",
+      "evolution_chain": [
+        "猴麦仔",
+        "音碟吼"
+      ],
+      "aliases": [
+        "猴麦仔",
+        "猴麦仔蛋",
+        "音碟吼"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：音碟吼 判断依据：魔攻向，六维最高项为 魔攻(151)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "猴麦仔蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组、机械组",
+          "height_range": "0.24-0.33",
+          "weight_range": "2.94-7.04",
+          "big_body_range": "6.958",
+          "small_body_range": "3.022"
+        },
+        {
+          "form_id": 358,
+          "name": "猴麦仔",
+          "types": [
+            "普通",
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、机械组",
+          "height_range": "0.57-0.79",
+          "weight_range": "8.4-17.6",
+          "big_body_range": "17.416",
+          "small_body_range": "8.584"
+        },
+        {
+          "form_id": 359,
+          "name": "音碟吼",
+          "types": [
+            "普通",
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、机械组",
+          "height_range": "0.77-1.08",
+          "weight_range": "23.1-40.8",
+          "big_body_range": "40.446",
+          "small_body_range": "23.454"
+        }
+      ]
+    },
+    {
+      "family_id": 360,
+      "name": "加油海葵",
+      "source": "local-seed",
+      "evolution_chain": [
+        "加油海葵",
+        "加油蟹"
+      ],
+      "aliases": [
+        "加油海葵",
+        "加油海葵蛋",
+        "加油蟹",
+        "加油蟹（单只海葵的样子）"
+      ],
+      "pvp": {
+        "nature": "悠闲 / 紧张",
+        "attributes": "物防、精力、速度",
+        "notes": "核心形态：加油蟹 判断依据：耐久向，六维最高项为 物防(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "加油海葵蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、两栖组",
+          "height_range": "0.15-0.2",
+          "weight_range": "1.015-1.66",
+          "big_body_range": "1.6471",
+          "small_body_range": "1.0279"
+        },
+        {
+          "form_id": 360,
+          "name": "加油海葵",
+          "types": [
+            "水",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、两栖组",
+          "height_range": "0.35-0.47",
+          "weight_range": "2.9-4.15",
+          "big_body_range": "4.125",
+          "small_body_range": "2.925"
+        },
+        {
+          "form_id": 361,
+          "name": "加油蟹",
+          "types": [
+            "水",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、两栖组",
+          "height_range": "0.51-0.78",
+          "weight_range": "6.75-11.7",
+          "big_body_range": "11.601",
+          "small_body_range": "6.849"
+        },
+        {
+          "form_id": 361,
+          "name": "加油蟹（单只海葵的样子）",
+          "types": [
+            "水",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、两栖组",
+          "height_range": "0.51-0.78",
+          "weight_range": "5.35-9.87",
+          "big_body_range": "9.7796",
+          "small_body_range": "5.4404"
+        }
+      ]
+    },
+    {
+      "family_id": 362,
+      "name": "小丑豆豆",
+      "source": "local-seed",
+      "evolution_chain": [
+        "小丑豆豆",
+        "小丑兔",
+        "小丑公爵"
+      ],
+      "aliases": [
+        "小丑兔",
+        "小丑公爵",
+        "小丑豆豆",
+        "小丑豆豆蛋"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：小丑公爵 判断依据：双攻/高速向，六维最高项为 魔攻(147)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "小丑豆豆蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、拟人组",
+          "height_range": "0.2-0.27",
+          "weight_range": "1.698-2.54",
+          "big_body_range": "2.5232",
+          "small_body_range": "1.7148"
+        },
+        {
+          "form_id": 362,
+          "name": "小丑豆豆",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、拟人组",
+          "height_range": "0.48-0.65",
+          "weight_range": "4.85-6.35",
+          "big_body_range": "6.32",
+          "small_body_range": "4.88"
+        },
+        {
+          "form_id": 363,
+          "name": "小丑兔",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、拟人组",
+          "height_range": "0.78-0.96",
+          "weight_range": "11.75-14.75",
+          "big_body_range": "14.69",
+          "small_body_range": "11.81"
+        },
+        {
+          "form_id": 364,
+          "name": "小丑公爵",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、拟人组",
+          "height_range": "1.24-1.63",
+          "weight_range": "38.5-47.6",
+          "big_body_range": "47.418",
+          "small_body_range": "38.682"
+        }
+      ]
+    },
+    {
+      "family_id": 365,
+      "name": "烟花团",
+      "source": "local-seed",
+      "evolution_chain": [
+        "烟花团",
+        "烟花伯爵"
+      ],
+      "aliases": [
+        "烟花伯爵",
+        "烟花团",
+        "烟花团蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：烟花伯爵 判断依据：魔攻向，六维最高项为 魔攻(111)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "烟花团蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "机械组、魔力组",
+          "height_range": "0.14-0.21",
+          "weight_range": "1.768-2.528",
+          "big_body_range": "2.5128",
+          "small_body_range": "1.7832"
+        },
+        {
+          "form_id": 365,
+          "name": "烟花团",
+          "types": [
+            "火",
+            "毒"
+          ],
+          "is_egg": false,
+          "egg_group": "机械组、魔力组",
+          "height_range": "0.33-0.5",
+          "weight_range": "5.05-6.32",
+          "big_body_range": "6.2946",
+          "small_body_range": "5.0754"
+        },
+        {
+          "form_id": 366,
+          "name": "烟花伯爵",
+          "types": [
+            "火",
+            "毒"
+          ],
+          "is_egg": false,
+          "egg_group": "机械组、魔力组",
+          "height_range": "0.6-0.88",
+          "weight_range": "10.5-22.5",
+          "big_body_range": "22.26",
+          "small_body_range": "10.74"
+        }
+      ]
+    },
+    {
+      "family_id": 367,
+      "name": "咕咕帽",
+      "source": "local-seed",
+      "evolution_chain": [
+        "咕咕帽",
+        "咕德帽帽"
+      ],
+      "aliases": [
+        "咕咕帽",
+        "咕咕帽蛋",
+        "咕德帽帽"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：咕德帽帽 判断依据：双攻/高速向，六维最高项为 物防(137)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "咕咕帽蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组",
+          "height_range": "0.16-0.23",
+          "weight_range": "2.304-7.63",
+          "big_body_range": "7.5235",
+          "small_body_range": "2.4105"
+        },
+        {
+          "form_id": 367,
+          "name": "咕咕帽",
+          "types": [
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "0.38-0.55",
+          "weight_range": "2.18-5.76",
+          "big_body_range": "5.6884",
+          "small_body_range": "2.2516"
+        },
+        {
+          "form_id": 368,
+          "name": "咕德帽帽",
+          "types": [
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "0.69-0.96",
+          "weight_range": "7.68-14.3",
+          "big_body_range": "14.1676",
+          "small_body_range": "7.8124"
+        }
+      ]
+    },
+    {
+      "family_id": 369,
+      "name": "炫光迪迪",
+      "source": "local-seed",
+      "evolution_chain": [
+        "炫光迪迪",
+        "霹雳迪迪"
+      ],
+      "aliases": [
+        "炫光迪迪",
+        "炫光迪迪蛋",
+        "霹雳迪迪"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：霹雳迪迪 判断依据：魔攻向，六维最高项为 魔攻(139)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "炫光迪迪蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组、大地组",
+          "height_range": "0.2-0.28",
+          "weight_range": "9.1-14.84",
+          "big_body_range": "14.7252",
+          "small_body_range": "9.2148"
+        },
+        {
+          "form_id": 369,
+          "name": "炫光迪迪",
+          "types": [
+            "电",
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、大地组",
+          "height_range": "0.47-0.68",
+          "weight_range": "26-37.1",
+          "big_body_range": "36.878",
+          "small_body_range": "26.222"
+        },
+        {
+          "form_id": 370,
+          "name": "霹雳迪迪",
+          "types": [
+            "电",
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、大地组",
+          "height_range": "1.6-1.87",
+          "weight_range": "66.8-89.3",
+          "big_body_range": "88.85",
+          "small_body_range": "67.25"
+        }
+      ]
+    },
+    {
+      "family_id": 371,
+      "name": "小鼓象",
+      "source": "local-seed",
+      "evolution_chain": [
+        "小鼓象",
+        "巨鼓象"
+      ],
+      "aliases": [
+        "小鼓象",
+        "小鼓象蛋",
+        "巨鼓象"
+      ],
+      "pvp": {
+        "nature": "悠闲 / 紧张",
+        "attributes": "物防、精力、速度",
+        "notes": "核心形态：巨鼓象 判断依据：耐久向，六维最高项为 物防(173)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "小鼓象蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组、机械组",
+          "height_range": "0.27-0.34",
+          "weight_range": "1.806-3.32",
+          "big_body_range": "3.2897",
+          "small_body_range": "1.8363"
+        },
+        {
+          "form_id": 371,
+          "name": "小鼓象",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、机械组",
+          "height_range": "0.64-0.83",
+          "weight_range": "5.16-8.3",
+          "big_body_range": "8.2372",
+          "small_body_range": "5.2228"
+        },
+        {
+          "form_id": 372,
+          "name": "巨鼓象",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、机械组",
+          "height_range": "0.93-1.2",
+          "weight_range": "35.6-59.1",
+          "big_body_range": "58.63",
+          "small_body_range": "36.07"
+        }
+      ]
+    },
+    {
+      "family_id": 373,
+      "name": "牵线木偶",
+      "source": "local-seed",
+      "evolution_chain": [
+        "牵线木偶",
+        "帅帅魔偶"
+      ],
+      "aliases": [
+        "帅帅魔偶",
+        "牵线木偶",
+        "牵线木偶蛋"
+      ],
+      "pvp": {
+        "nature": "狂妄 / 紧张",
+        "attributes": "魔防、精力、速度",
+        "notes": "核心形态：帅帅魔偶 判断依据：耐久向，六维最高项为 魔防(133)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "牵线木偶蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、拟人组",
+          "height_range": "0.27-0.38",
+          "weight_range": "2.09-3.48",
+          "big_body_range": "3.4522",
+          "small_body_range": "2.1178"
+        },
+        {
+          "form_id": 373,
+          "name": "牵线木偶",
+          "types": [
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、拟人组",
+          "height_range": "0.63-0.91",
+          "weight_range": "5.97-8.7",
+          "big_body_range": "8.6454",
+          "small_body_range": "6.0246"
+        },
+        {
+          "form_id": 374,
+          "name": "帅帅魔偶",
+          "types": [
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、拟人组",
+          "height_range": "0.89-1.27",
+          "weight_range": "15.1-21.2",
+          "big_body_range": "21.078",
+          "small_body_range": "15.222"
+        }
+      ]
+    },
+    {
+      "family_id": 375,
+      "name": "学院呱呱",
+      "source": "local-seed",
+      "evolution_chain": [
+        "学院呱呱"
+      ],
+      "aliases": [
+        "学院呱呱",
+        "学院呱呱蛋"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：学院呱呱 判断依据：双攻/高速向，六维最高项为 精力(132)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "学院呱呱蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.21-0.27",
+          "weight_range": "1.687-2.2",
+          "big_body_range": "2.1897",
+          "small_body_range": "1.6973"
+        },
+        {
+          "form_id": 375,
+          "name": "学院呱呱",
+          "types": [
+            "武"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.49-0.66",
+          "weight_range": "4.82-5.5",
+          "big_body_range": "5.4864",
+          "small_body_range": "4.8336"
+        }
+      ]
+    },
+    {
+      "family_id": 376,
+      "name": "烈钻鸟",
+      "source": "local-seed",
+      "evolution_chain": [
+        "烈钻鸟",
+        "长尾火鸟",
+        "火羽"
+      ],
+      "aliases": [
+        "火羽",
+        "烈钻鸟",
+        "烈钻鸟蛋",
+        "长尾火鸟"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：火羽 判断依据：魔攻向，六维最高项为 魔防(121)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "烈钻鸟蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "天空组、动物组",
+          "height_range": "0.28-0.39",
+          "weight_range": "1.645-2.32",
+          "big_body_range": "2.3065",
+          "small_body_range": "1.6585"
+        },
+        {
+          "form_id": 376,
+          "name": "烈钻鸟",
+          "types": [
+            "火",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、动物组",
+          "height_range": "0.67-0.95",
+          "weight_range": "4.7-5.8",
+          "big_body_range": "5.778",
+          "small_body_range": "4.722"
+        },
+        {
+          "form_id": 377,
+          "name": "长尾火鸟",
+          "types": [
+            "火",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、动物组",
+          "height_range": "0.84-1.2",
+          "weight_range": "15.5-21.6",
+          "big_body_range": "21.478",
+          "small_body_range": "15.622"
+        },
+        {
+          "form_id": 378,
+          "name": "火羽",
+          "types": [
+            "火",
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、动物组",
+          "height_range": "1.33-1.91",
+          "weight_range": "79.6-87.5",
+          "big_body_range": "87.342",
+          "small_body_range": "79.758"
+        }
+      ]
+    },
+    {
+      "family_id": 379,
+      "name": "叮叮卯",
+      "source": "local-seed",
+      "evolution_chain": [
+        "叮叮卯",
+        "飞飞钥"
+      ],
+      "aliases": [
+        "叮叮卯",
+        "叮叮卯蛋",
+        "飞飞钥"
+      ],
+      "pvp": {
+        "nature": "狂妄 / 紧张",
+        "attributes": "魔防、精力、物防",
+        "notes": "核心形态：飞飞钥 判断依据：耐久向，六维最高项为 魔防(170)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "叮叮卯蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "昆虫组、机械组",
+          "height_range": "0.06-0.13",
+          "weight_range": "0.105-0.36",
+          "big_body_range": "0.3549",
+          "small_body_range": "0.1101"
+        },
+        {
+          "form_id": 379,
+          "name": "叮叮卯",
+          "types": [
+            "机械",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、机械组",
+          "height_range": "0.14-0.31",
+          "weight_range": "0.3-0.9",
+          "big_body_range": "0.888",
+          "small_body_range": "0.312"
+        },
+        {
+          "form_id": 380,
+          "name": "飞飞钥",
+          "types": [
+            "机械",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、机械组",
+          "height_range": "0.38-0.51",
+          "weight_range": "1.15-1.9",
+          "big_body_range": "1.885",
+          "small_body_range": "1.165"
+        }
+      ]
+    },
+    {
+      "family_id": 381,
+      "name": "碎晶蝎",
+      "source": "local-seed",
+      "evolution_chain": [
+        "碎晶蝎",
+        "晶尾蝎",
+        "蝎子王"
+      ],
+      "aliases": [
+        "晶尾蝎",
+        "碎晶蝎",
+        "碎晶蝎蛋",
+        "蝎子王"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：蝎子王 判断依据：双攻/高速向，六维最高项为 物攻(126)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "碎晶蝎蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "昆虫组、大地组",
+          "height_range": "0.17-0.22",
+          "weight_range": "3.262-5.8",
+          "big_body_range": "5.7492",
+          "small_body_range": "3.3128"
+        },
+        {
+          "form_id": 381,
+          "name": "碎晶蝎",
+          "types": [
+            "恶",
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、大地组",
+          "height_range": "0.4-0.54",
+          "weight_range": "9.32-14.5",
+          "big_body_range": "14.3964",
+          "small_body_range": "9.4236"
+        },
+        {
+          "form_id": 382,
+          "name": "晶尾蝎",
+          "types": [
+            "恶",
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、大地组",
+          "height_range": "0.48-0.59",
+          "weight_range": "15.5-25.5",
+          "big_body_range": "25.3",
+          "small_body_range": "15.7"
+        },
+        {
+          "form_id": 383,
+          "name": "蝎子王",
+          "types": [
+            "恶",
+            "地"
+          ],
+          "is_egg": false,
+          "egg_group": "昆虫组、大地组",
+          "height_range": "0.61-0.82",
+          "weight_range": "33-45",
+          "big_body_range": "44.76",
+          "small_body_range": "33.24"
+        }
+      ]
+    },
+    {
+      "family_id": 384,
+      "name": "森豆丁",
+      "source": "local-seed",
+      "evolution_chain": [
+        "森豆丁",
+        "森蛮人",
+        "森巨人"
+      ],
+      "aliases": [
+        "森巨人",
+        "森蛮人",
+        "森豆丁",
+        "森豆丁蛋"
+      ],
+      "pvp": {
+        "nature": "固执 / 平和",
+        "attributes": "物攻、精力、物防",
+        "notes": "核心形态：森巨人 判断依据：物攻向，六维最高项为 物攻(155)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "森豆丁蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "0.31-0.46",
+          "weight_range": "5.6-11.08",
+          "big_body_range": "10.9704",
+          "small_body_range": "5.7096"
+        },
+        {
+          "form_id": 384,
+          "name": "森豆丁",
+          "types": [
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "0.72-1.1",
+          "weight_range": "16-27.7",
+          "big_body_range": "27.466",
+          "small_body_range": "16.234"
+        },
+        {
+          "form_id": 385,
+          "name": "森蛮人",
+          "types": [
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "1.05-1.39",
+          "weight_range": "71-100",
+          "big_body_range": "99.42",
+          "small_body_range": "71.58"
+        },
+        {
+          "form_id": 386,
+          "name": "森巨人",
+          "types": [
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "1.41-1.69",
+          "weight_range": "160.7-200",
+          "big_body_range": "199.214",
+          "small_body_range": "161.486"
+        }
+      ]
+    },
+    {
+      "family_id": 387,
+      "name": "霹雳宝宝",
+      "source": "local-seed",
+      "evolution_chain": [
+        "霹雳宝宝",
+        "雷鸣小子",
+        "雷神之子"
+      ],
+      "aliases": [
+        "雷神之子",
+        "雷鸣小子",
+        "霹雳宝宝",
+        "霹雳宝宝蛋"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：雷神之子 判断依据：双攻/高速向，六维最高项为 速度(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "霹雳宝宝蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "0.24-0.29",
+          "weight_range": "2.338-4.32",
+          "big_body_range": "4.2804",
+          "small_body_range": "2.3776"
+        },
+        {
+          "form_id": 387,
+          "name": "霹雳宝宝",
+          "types": [
+            "电"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "0.57-0.71",
+          "weight_range": "6.68-10.8",
+          "big_body_range": "10.7176",
+          "small_body_range": "6.7624"
+        },
+        {
+          "form_id": 388,
+          "name": "雷鸣小子",
+          "types": [
+            "电"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "0.85-1.1",
+          "weight_range": "27.9-57.1",
+          "big_body_range": "56.516",
+          "small_body_range": "28.484"
+        },
+        {
+          "form_id": 389,
+          "name": "雷神之子",
+          "types": [
+            "电"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "1.44-1.73",
+          "weight_range": "77-91.3",
+          "big_body_range": "91.014",
+          "small_body_range": "77.286"
+        }
+      ]
+    },
+    {
+      "family_id": 390,
+      "name": "雪灵兽",
+      "source": "local-seed",
+      "evolution_chain": [
+        "雪灵兽",
+        "幻雪兽",
+        "饮雪狂兽"
+      ],
+      "aliases": [
+        "幻雪兽",
+        "雪灵兽",
+        "雪灵兽蛋",
+        "饮雪狂兽"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：饮雪狂兽 判断依据：物攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "雪灵兽蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组",
+          "height_range": "0.2-0.24",
+          "weight_range": "1.75-2.76",
+          "big_body_range": "2.7398",
+          "small_body_range": "1.7702"
+        },
+        {
+          "form_id": 390,
+          "name": "雪灵兽",
+          "types": [
+            "冰"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "0.47-0.59",
+          "weight_range": "5-6.9",
+          "big_body_range": "6.862",
+          "small_body_range": "5.038"
+        },
+        {
+          "form_id": 391,
+          "name": "幻雪兽",
+          "types": [
+            "冰"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "0.66-0.91",
+          "weight_range": "9.8-19.1",
+          "big_body_range": "18.914",
+          "small_body_range": "9.986"
+        },
+        {
+          "form_id": 392,
+          "name": "饮雪狂兽",
+          "types": [
+            "冰"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "1.45-1.9",
+          "weight_range": "61.3-84.3",
+          "big_body_range": "83.84",
+          "small_body_range": "61.76"
+        }
+      ]
+    },
+    {
+      "family_id": 393,
+      "name": "火豆丁",
+      "source": "local-seed",
+      "evolution_chain": [
+        "火豆丁",
+        "火蛮人",
+        "火巨人"
+      ],
+      "aliases": [
+        "火巨人",
+        "火蛮人",
+        "火豆丁",
+        "火豆丁蛋"
+      ],
+      "pvp": {
+        "nature": "固执 / 平和",
+        "attributes": "物攻、精力、物防",
+        "notes": "核心形态：火巨人 判断依据：物攻向，六维最高项为 物防(81)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "火豆丁蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "0.37-0.52",
+          "weight_range": "2.625-4.4",
+          "big_body_range": "4.3645",
+          "small_body_range": "2.6605"
+        },
+        {
+          "form_id": 393,
+          "name": "火豆丁",
+          "types": [
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "0.88-1.25",
+          "weight_range": "7.5-11",
+          "big_body_range": "10.93",
+          "small_body_range": "7.57"
+        },
+        {
+          "form_id": 394,
+          "name": "火蛮人",
+          "types": [
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "1.48-1.76",
+          "weight_range": "41-67.7",
+          "big_body_range": "67.166",
+          "small_body_range": "41.534"
+        },
+        {
+          "form_id": 395,
+          "name": "火巨人",
+          "types": [
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、拟人组",
+          "height_range": "1.82-2.35",
+          "weight_range": "110-159",
+          "big_body_range": "158.02",
+          "small_body_range": "110.98"
+        }
+      ]
+    },
+    {
+      "family_id": 396,
+      "name": "友爱天天",
+      "source": "local-seed",
+      "evolution_chain": [
+        "友爱天天",
+        "友爱星飞"
+      ],
+      "aliases": [
+        "友爱天天",
+        "友爱天天蛋",
+        "友爱星飞"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：友爱星飞 判断依据：魔攻向，六维最高项为 精力(108)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "友爱天天蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "天空组、妖精组",
+          "height_range": "0.12-0.17",
+          "weight_range": "1.04-1.676",
+          "big_body_range": "1.6633",
+          "small_body_range": "1.0527"
+        },
+        {
+          "form_id": 396,
+          "name": "友爱天天",
+          "types": [
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、妖精组",
+          "height_range": "0.28-0.41",
+          "weight_range": "2.97-4.19",
+          "big_body_range": "4.1656",
+          "small_body_range": "2.9944"
+        },
+        {
+          "form_id": 397,
+          "name": "友爱星飞",
+          "types": [
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、妖精组",
+          "height_range": "0.45-0.69",
+          "weight_range": "7.65-11.08",
+          "big_body_range": "11.0114",
+          "small_body_range": "7.7186"
+        }
+      ]
+    },
+    {
+      "family_id": 398,
+      "name": "莫比乌乌",
+      "source": "local-seed",
+      "evolution_chain": [
+        "莫比乌乌",
+        "克莱因龙"
+      ],
+      "aliases": [
+        "克莱因龙",
+        "莫比乌乌",
+        "莫比乌乌蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：克莱因龙 判断依据：魔攻向，六维最高项为 魔攻(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "莫比乌乌蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、龙组",
+          "height_range": "0.25-0.32",
+          "weight_range": "0.98-1.92",
+          "big_body_range": "1.9012",
+          "small_body_range": "0.9988"
+        },
+        {
+          "form_id": 398,
+          "name": "莫比乌乌",
+          "types": [
+            "龙",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、龙组",
+          "height_range": "0.58-0.78",
+          "weight_range": "2.8-4.8",
+          "big_body_range": "4.76",
+          "small_body_range": "2.84"
+        },
+        {
+          "form_id": 399,
+          "name": "克莱因龙",
+          "types": [
+            "龙",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、龙组",
+          "height_range": "1.38-1.68",
+          "weight_range": "28-48",
+          "big_body_range": "47.6",
+          "small_body_range": "28.4"
+        }
+      ]
+    },
+    {
+      "family_id": 400,
+      "name": "瑰眼仔",
+      "source": "local-seed",
+      "evolution_chain": [
+        "瑰眼仔",
+        "耳翎瑰魅",
+        "邪眼巨魔"
+      ],
+      "aliases": [
+        "瑰眼仔",
+        "瑰眼仔蛋",
+        "耳翎瑰魅",
+        "邪眼巨魔"
+      ],
+      "pvp": {
+        "nature": "狂妄 / 紧张",
+        "attributes": "魔防、精力、速度",
+        "notes": "核心形态：邪眼巨魔 判断依据：耐久向，六维最高项为 魔防(119)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "瑰眼仔蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "巨灵组、昆虫组",
+          "height_range": "0.17-0.24",
+          "weight_range": "1.397-2.2",
+          "big_body_range": "2.1839",
+          "small_body_range": "1.4131"
+        },
+        {
+          "form_id": 400,
+          "name": "瑰眼仔",
+          "types": [
+            "恶",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、昆虫组",
+          "height_range": "0.4-0.58",
+          "weight_range": "3.99-5.5",
+          "big_body_range": "5.4698",
+          "small_body_range": "4.0202"
+        },
+        {
+          "form_id": 401,
+          "name": "耳翎瑰魅",
+          "types": [
+            "恶",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、昆虫组",
+          "height_range": "0.89-1.08",
+          "weight_range": "13.4-19.1",
+          "big_body_range": "18.986",
+          "small_body_range": "13.514"
+        },
+        {
+          "form_id": 402,
+          "name": "邪眼巨魔",
+          "types": [
+            "恶",
+            "虫"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、昆虫组",
+          "height_range": "1.35-1.58",
+          "weight_range": "49-56",
+          "big_body_range": "55.86",
+          "small_body_range": "49.14"
+        }
+      ]
+    },
+    {
+      "family_id": 403,
+      "name": "觅觅蝠",
+      "source": "local-seed",
+      "evolution_chain": [
+        "觅觅蝠",
+        "翻翻蝠",
+        "夜游魔"
+      ],
+      "aliases": [
+        "夜游魔",
+        "翻翻蝠",
+        "觅觅蝠",
+        "觅觅蝠蛋"
+      ],
+      "pvp": {
+        "nature": "狂妄 / 紧张",
+        "attributes": "魔防、精力、物防",
+        "notes": "核心形态：夜游魔 判断依据：耐久向，六维最高项为 精力(126)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "觅觅蝠蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "巨灵组、天空组",
+          "height_range": "0.28-0.33",
+          "weight_range": "2.321-3.748",
+          "big_body_range": "3.7195",
+          "small_body_range": "2.3495"
+        },
+        {
+          "form_id": 403,
+          "name": "觅觅蝠",
+          "types": [
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、天空组",
+          "height_range": "0.65-0.79",
+          "weight_range": "6.63-9.37",
+          "big_body_range": "9.3152",
+          "small_body_range": "6.6848"
+        },
+        {
+          "form_id": 404,
+          "name": "翻翻蝠",
+          "types": [
+            "翼"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、天空组",
+          "height_range": "0.75-0.98",
+          "weight_range": "16.9-24.7",
+          "big_body_range": "24.544",
+          "small_body_range": "17.056"
+        },
+        {
+          "form_id": 405,
+          "name": "夜游魔",
+          "types": [
+            "翼",
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、天空组",
+          "height_range": "1.38-1.75",
+          "weight_range": "49.3-71.3",
+          "big_body_range": "70.86",
+          "small_body_range": "49.74"
+        }
+      ]
+    },
+    {
+      "family_id": 406,
+      "name": "芽眼魔",
+      "source": "local-seed",
+      "evolution_chain": [
+        "芽眼魔",
+        "叶眼魔",
+        "障眼魔"
+      ],
+      "aliases": [
+        "叶眼魔",
+        "芽眼魔",
+        "芽眼魔蛋",
+        "障眼魔"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：障眼魔 判断依据：双攻/高速向，六维最高项为 精力(113)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "芽眼魔蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "巨灵组、妖精组",
+          "height_range": "0.19-0.27",
+          "weight_range": "1.033-1.36",
+          "big_body_range": "1.3535",
+          "small_body_range": "1.0395"
+        },
+        {
+          "form_id": 406,
+          "name": "芽眼魔",
+          "types": [
+            "恶",
+            "水"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、妖精组",
+          "height_range": "0.44-0.64",
+          "weight_range": "2.95-3.4",
+          "big_body_range": "3.391",
+          "small_body_range": "2.959"
+        },
+        {
+          "form_id": 407,
+          "name": "叶眼魔",
+          "types": [
+            "恶",
+            "水"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、妖精组",
+          "height_range": "0.69-0.98",
+          "weight_range": "20.5-28.6",
+          "big_body_range": "28.438",
+          "small_body_range": "20.662"
+        },
+        {
+          "form_id": 408,
+          "name": "障眼魔",
+          "types": [
+            "恶",
+            "水"
+          ],
+          "is_egg": false,
+          "egg_group": "巨灵组、妖精组",
+          "height_range": "1.49-1.8",
+          "weight_range": "66.5-89",
+          "big_body_range": "88.55",
+          "small_body_range": "66.95"
+        }
+      ]
+    },
+    {
+      "family_id": 409,
+      "name": "星云旅者",
+      "source": "local-seed",
+      "evolution_chain": [
+        "星云旅者"
+      ],
+      "aliases": [
+        "星云旅者",
+        "星云旅者蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、物防",
+        "notes": "核心形态：星云旅者 判断依据：魔攻向，六维最高项为 魔攻(129)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "星云旅者蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、魔力组",
+          "height_range": "0.79-0.95",
+          "weight_range": "20.475-32",
+          "big_body_range": "31.7695",
+          "small_body_range": "20.7055"
+        },
+        {
+          "form_id": 409,
+          "name": "星云旅者",
+          "types": [
+            "翼",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、魔力组",
+          "height_range": "1.85-2.3",
+          "weight_range": "58.5-80",
+          "big_body_range": "79.57",
+          "small_body_range": "58.93"
+        }
+      ]
+    },
+    {
+      "family_id": 410,
+      "name": "点点",
+      "source": "local-seed",
+      "evolution_chain": [
+        "点点",
+        "珀尔鼬"
+      ],
+      "aliases": [
+        "点点",
+        "点点蛋",
+        "珀尔鼬"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：珀尔鼬 判断依据：魔攻向，六维最高项为 精力(117)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "点点蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组、妖精组",
+          "height_range": "0.17-0.23",
+          "weight_range": "1.019-1.556",
+          "big_body_range": "1.5453",
+          "small_body_range": "1.0297"
+        },
+        {
+          "form_id": 410,
+          "name": "点点",
+          "types": [
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、妖精组",
+          "height_range": "0.41-0.55",
+          "weight_range": "2.91-3.89",
+          "big_body_range": "3.8704",
+          "small_body_range": "2.9296"
+        },
+        {
+          "form_id": 411,
+          "name": "珀尔鼬",
+          "types": [
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、妖精组",
+          "height_range": "0.71-1.01",
+          "weight_range": "10.3-17.1",
+          "big_body_range": "16.964",
+          "small_body_range": "10.436"
+        }
+      ]
+    },
+    {
+      "family_id": 412,
+      "name": "不咕钟",
+      "source": "local-seed",
+      "evolution_chain": [
+        "不咕钟",
+        "溯源钟"
+      ],
+      "aliases": [
+        "不咕钟",
+        "不咕钟蛋",
+        "溯源钟"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：溯源钟 判断依据：魔攻向，六维最高项为 魔防(116)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "不咕钟蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "天空组、机械组",
+          "height_range": "0.1-0.15",
+          "weight_range": "0.536-1.216",
+          "big_body_range": "1.2024",
+          "small_body_range": "0.5496"
+        },
+        {
+          "form_id": 412,
+          "name": "不咕钟",
+          "types": [
+            "机械",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、机械组",
+          "height_range": "0.23-0.35",
+          "weight_range": "1.53-3.04",
+          "big_body_range": "3.0098",
+          "small_body_range": "1.5602"
+        },
+        {
+          "form_id": 413,
+          "name": "溯源钟",
+          "types": [
+            "机械",
+            "幻"
+          ],
+          "is_egg": false,
+          "egg_group": "天空组、机械组",
+          "height_range": "0.34-0.68",
+          "weight_range": "4.07-7.6",
+          "big_body_range": "7.5294",
+          "small_body_range": "4.1406"
+        }
+      ]
+    },
+    {
+      "family_id": 414,
+      "name": "加灵",
+      "source": "local-seed",
+      "evolution_chain": [
+        "加灵",
+        "加益"
+      ],
+      "aliases": [
+        "加尔",
+        "加灵",
+        "加灵蛋",
+        "加益",
+        "黑化加尔"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：黑化加尔 判断依据：魔攻向，六维最高项为 魔防(124)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "加灵蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.2-0.29",
+          "weight_range": "2.03-2.56",
+          "big_body_range": "2.5494",
+          "small_body_range": "2.0406"
+        },
+        {
+          "form_id": 414,
+          "name": "加灵",
+          "types": [
+            "普通",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.48-0.69",
+          "weight_range": "5.8-6.4",
+          "big_body_range": "6.388",
+          "small_body_range": "5.812"
+        },
+        {
+          "form_id": 415,
+          "name": "加益",
+          "types": [
+            "普通",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.57-0.82",
+          "weight_range": "8.6-10.2",
+          "big_body_range": "10.168",
+          "small_body_range": "8.632"
+        },
+        {
+          "form_id": 417,
+          "name": "黑化加尔",
+          "types": [
+            "普通",
+            "幽"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.71-1.01",
+          "weight_range": "19.2-21.5",
+          "big_body_range": "21.454",
+          "small_body_range": "19.246"
+        },
+        {
+          "form_id": 416,
+          "name": "加尔",
+          "types": [
+            "普通",
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.71-1.01",
+          "weight_range": "19.2-21.5",
+          "big_body_range": "21.454",
+          "small_body_range": "19.246"
+        }
+      ]
+    },
+    {
+      "family_id": 418,
+      "name": "咬咬小子",
+      "source": "local-seed",
+      "evolution_chain": [
+        "咬咬小子",
+        "胡桃王子"
+      ],
+      "aliases": [
+        "咬咬小子",
+        "胡桃王子"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、魔防",
+        "notes": "核心形态：胡桃王子 判断依据：物攻向，六维最高项为 精力(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": 418,
+          "name": "咬咬小子",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.87-1.23",
+          "weight_range": "18.7-27.3",
+          "big_body_range": "27.128",
+          "small_body_range": "18.872"
+        },
+        {
+          "form_id": 419,
+          "name": "胡桃王子",
+          "types": [
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.42-1.71",
+          "weight_range": "41.5-65",
+          "big_body_range": "64.53",
+          "small_body_range": "41.97"
+        }
+      ]
+    },
+    {
+      "family_id": 420,
+      "name": "足尖元件",
+      "source": "local-seed",
+      "evolution_chain": [
+        "足尖元件",
+        "离心舞者"
+      ],
+      "aliases": [
+        "离心舞者",
+        "足尖元件",
+        "足尖元件蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：离心舞者 判断依据：魔攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "足尖元件蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.11-0.16",
+          "weight_range": "1.085-2.052",
+          "big_body_range": "2.0327",
+          "small_body_range": "1.1043"
+        },
+        {
+          "form_id": 420,
+          "name": "足尖元件",
+          "types": [
+            "幻",
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.26-0.39",
+          "weight_range": "3.1-5.13",
+          "big_body_range": "5.0894",
+          "small_body_range": "3.1406"
+        },
+        {
+          "form_id": 421,
+          "name": "离心舞者",
+          "types": [
+            "幻",
+            "机械"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "1.67-2.01",
+          "weight_range": "36.7-59.3",
+          "big_body_range": "58.848",
+          "small_body_range": "37.152"
+        }
+      ]
+    },
+    {
+      "family_id": 422,
+      "name": "蝴蝶陶陶",
+      "source": "local-seed",
+      "evolution_chain": [
+        "蝴蝶陶陶",
+        "铆钉毛毛",
+        "徘徊爪爪"
+      ],
+      "aliases": [
+        "徘徊爪爪",
+        "蝴蝶陶陶",
+        "蝴蝶陶陶蛋",
+        "铆钉毛毛"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：徘徊爪爪 判断依据：物攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "蝴蝶陶陶蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组、拟人组",
+          "height_range": "0.25-0.33",
+          "weight_range": "1.4-2.452",
+          "big_body_range": "2.431",
+          "small_body_range": "1.421"
+        },
+        {
+          "form_id": 422,
+          "name": "蝴蝶陶陶",
+          "types": [
+            "萌"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、拟人组",
+          "height_range": "0.58-0.79",
+          "weight_range": "4-6.13",
+          "big_body_range": "6.0874",
+          "small_body_range": "4.0426"
+        },
+        {
+          "form_id": 423,
+          "name": "铆钉毛毛",
+          "types": [
+            "萌",
+            "毒"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、拟人组",
+          "height_range": "0.81-1.08",
+          "weight_range": "27.5-40",
+          "big_body_range": "39.75",
+          "small_body_range": "27.75"
+        },
+        {
+          "form_id": 424,
+          "name": "徘徊爪爪",
+          "types": [
+            "萌",
+            "毒"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组、拟人组",
+          "height_range": "1.55-1.71",
+          "weight_range": "40.5-67.3",
+          "big_body_range": "66.764",
+          "small_body_range": "41.036"
+        }
+      ]
+    },
+    {
+      "family_id": 425,
+      "name": "苞米仔",
+      "source": "local-seed",
+      "evolution_chain": [
+        "苞米仔",
+        "炮米花"
+      ],
+      "aliases": [
+        "炮米花",
+        "苞米仔",
+        "苞米仔蛋"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：炮米花 判断依据：双攻/高速向，六维最高项为 精力(107)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "苞米仔蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "植物组、拟人组",
+          "height_range": "0.22-0.3",
+          "weight_range": "3.115-5.2",
+          "big_body_range": "5.1583",
+          "small_body_range": "3.1567"
+        },
+        {
+          "form_id": 425,
+          "name": "苞米仔",
+          "types": [
+            "草",
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "植物组、拟人组",
+          "height_range": "0.51-0.73",
+          "weight_range": "8.9-13",
+          "big_body_range": "12.918",
+          "small_body_range": "8.982"
+        },
+        {
+          "form_id": 426,
+          "name": "炮米花",
+          "types": [
+            "草",
+            "火"
+          ],
+          "is_egg": false,
+          "egg_group": "植物组、拟人组",
+          "height_range": "1.37-1.59",
+          "weight_range": "48-71",
+          "big_body_range": "70.54",
+          "small_body_range": "48.46"
+        }
+      ]
+    },
+    {
+      "family_id": 427,
+      "name": "十字蝌蚪",
+      "source": "local-seed",
+      "evolution_chain": [
+        "十字蝌蚪",
+        "十字蛙",
+        "深渊蛙"
+      ],
+      "aliases": [
+        "十字蛙",
+        "十字蝌蚪",
+        "十字蝌蚪蛋",
+        "深渊蛙"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：深渊蛙 判断依据：物攻向，六维最高项为 物攻(130)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "十字蝌蚪蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "两栖组、拟人组",
+          "height_range": "0.09-0.1",
+          "weight_range": "0.122-0.38",
+          "big_body_range": "0.3748",
+          "small_body_range": "0.1272"
+        },
+        {
+          "form_id": 427,
+          "name": "十字蝌蚪",
+          "types": [
+            "水"
+          ],
+          "is_egg": false,
+          "egg_group": "两栖组、拟人组",
+          "height_range": "0.2-0.25",
+          "weight_range": "0.35-0.95",
+          "big_body_range": "0.938",
+          "small_body_range": "0.362"
+        },
+        {
+          "form_id": 428,
+          "name": "十字蛙",
+          "types": [
+            "水"
+          ],
+          "is_egg": false,
+          "egg_group": "两栖组、拟人组",
+          "height_range": "0.38-0.45",
+          "weight_range": "1.8-3.13",
+          "big_body_range": "3.1034",
+          "small_body_range": "1.8266"
+        },
+        {
+          "form_id": 429,
+          "name": "深渊蛙",
+          "types": [
+            "水",
+            "武"
+          ],
+          "is_egg": false,
+          "egg_group": "两栖组、拟人组",
+          "height_range": "0.87-1.15",
+          "weight_range": "6-9.05",
+          "big_body_range": "8.989",
+          "small_body_range": "6.061"
+        }
+      ]
+    },
+    {
+      "family_id": 430,
+      "name": "卡波",
+      "source": "local-seed",
+      "evolution_chain": [
+        "卡波",
+        "卡拉波斯"
+      ],
+      "aliases": [
+        "卡拉波斯",
+        "卡波",
+        "卡波蛋"
+      ],
+      "pvp": {
+        "nature": "固执 / 开朗",
+        "attributes": "物攻、速度、物防",
+        "notes": "核心形态：卡拉波斯 判断依据：物攻向，六维最高项为 物攻(107)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "卡波蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组",
+          "height_range": "0.2-0.28",
+          "weight_range": "0.91-1.508",
+          "big_body_range": "1.496",
+          "small_body_range": "0.922"
+        },
+        {
+          "form_id": 430,
+          "name": "卡波",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "0.47-0.67",
+          "weight_range": "2.6-3.77",
+          "big_body_range": "3.7466",
+          "small_body_range": "2.6234"
+        },
+        {
+          "form_id": 431,
+          "name": "卡拉波斯",
+          "types": [
+            "恶"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "0.83-1.19",
+          "weight_range": "4.9-5.7",
+          "big_body_range": "5.684",
+          "small_body_range": "4.916"
+        }
+      ]
+    },
+    {
+      "family_id": 432,
+      "name": "守夜烛",
+      "source": "local-seed",
+      "evolution_chain": [
+        "守夜烛",
+        "流明坎德拉"
+      ],
+      "aliases": [
+        "守夜烛",
+        "守夜烛蛋",
+        "流明坎德拉"
+      ],
+      "pvp": {
+        "nature": "急躁 / 孤僻",
+        "attributes": "速度、物攻、魔攻",
+        "notes": "核心形态：流明坎德拉 判断依据：双攻/高速向，六维最高项为 魔防(123)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "守夜烛蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组",
+          "height_range": "0.13-0.2",
+          "weight_range": "4.225-7.32",
+          "big_body_range": "7.2581",
+          "small_body_range": "4.2869"
+        },
+        {
+          "form_id": 432,
+          "name": "守夜烛",
+          "types": [
+            "火",
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "0.3-0.49",
+          "weight_range": "12.07-18.3",
+          "big_body_range": "18.1754",
+          "small_body_range": "12.1946"
+        },
+        {
+          "form_id": 433,
+          "name": "流明坎德拉",
+          "types": [
+            "火",
+            "光"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "1.19-1.51",
+          "weight_range": "58.6-74.9",
+          "big_body_range": "74.574",
+          "small_body_range": "58.926"
+        }
+      ]
+    },
+    {
+      "family_id": 434,
+      "name": "蜜果骸",
+      "source": "local-seed",
+      "evolution_chain": [
+        "蜜果骸",
+        "半朽蜜果灵"
+      ],
+      "aliases": [
+        "半朽蜜果灵",
+        "蜜果骸",
+        "蜜果骸蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：半朽蜜果灵 判断依据：魔攻向，六维最高项为 魔攻(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "蜜果骸蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组、植物组",
+          "height_range": "0.15-0.18",
+          "weight_range": "0.074-0.356",
+          "big_body_range": "0.3504",
+          "small_body_range": "0.0796"
+        },
+        {
+          "form_id": 434,
+          "name": "蜜果骸",
+          "types": [
+            "幽",
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、植物组",
+          "height_range": "0.35-0.44",
+          "weight_range": "0.21-0.89",
+          "big_body_range": "0.8764",
+          "small_body_range": "0.2236"
+        },
+        {
+          "form_id": 435,
+          "name": "半朽蜜果灵",
+          "types": [
+            "幽",
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组、植物组",
+          "height_range": "0.56-0.78",
+          "weight_range": "1.06-2.09",
+          "big_body_range": "2.0694",
+          "small_body_range": "1.0806"
+        }
+      ]
+    },
+    {
+      "family_id": 436,
+      "name": "稻草人",
+      "source": "local-seed",
+      "evolution_chain": [
+        "稻草人",
+        "稻草守护者"
+      ],
+      "aliases": [
+        "稻草人",
+        "稻草人蛋",
+        "稻草守护者"
+      ],
+      "pvp": {
+        "nature": "悠闲 / 紧张",
+        "attributes": "物防、精力",
+        "notes": "核心形态：稻草守护者 判断依据：耐久向，六维最高项为 精力(116)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "稻草人蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "妖精组",
+          "height_range": "0.31-0.44",
+          "weight_range": "6.335-15.84",
+          "big_body_range": "15.6499",
+          "small_body_range": "6.5251"
+        },
+        {
+          "form_id": 436,
+          "name": "稻草人",
+          "types": [
+            "萌",
+            "武"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "0.74-1.05",
+          "weight_range": "18.1-39.6",
+          "big_body_range": "39.17",
+          "small_body_range": "18.53"
+        },
+        {
+          "form_id": 437,
+          "name": "稻草守护者",
+          "types": [
+            "萌",
+            "武"
+          ],
+          "is_egg": false,
+          "egg_group": "妖精组",
+          "height_range": "1.47-1.81",
+          "weight_range": "63.9-85",
+          "big_body_range": "84.578",
+          "small_body_range": "64.322"
+        }
+      ]
+    },
+    {
+      "family_id": 438,
+      "name": "栗鼠",
+      "source": "local-seed",
+      "evolution_chain": [
+        "栗鼠",
+        "壳栗丝鼠"
+      ],
+      "aliases": [
+        "壳栗丝鼠",
+        "栗鼠",
+        "栗鼠蛋"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：壳栗丝鼠 判断依据：魔攻向，六维最高项为 精力(114)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": null,
+          "name": "栗鼠蛋",
+          "types": [],
+          "is_egg": true,
+          "egg_group": "动物组",
+          "height_range": "0.16-0.21",
+          "weight_range": "2.013-3.04",
+          "big_body_range": "3.0195",
+          "small_body_range": "2.0335"
+        },
+        {
+          "form_id": 438,
+          "name": "栗鼠",
+          "types": [
+            "毒",
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "0.38-0.51",
+          "weight_range": "5.75-7.6",
+          "big_body_range": "7.563",
+          "small_body_range": "5.787"
+        },
+        {
+          "form_id": 439,
+          "name": "壳栗丝鼠",
+          "types": [
+            "毒",
+            "普通"
+          ],
+          "is_egg": false,
+          "egg_group": "动物组",
+          "height_range": "0.67-0.71",
+          "weight_range": "19.01-28.3",
+          "big_body_range": "28.1142",
+          "small_body_range": "19.1958"
+        }
+      ]
+    },
+    {
+      "family_id": 440,
+      "name": "睡铃雪影娃娃",
+      "source": "local-seed",
+      "evolution_chain": [
+        "睡铃雪影娃娃"
+      ],
+      "aliases": [
+        "睡铃雪影娃娃"
+      ],
+      "pvp": {
+        "nature": "保守 / 胆小",
+        "attributes": "魔攻、速度、魔防",
+        "notes": "核心形态：睡铃雪影娃娃 判断依据：魔攻向，六维最高项为 精力(116)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。"
+      },
+      "stages": [
+        {
+          "form_id": 440,
+          "name": "睡铃雪影娃娃",
+          "types": [
+            "冰",
+            "草"
+          ],
+          "is_egg": false,
+          "egg_group": "无法孵蛋",
+          "height_range": "0.71-0.89",
+          "weight_range": "41-55",
+          "big_body_range": "54.72",
+          "small_body_range": "41.28"
         }
       ]
     }

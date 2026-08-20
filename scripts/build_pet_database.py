@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -12,7 +13,7 @@ def main() -> int:
     parser.add_argument("--source", default="data/raw/roco_egg_master/src/pets_data.json")
     parser.add_argument("--body-xls", default="data/raw/big_body_ranges.xls")
     parser.add_argument("--output", default="data/pets.seed.json")
-    parser.add_argument("--limit", type=int, default=442, help="target form count for the first database")
+    parser.add_argument("--limit", type=int, default=0, help="target form count; 0 means include every form")
     args = parser.parse_args()
 
     source_path = Path(args.source)
@@ -22,13 +23,13 @@ def main() -> int:
     families = []
     form_count = 0
     for pet in pets_data:
-        if form_count >= args.limit:
+        if args.limit and form_count >= args.limit:
             break
         profile = build_profile(pet, body_rows)
         form_stages = [stage for stage in profile["stages"] if not stage.get("is_egg")]
         if not form_stages:
             continue
-        if form_count + len(form_stages) > args.limit:
+        if args.limit and form_count + len(form_stages) > args.limit:
             remaining = args.limit - form_count
             kept_forms = form_stages[:remaining]
             egg_stages = [stage for stage in profile["stages"] if stage.get("is_egg")]
@@ -61,6 +62,7 @@ def build_profile(pet: dict[str, Any], body_rows: dict[str, dict[str, Any]]) -> 
     egg_stage = build_egg_stage(pet, body_rows)
     stages = ([egg_stage] if egg_stage else []) + form_stages
     aliases = sorted({stage["name"] for stage in stages} | set(flatten_chain(pet.get("evolution_chain", []))))
+    aliases = sorted(set(aliases) | {strip_variant_suffix(alias) for alias in aliases})
     return {
         "family_id": pet.get("id"),
         "name": family_name,
@@ -103,6 +105,8 @@ def build_egg_stage(pet: dict[str, Any], body_rows: dict[str, dict[str, Any]]) -
     if not name:
         return None
     egg_groups = egg.get("egg_groups") or ["未知"]
+    if any(egg.get(key) in ("", None) for key in ("height_min", "height_max", "weight_min", "weight_max")):
+        return None
     body = body_rows.get(f"{name}蛋") or body_rows.get(name) or {}
     return {
         "form_id": None,
@@ -141,6 +145,10 @@ def flatten_chain(chain: list[Any]) -> list[str]:
         elif item:
             result.append(str(item))
     return result
+
+
+def strip_variant_suffix(name: str) -> str:
+    return re.sub(r"（[^（）]+）$", "", str(name)).strip()
 
 
 def load_body_xls(path: Path) -> dict[str, dict[str, Any]]:
