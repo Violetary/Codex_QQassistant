@@ -18,13 +18,13 @@ class CardRendererTest(unittest.TestCase):
             self.assertIn("蹦蹦花（海神球、彩玉球、短毛球、象牙球）", titles)
             self.assertIn("蹦蹦种子（原始、海神球、彩玉球、短毛球、象牙球）", titles)
 
-    def test_grouped_body_card_renders_v6_image(self) -> None:
+    def test_grouped_body_card_renders_v12_image(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
             profile = LocalJsonSource().fetch("蹦蹦花")
             renderer = CardRenderer(Path(tmpdir))
             image_path = renderer.render(profile, "body", force=True)
 
-            self.assertEqual("63_body_v6.png", image_path.name)
+            self.assertEqual("63_body_v12.png", image_path.name)
             self.assertTrue(image_path.exists())
 
 
