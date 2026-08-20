@@ -1,0 +1,4917 @@
+{
+  "meta": {
+    "record_count": 178,
+    "source": "computed from real base stats and 4399 nature mechanics",
+    "method": "rules-v1",
+    "notes": "This is an auditable baseline recommendation. Manual overrides can replace any family later with cited guide sources."
+  },
+  "records": [
+    {
+      "family_id": 1,
+      "family_name": "迪莫",
+      "core_form": "圣火迪莫",
+      "core_form_id": 1,
+      "types": [
+        "光",
+        "火"
+      ],
+      "stats": {
+        "hp": 120,
+        "atk": 88,
+        "def": 105,
+        "sp_atk": 88,
+        "sp_def": 105,
+        "speed": 92,
+        "sum": 598
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、物防",
+      "notes": "核心形态：圣火迪莫 判断依据：魔攻向，六维最高项为 精力(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 2,
+      "family_name": "喵喵",
+      "core_form": "叶冕魔力猫",
+      "core_form_id": 4,
+      "types": [
+        "草"
+      ],
+      "stats": {
+        "hp": 108,
+        "atk": 127,
+        "def": 81,
+        "sp_atk": 127,
+        "sp_def": 151,
+        "speed": 55,
+        "sum": 649
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、物防",
+      "notes": "核心形态：叶冕魔力猫 判断依据：耐久向，六维最高项为 魔防(151)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 5,
+      "family_name": "火花",
+      "core_form": "烈火战神",
+      "core_form_id": 7,
+      "types": [
+        "火"
+      ],
+      "stats": {
+        "hp": 117,
+        "atk": 175,
+        "def": 94,
+        "sp_atk": 84,
+        "sp_def": 72,
+        "speed": 130,
+        "sum": 672
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：烈火战神 判断依据：物攻向，六维最高项为 物攻(175)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 8,
+      "family_name": "水蓝蓝",
+      "core_form": "圣水守护",
+      "core_form_id": 10,
+      "types": [
+        "水"
+      ],
+      "stats": {
+        "hp": 125,
+        "atk": 67,
+        "def": 104,
+        "sp_atk": 141,
+        "sp_def": 145,
+        "speed": 85,
+        "sum": 667
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：圣水守护 判断依据：魔攻向，六维最高项为 魔防(145)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 11,
+      "family_name": "鸭吉吉",
+      "core_form": "鸭吉吉国王（起来鸭）",
+      "core_form_id": 11,
+      "types": [
+        "普通"
+      ],
+      "stats": {
+        "hp": 107,
+        "atk": 77,
+        "def": 80,
+        "sp_atk": 163,
+        "sp_def": 113,
+        "speed": 100,
+        "sum": 640
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：鸭吉吉国王（起来鸭） 判断依据：魔攻向，六维最高项为 魔攻(163)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 12,
+      "family_name": "板板壳",
+      "core_form": "水泡壳",
+      "core_form_id": 14,
+      "types": [
+        "水"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 46,
+        "def": 107,
+        "sp_atk": 120,
+        "sp_def": 134,
+        "speed": 75,
+        "sum": 594
+      },
+      "nature": "保守 / 沉默",
+      "attributes": "魔攻、精力、魔防",
+      "notes": "核心形态：水泡壳 判断依据：魔攻向，六维最高项为 魔防(134)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 15,
+      "family_name": "锥尾羊",
+      "core_form": "花影羚羊",
+      "core_form_id": 17,
+      "types": [
+        "幽",
+        "恶"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 111,
+        "def": 120,
+        "sp_atk": 48,
+        "sp_def": 81,
+        "speed": 110,
+        "sum": 582
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：花影羚羊 判断依据：物攻向，六维最高项为 物防(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 18,
+      "family_name": "雪绒鸟",
+      "core_form": "霜翼领主（冬天的样子）",
+      "core_form_id": 20,
+      "types": [
+        "翼"
+      ],
+      "stats": {
+        "hp": 90,
+        "atk": 142,
+        "def": 108,
+        "sp_atk": 63,
+        "sp_def": 74,
+        "speed": 115,
+        "sum": 592
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：霜翼领主（冬天的样子） 判断依据：物攻向，六维最高项为 物攻(142)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 21,
+      "family_name": "小灵菇",
+      "core_form": "幻影灵菇",
+      "core_form_id": 23,
+      "types": [
+        "幽",
+        "草"
+      ],
+      "stats": {
+        "hp": 111,
+        "atk": 98,
+        "def": 103,
+        "sp_atk": 98,
+        "sp_def": 136,
+        "speed": 75,
+        "sum": 621
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：幻影灵菇 判断依据：耐久向，六维最高项为 魔防(136)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 24,
+      "family_name": "石肤蜥",
+      "core_form": "石冠王蜥",
+      "core_form_id": 26,
+      "types": [
+        "地"
+      ],
+      "stats": {
+        "hp": 115,
+        "atk": 101,
+        "def": 120,
+        "sp_atk": 100,
+        "sp_def": 84,
+        "speed": 95,
+        "sum": 615
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：石冠王蜥 判断依据：双攻/高速向，六维最高项为 物防(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 27,
+      "family_name": "布是石",
+      "core_form": "迷嶂布莱克",
+      "core_form_id": 29,
+      "types": [
+        "地"
+      ],
+      "stats": {
+        "hp": 125,
+        "atk": 139,
+        "def": 164,
+        "sp_atk": 52,
+        "sp_def": 154,
+        "speed": 70,
+        "sum": 704
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：迷嶂布莱克 判断依据：耐久向，六维最高项为 物防(164)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 30,
+      "family_name": "恶魔叮",
+      "core_form": "恶魔男爵",
+      "core_form_id": 31,
+      "types": [
+        "恶",
+        "翼"
+      ],
+      "stats": {
+        "hp": 117,
+        "atk": 128,
+        "def": 103,
+        "sp_atk": 55,
+        "sp_def": 73,
+        "speed": 120,
+        "sum": 596
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：恶魔男爵 判断依据：物攻向，六维最高项为 物攻(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 32,
+      "family_name": "毛毛",
+      "core_form": "化蝶（平常的样子）",
+      "core_form_id": 34,
+      "types": [
+        "虫",
+        "萌"
+      ],
+      "stats": {
+        "hp": 53,
+        "atk": 46,
+        "def": 66,
+        "sp_atk": 46,
+        "sp_def": 66,
+        "speed": 100,
+        "sum": 377
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、物防",
+      "notes": "核心形态：化蝶（平常的样子） 判断依据：魔攻向，六维最高项为 速度(100)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 35,
+      "family_name": "幽影树",
+      "core_form": "幻影荆棘",
+      "core_form_id": 35,
+      "types": [
+        "幽",
+        "草"
+      ],
+      "stats": {
+        "hp": 113,
+        "atk": 96,
+        "def": 66,
+        "sp_atk": 96,
+        "sp_def": 125,
+        "speed": 80,
+        "sum": 576
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：幻影荆棘 判断依据：耐久向，六维最高项为 魔防(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 36,
+      "family_name": "小鼠獭",
+      "core_form": "卷胡巨獭",
+      "core_form_id": 38,
+      "types": [
+        "普通",
+        "水"
+      ],
+      "stats": {
+        "hp": 121,
+        "atk": 96,
+        "def": 101,
+        "sp_atk": 96,
+        "sp_def": 101,
+        "speed": 80,
+        "sum": 595
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：卷胡巨獭 判断依据：耐久向，六维最高项为 精力(121)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 39,
+      "family_name": "矿晶虫",
+      "core_form": "晶石蜗（莲花刚玉的样子）",
+      "core_form_id": 40,
+      "types": [
+        "光",
+        "地"
+      ],
+      "stats": {
+        "hp": 94,
+        "atk": 97,
+        "def": 137,
+        "sp_atk": 101,
+        "sp_def": 91,
+        "speed": 65,
+        "sum": 585
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力",
+      "notes": "核心形态：晶石蜗（莲花刚玉的样子） 判断依据：耐久向，六维最高项为 物防(137)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 41,
+      "family_name": "奇丽草",
+      "core_form": "奇丽果",
+      "core_form_id": 43,
+      "types": [
+        "草"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 128,
+        "def": 133,
+        "sp_atk": 128,
+        "sp_def": 105,
+        "speed": 80,
+        "sum": 686
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：奇丽果 判断依据：双攻/高速向，六维最高项为 物防(133)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 44,
+      "family_name": "丢丢",
+      "core_form": "卡瓦重（沙地附近的样子）",
+      "core_form_id": 46,
+      "types": [
+        "草",
+        "地"
+      ],
+      "stats": {
+        "hp": 73,
+        "atk": 70,
+        "def": 92,
+        "sp_atk": 20,
+        "sp_def": 71,
+        "speed": 125,
+        "sum": 451
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：卡瓦重（沙地附近的样子） 判断依据：物攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 47,
+      "family_name": "护主犬",
+      "core_form": "音速犬",
+      "core_form_id": 48,
+      "types": [
+        "火"
+      ],
+      "stats": {
+        "hp": 85,
+        "atk": 128,
+        "def": 101,
+        "sp_atk": 46,
+        "sp_def": 82,
+        "speed": 120,
+        "sum": 562
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：音速犬 判断依据：物攻向，六维最高项为 物攻(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 49,
+      "family_name": "绿耳松鼠",
+      "core_form": "蹦床松鼠",
+      "core_form_id": 51,
+      "types": [
+        "普通"
+      ],
+      "stats": {
+        "hp": 114,
+        "atk": 84,
+        "def": 111,
+        "sp_atk": 79,
+        "sp_def": 87,
+        "speed": 80,
+        "sum": 555
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：蹦床松鼠 判断依据：耐久向，六维最高项为 精力(114)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 52,
+      "family_name": "嘟嘟煲",
+      "core_form": "嘟嘟锅",
+      "core_form_id": 53,
+      "types": [
+        "毒"
+      ],
+      "stats": {
+        "hp": 137,
+        "atk": 36,
+        "def": 89,
+        "sp_atk": 102,
+        "sp_def": 104,
+        "speed": 105,
+        "sum": 573
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：嘟嘟锅 判断依据：魔攻向，六维最高项为 精力(137)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 54,
+      "family_name": "小灵面",
+      "core_form": "幽冥眼（睁眼的样子）",
+      "core_form_id": 56,
+      "types": [
+        "幽"
+      ],
+      "stats": {
+        "hp": 92,
+        "atk": 50,
+        "def": 98,
+        "sp_atk": 120,
+        "sp_def": 135,
+        "speed": 115,
+        "sum": 610
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：幽冥眼（睁眼的样子） 判断依据：魔攻向，六维最高项为 魔防(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 57,
+      "family_name": "梦游",
+      "core_form": "梦悠悠（穿星星睡衣的样子）",
+      "core_form_id": 58,
+      "types": [
+        "幽",
+        "光"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 78,
+        "def": 70,
+        "sp_atk": 150,
+        "sp_def": 112,
+        "speed": 110,
+        "sum": 632
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：梦悠悠（穿星星睡衣的样子） 判断依据：魔攻向，六维最高项为 魔攻(150)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 59,
+      "family_name": "兽花蕾",
+      "core_form": "兽花蕾",
+      "core_form_id": 59,
+      "types": [
+        "光",
+        "草"
+      ],
+      "stats": {
+        "hp": 70,
+        "atk": 79,
+        "def": 70,
+        "sp_atk": 82,
+        "sp_def": 97,
+        "speed": 115,
+        "sum": 513
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：兽花蕾 判断依据：魔攻向，六维最高项为 速度(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 60,
+      "family_name": "伏地兽",
+      "core_form": "巨噬针鼹",
+      "core_form_id": 62,
+      "types": [
+        "普通"
+      ],
+      "stats": {
+        "hp": 158,
+        "atk": 93,
+        "def": 117,
+        "sp_atk": 41,
+        "sp_def": 68,
+        "speed": 85,
+        "sum": 562
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：巨噬针鼹 判断依据：耐久向，六维最高项为 精力(158)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 63,
+      "family_name": "蹦蹦种子",
+      "core_form": "蹦蹦花（海神球形态）",
+      "core_form_id": 65,
+      "types": [
+        "草",
+        "毒"
+      ],
+      "stats": {
+        "hp": 100,
+        "atk": 107,
+        "def": 73,
+        "sp_atk": 110,
+        "sp_def": 105,
+        "speed": 85,
+        "sum": 580
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：蹦蹦花（海神球形态） 判断依据：双攻/高速向，六维最高项为 魔攻(110)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 66,
+      "family_name": "电咩咩",
+      "core_form": "电球咩咩",
+      "core_form_id": 68,
+      "types": [
+        "电"
+      ],
+      "stats": {
+        "hp": 78,
+        "atk": 82,
+        "def": 91,
+        "sp_atk": 82,
+        "sp_def": 95,
+        "speed": 125,
+        "sum": 553
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：电球咩咩 判断依据：魔攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 69,
+      "family_name": "蒲公英",
+      "core_form": "蒲公英娃娃",
+      "core_form_id": 70,
+      "types": [
+        "草",
+        "萌"
+      ],
+      "stats": {
+        "hp": 111,
+        "atk": 123,
+        "def": 129,
+        "sp_atk": 117,
+        "sp_def": 97,
+        "speed": 65,
+        "sum": 642
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：蒲公英娃娃 判断依据：双攻/高速向，六维最高项为 物防(129)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 71,
+      "family_name": "伊贝儿",
+      "core_form": "伊贝粉粉",
+      "core_form_id": 72,
+      "types": [
+        "草"
+      ],
+      "stats": {
+        "hp": 117,
+        "atk": 91,
+        "def": 110,
+        "sp_atk": 89,
+        "sp_def": 110,
+        "speed": 90,
+        "sum": 607
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：伊贝粉粉 判断依据：耐久向，六维最高项为 精力(117)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 73,
+      "family_name": "白发懒人",
+      "core_form": "瞌睡王",
+      "core_form_id": 75,
+      "types": [
+        "普通",
+        "武"
+      ],
+      "stats": {
+        "hp": 156,
+        "atk": 167,
+        "def": 143,
+        "sp_atk": 70,
+        "sp_def": 117,
+        "speed": 75,
+        "sum": 728
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：瞌睡王 判断依据：物攻向，六维最高项为 物攻(167)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 76,
+      "family_name": "海盔虫",
+      "core_form": "千棘海针",
+      "core_form_id": 78,
+      "types": [
+        "水",
+        "毒"
+      ],
+      "stats": {
+        "hp": 118,
+        "atk": 32,
+        "def": 94,
+        "sp_atk": 85,
+        "sp_def": 133,
+        "speed": 100,
+        "sum": 562
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：千棘海针 判断依据：魔攻向，六维最高项为 魔防(133)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 79,
+      "family_name": "菊花梨",
+      "core_form": "菊花梨",
+      "core_form_id": 79,
+      "types": [
+        "萌"
+      ],
+      "stats": {
+        "hp": 120,
+        "atk": 56,
+        "def": 84,
+        "sp_atk": 127,
+        "sp_def": 125,
+        "speed": 60,
+        "sum": 572
+      },
+      "nature": "保守 / 沉默",
+      "attributes": "魔攻、精力、魔防",
+      "notes": "核心形态：菊花梨 判断依据：魔攻向，六维最高项为 魔攻(127)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 80,
+      "family_name": "小星光",
+      "core_form": "星光狮（星光能量的样子）",
+      "core_form_id": 81,
+      "types": [
+        "电"
+      ],
+      "stats": {
+        "hp": 75,
+        "atk": 101,
+        "def": 90,
+        "sp_atk": 106,
+        "sp_def": 110,
+        "speed": 135,
+        "sum": 617
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：星光狮（星光能量的样子） 判断依据：双攻/高速向，六维最高项为 速度(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 82,
+      "family_name": "一窝蜂",
+      "core_form": "花魁蜂后",
+      "core_form_id": 84,
+      "types": [
+        "虫",
+        "翼"
+      ],
+      "stats": {
+        "hp": 145,
+        "atk": 54,
+        "def": 45,
+        "sp_atk": 49,
+        "sp_def": 45,
+        "speed": 44,
+        "sum": 382
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力",
+      "notes": "核心形态：花魁蜂后 判断依据：耐久向，六维最高项为 精力(145)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 85,
+      "family_name": "小夜",
+      "core_form": "朔夜伊芙",
+      "core_form_id": 87,
+      "types": [
+        "恶"
+      ],
+      "stats": {
+        "hp": 100,
+        "atk": 115,
+        "def": 104,
+        "sp_atk": 105,
+        "sp_def": 85,
+        "speed": 115,
+        "sum": 624
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：朔夜伊芙 判断依据：双攻/高速向，六维最高项为 物攻(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 88,
+      "family_name": "乖乖鹄",
+      "core_form": "翠顶夫人",
+      "core_form_id": 90,
+      "types": [
+        "翼",
+        "水"
+      ],
+      "stats": {
+        "hp": 125,
+        "atk": 95,
+        "def": 138,
+        "sp_atk": 86,
+        "sp_def": 97,
+        "speed": 115,
+        "sum": 656
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：翠顶夫人 判断依据：双攻/高速向，六维最高项为 物防(138)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 92,
+      "family_name": "锤头鹳",
+      "core_form": "锤头鹳",
+      "core_form_id": 92,
+      "types": [
+        "翼",
+        "水"
+      ],
+      "stats": {
+        "hp": 128,
+        "atk": 77,
+        "def": 101,
+        "sp_atk": 75,
+        "sp_def": 81,
+        "speed": 105,
+        "sum": 567
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：锤头鹳 判断依据：物攻向，六维最高项为 精力(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 93,
+      "family_name": "绿草精灵",
+      "core_form": "魔草巫灵",
+      "core_form_id": 94,
+      "types": [
+        "草",
+        "幻"
+      ],
+      "stats": {
+        "hp": 109,
+        "atk": 48,
+        "def": 115,
+        "sp_atk": 120,
+        "sp_def": 147,
+        "speed": 90,
+        "sum": 629
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：魔草巫灵 判断依据：耐久向，六维最高项为 魔防(147)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 95,
+      "family_name": "记忆石",
+      "core_form": "记忆石",
+      "core_form_id": 95,
+      "types": [
+        "地"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 108,
+        "def": 141,
+        "sp_atk": 97,
+        "sp_def": 79,
+        "speed": 70,
+        "sum": 607
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：记忆石 判断依据：耐久向，六维最高项为 物防(141)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 96,
+      "family_name": "咔咔羽毛",
+      "core_form": "咔咔鸟",
+      "core_form_id": 98,
+      "types": [
+        "翼",
+        "普通"
+      ],
+      "stats": {
+        "hp": 97,
+        "atk": 114,
+        "def": 101,
+        "sp_atk": 110,
+        "sp_def": 89,
+        "speed": 120,
+        "sum": 631
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：咔咔鸟 判断依据：双攻/高速向，六维最高项为 速度(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 99,
+      "family_name": "小草虫",
+      "core_form": "花衣蝶",
+      "core_form_id": 101,
+      "types": [
+        "虫",
+        "草"
+      ],
+      "stats": {
+        "hp": 122,
+        "atk": 67,
+        "def": 84,
+        "sp_atk": 72,
+        "sp_def": 94,
+        "speed": 100,
+        "sum": 539
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：花衣蝶 判断依据：魔攻向，六维最高项为 精力(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 102,
+      "family_name": "绿翼鸟",
+      "core_form": "魔眷鸟",
+      "core_form_id": 104,
+      "types": [
+        "萌",
+        "翼"
+      ],
+      "stats": {
+        "hp": 87,
+        "atk": 106,
+        "def": 94,
+        "sp_atk": 29,
+        "sp_def": 88,
+        "speed": 135,
+        "sum": 539
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：魔眷鸟 判断依据：物攻向，六维最高项为 速度(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 105,
+      "family_name": "阿米亚特",
+      "core_form": "深渊罗隐",
+      "core_form_id": 107,
+      "types": [
+        "地",
+        "恶"
+      ],
+      "stats": {
+        "hp": 107,
+        "atk": 159,
+        "def": 167,
+        "sp_atk": 78,
+        "sp_def": 32,
+        "speed": 75,
+        "sum": 618
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：深渊罗隐 判断依据：物攻向，六维最高项为 物防(167)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 108,
+      "family_name": "风铃鲨",
+      "core_form": "彩蝶鲨",
+      "core_form_id": 110,
+      "types": [
+        "水",
+        "翼"
+      ],
+      "stats": {
+        "hp": 90,
+        "atk": 98,
+        "def": 105,
+        "sp_atk": 98,
+        "sp_def": 105,
+        "speed": 125,
+        "sum": 621
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：彩蝶鲨 判断依据：双攻/高速向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 111,
+      "family_name": "石石",
+      "core_form": "巨灵石",
+      "core_form_id": 112,
+      "types": [
+        "地",
+        "幽"
+      ],
+      "stats": {
+        "hp": 95,
+        "atk": 99,
+        "def": 126,
+        "sp_atk": 99,
+        "sp_def": 70,
+        "speed": 95,
+        "sum": 584
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：巨灵石 判断依据：耐久向，六维最高项为 物防(126)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 113,
+      "family_name": "仪使者",
+      "core_form": "祭礼巨像",
+      "core_form_id": 115,
+      "types": [
+        "地",
+        "幻"
+      ],
+      "stats": {
+        "hp": 106,
+        "atk": 96,
+        "def": 115,
+        "sp_atk": 101,
+        "sp_def": 119,
+        "speed": 85,
+        "sum": 622
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：祭礼巨像 判断依据：双攻/高速向，六维最高项为 魔防(119)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 116,
+      "family_name": "小独角兽",
+      "core_form": "彩虹独角兽",
+      "core_form_id": 117,
+      "types": [
+        "光"
+      ],
+      "stats": {
+        "hp": 99,
+        "atk": 78,
+        "def": 77,
+        "sp_atk": 192,
+        "sp_def": 92,
+        "speed": 105,
+        "sum": 643
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：彩虹独角兽 判断依据：魔攻向，六维最高项为 魔攻(192)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 118,
+      "family_name": "旋叶虫",
+      "core_form": "暮风隐者（金黄的样子）",
+      "core_form_id": 120,
+      "types": [
+        "普通",
+        "虫"
+      ],
+      "stats": {
+        "hp": 105,
+        "atk": 30,
+        "def": 105,
+        "sp_atk": 119,
+        "sp_def": 91,
+        "speed": 125,
+        "sum": 575
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、物防",
+      "notes": "核心形态：暮风隐者（金黄的样子） 判断依据：魔攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 121,
+      "family_name": "小黑猫",
+      "core_form": "黑猫密探",
+      "core_form_id": 122,
+      "types": [
+        "普通"
+      ],
+      "stats": {
+        "hp": 149,
+        "atk": 65,
+        "def": 90,
+        "sp_atk": 143,
+        "sp_def": 129,
+        "speed": 70,
+        "sum": 646
+      },
+      "nature": "保守 / 沉默",
+      "attributes": "魔攻、精力、魔防",
+      "notes": "核心形态：黑猫密探 判断依据：魔攻向，六维最高项为 精力(149)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 123,
+      "family_name": "忽幽狸",
+      "core_form": "影狸",
+      "core_form_id": 124,
+      "types": [
+        "幽",
+        "毒"
+      ],
+      "stats": {
+        "hp": 97,
+        "atk": 109,
+        "def": 105,
+        "sp_atk": 105,
+        "sp_def": 70,
+        "speed": 130,
+        "sum": 616
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：影狸 判断依据：双攻/高速向，六维最高项为 速度(130)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 125,
+      "family_name": "多多",
+      "core_form": "古啦多",
+      "core_form_id": 127,
+      "types": [
+        "毒",
+        "地"
+      ],
+      "stats": {
+        "hp": 85,
+        "atk": 88,
+        "def": 134,
+        "sp_atk": 88,
+        "sp_def": 74,
+        "speed": 90,
+        "sum": 559
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、物防",
+      "notes": "核心形态：古啦多 判断依据：魔攻向，六维最高项为 物防(134)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 128,
+      "family_name": "哭哭菇",
+      "core_form": "怖哭菇",
+      "core_form_id": 130,
+      "types": [
+        "幻"
+      ],
+      "stats": {
+        "hp": 124,
+        "atk": 63,
+        "def": 50,
+        "sp_atk": 69,
+        "sp_def": 100,
+        "speed": 60,
+        "sum": 466
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、物防",
+      "notes": "核心形态：怖哭菇 判断依据：耐久向，六维最高项为 精力(124)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 131,
+      "family_name": "恶魔狼",
+      "core_form": "恶魔狼王",
+      "core_form_id": 131,
+      "types": [
+        "恶"
+      ],
+      "stats": {
+        "hp": 115,
+        "atk": 121,
+        "def": 91,
+        "sp_atk": 50,
+        "sp_def": 63,
+        "speed": 120,
+        "sum": 560
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：恶魔狼王 判断依据：物攻向，六维最高项为 物攻(121)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 132,
+      "family_name": "小电企鹅",
+      "core_form": "电企鹅",
+      "core_form_id": 133,
+      "types": [
+        "冰",
+        "电"
+      ],
+      "stats": {
+        "hp": 94,
+        "atk": 56,
+        "def": 73,
+        "sp_atk": 126,
+        "sp_def": 109,
+        "speed": 125,
+        "sum": 583
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：电企鹅 判断依据：魔攻向，六维最高项为 魔攻(126)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 134,
+      "family_name": "雪豆丁",
+      "core_form": "雪巨人",
+      "core_form_id": 136,
+      "types": [
+        "冰"
+      ],
+      "stats": {
+        "hp": 162,
+        "atk": 174,
+        "def": 139,
+        "sp_atk": 79,
+        "sp_def": 104,
+        "speed": 60,
+        "sum": 718
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：雪巨人 判断依据：物攻向，六维最高项为 物攻(174)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 137,
+      "family_name": "呼呼猪",
+      "core_form": "獠牙猪",
+      "core_form_id": 138,
+      "types": [
+        "冰",
+        "地"
+      ],
+      "stats": {
+        "hp": 123,
+        "atk": 119,
+        "def": 110,
+        "sp_atk": 41,
+        "sp_def": 101,
+        "speed": 85,
+        "sum": 579
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：獠牙猪 判断依据：物攻向，六维最高项为 精力(123)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 139,
+      "family_name": "雪娃娃",
+      "core_form": "雪灵",
+      "core_form_id": 141,
+      "types": [
+        "冰"
+      ],
+      "stats": {
+        "hp": 94,
+        "atk": 112,
+        "def": 105,
+        "sp_atk": 112,
+        "sp_def": 105,
+        "speed": 115,
+        "sum": 643
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：雪灵 判断依据：双攻/高速向，六维最高项为 速度(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 142,
+      "family_name": "大耳帽兜",
+      "core_form": "雪影冰灵",
+      "core_form_id": 144,
+      "types": [
+        "冰",
+        "萌"
+      ],
+      "stats": {
+        "hp": 130,
+        "atk": 120,
+        "def": 66,
+        "sp_atk": 114,
+        "sp_def": 130,
+        "speed": 90,
+        "sum": 650
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：雪影冰灵 判断依据：双攻/高速向，六维最高项为 精力(130)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 145,
+      "family_name": "权杖-Ⅱ",
+      "core_form": "权杖-V",
+      "core_form_id": 146,
+      "types": [
+        "机械"
+      ],
+      "stats": {
+        "hp": 103,
+        "atk": 105,
+        "def": 136,
+        "sp_atk": 97,
+        "sp_def": 136,
+        "speed": 75,
+        "sum": 652
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：权杖-V 判断依据：耐久向，六维最高项为 物防(136)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 147,
+      "family_name": "灵狐",
+      "core_form": "尖嘴狐仙",
+      "core_form_id": 149,
+      "types": [
+        "火",
+        "冰"
+      ],
+      "stats": {
+        "hp": 115,
+        "atk": 87,
+        "def": 84,
+        "sp_atk": 87,
+        "sp_def": 107,
+        "speed": 100,
+        "sum": 580
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：尖嘴狐仙 判断依据：魔攻向，六维最高项为 精力(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 150,
+      "family_name": "里奥",
+      "core_form": "圣羽翼王",
+      "core_form_id": 152,
+      "types": [
+        "翼"
+      ],
+      "stats": {
+        "hp": 132,
+        "atk": 109,
+        "def": 128,
+        "sp_atk": 109,
+        "sp_def": 83,
+        "speed": 125,
+        "sum": 686
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：圣羽翼王 判断依据：双攻/高速向，六维最高项为 精力(132)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 153,
+      "family_name": "松仔",
+      "core_form": "针叶巡林",
+      "core_form_id": 155,
+      "types": [
+        "草",
+        "武"
+      ],
+      "stats": {
+        "hp": 105,
+        "atk": 139,
+        "def": 128,
+        "sp_atk": 57,
+        "sp_def": 100,
+        "speed": 105,
+        "sum": 634
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：针叶巡林 判断依据：物攻向，六维最高项为 物攻(139)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 156,
+      "family_name": "小勇狮",
+      "core_form": "炽心勇狮",
+      "core_form_id": 158,
+      "types": [
+        "火",
+        "武"
+      ],
+      "stats": {
+        "hp": 137,
+        "atk": 51,
+        "def": 88,
+        "sp_atk": 111,
+        "sp_def": 130,
+        "speed": 80,
+        "sum": 597
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：炽心勇狮 判断依据：耐久向，六维最高项为 精力(137)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 159,
+      "family_name": "水滴蛇",
+      "core_form": "游蛇魔使",
+      "core_form_id": 161,
+      "types": [
+        "水",
+        "武"
+      ],
+      "stats": {
+        "hp": 105,
+        "atk": 110,
+        "def": 103,
+        "sp_atk": 104,
+        "sp_def": 103,
+        "speed": 105,
+        "sum": 630
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：游蛇魔使 判断依据：双攻/高速向，六维最高项为 物攻(110)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 162,
+      "family_name": "公平鸽",
+      "core_form": "公平鸽",
+      "core_form_id": 162,
+      "types": [
+        "普通"
+      ],
+      "stats": {
+        "hp": 113,
+        "atk": 93,
+        "def": 125,
+        "sp_atk": 93,
+        "sp_def": 125,
+        "speed": 100,
+        "sum": 649
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：公平鸽 判断依据：双攻/高速向，六维最高项为 物防(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 163,
+      "family_name": "小怂猫",
+      "core_form": "怒目怂猫",
+      "core_form_id": 164,
+      "types": [
+        "武"
+      ],
+      "stats": {
+        "hp": 92,
+        "atk": 132,
+        "def": 111,
+        "sp_atk": 126,
+        "sp_def": 95,
+        "speed": 95,
+        "sum": 651
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：怒目怂猫 判断依据：双攻/高速向，六维最高项为 物攻(132)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 165,
+      "family_name": "小狮鹫",
+      "core_form": "皇家狮鹫（崖间地的样子）",
+      "core_form_id": 167,
+      "types": [
+        "翼"
+      ],
+      "stats": {
+        "hp": 107,
+        "atk": 116,
+        "def": 127,
+        "sp_atk": 69,
+        "sp_def": 65,
+        "speed": 120,
+        "sum": 604
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：皇家狮鹫（崖间地的样子） 判断依据：物攻向，六维最高项为 物防(127)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 168,
+      "family_name": "圆眼蜘蛛",
+      "core_form": "芋香巨角蛛",
+      "core_form_id": 170,
+      "types": [
+        "虫",
+        "毒"
+      ],
+      "stats": {
+        "hp": 92,
+        "atk": 88,
+        "def": 91,
+        "sp_atk": 88,
+        "sp_def": 91,
+        "speed": 110,
+        "sum": 560
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、物防",
+      "notes": "核心形态：芋香巨角蛛 判断依据：魔攻向，六维最高项为 速度(110)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 171,
+      "family_name": "波波螺",
+      "core_form": "嗜波螺",
+      "core_form_id": 173,
+      "types": [
+        "地",
+        "水"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 98,
+        "def": 146,
+        "sp_atk": 98,
+        "sp_def": 110,
+        "speed": 70,
+        "sum": 634
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：嗜波螺 判断依据：耐久向，六维最高项为 物防(146)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 174,
+      "family_name": "菇菇丁",
+      "core_form": "九幽菇",
+      "core_form_id": 176,
+      "types": [
+        "地",
+        "草"
+      ],
+      "stats": {
+        "hp": 149,
+        "atk": 110,
+        "def": 125,
+        "sp_atk": 103,
+        "sp_def": 103,
+        "speed": 70,
+        "sum": 660
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：九幽菇 判断依据：耐久向，六维最高项为 精力(149)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 177,
+      "family_name": "斑斑",
+      "core_form": "斑枭",
+      "core_form_id": 178,
+      "types": [
+        "翼"
+      ],
+      "stats": {
+        "hp": 109,
+        "atk": 112,
+        "def": 102,
+        "sp_atk": 112,
+        "sp_def": 114,
+        "speed": 115,
+        "sum": 664
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：斑枭 判断依据：双攻/高速向，六维最高项为 速度(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 179,
+      "family_name": "草头鸭",
+      "core_form": "卷毛鸭",
+      "core_form_id": 180,
+      "types": [
+        "草",
+        "武"
+      ],
+      "stats": {
+        "hp": 116,
+        "atk": 98,
+        "def": 83,
+        "sp_atk": 29,
+        "sp_def": 63,
+        "speed": 115,
+        "sum": 504
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：卷毛鸭 判断依据：物攻向，六维最高项为 精力(116)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 181,
+      "family_name": "海豹战士",
+      "core_form": "海豹船长",
+      "core_form_id": 182,
+      "types": [
+        "武",
+        "水"
+      ],
+      "stats": {
+        "hp": 90,
+        "atk": 113,
+        "def": 111,
+        "sp_atk": 109,
+        "sp_def": 77,
+        "speed": 100,
+        "sum": 600
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：海豹船长 判断依据：双攻/高速向，六维最高项为 物攻(113)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 183,
+      "family_name": "号儿鱼",
+      "core_form": "圆号鱼",
+      "core_form_id": 184,
+      "types": [
+        "水"
+      ],
+      "stats": {
+        "hp": 113,
+        "atk": 31,
+        "def": 95,
+        "sp_atk": 95,
+        "sp_def": 110,
+        "speed": 105,
+        "sum": 549
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：圆号鱼 判断依据：魔攻向，六维最高项为 精力(113)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 185,
+      "family_name": "甜田螺",
+      "core_form": "卡洛儿",
+      "core_form_id": 187,
+      "types": [
+        "水",
+        "萌"
+      ],
+      "stats": {
+        "hp": 114,
+        "atk": 112,
+        "def": 90,
+        "sp_atk": 117,
+        "sp_def": 134,
+        "speed": 90,
+        "sum": 657
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：卡洛儿 判断依据：双攻/高速向，六维最高项为 魔防(134)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 188,
+      "family_name": "棋棋",
+      "core_form": "棋契陛下（白棋棋祈督分支）",
+      "core_form_id": 192,
+      "types": [
+        "武",
+        "地"
+      ],
+      "stats": {
+        "hp": 126,
+        "atk": 147,
+        "def": 143,
+        "sp_atk": 147,
+        "sp_def": 118,
+        "speed": 85,
+        "sum": 766
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：棋契陛下（白棋棋祈督分支） 判断依据：双攻/高速向，六维最高项为 物攻(147)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 193,
+      "family_name": "奔波鼠",
+      "core_form": "流浪鼠",
+      "core_form_id": 194,
+      "types": [
+        "地"
+      ],
+      "stats": {
+        "hp": 103,
+        "atk": 46,
+        "def": 92,
+        "sp_atk": 116,
+        "sp_def": 122,
+        "speed": 115,
+        "sum": 594
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：流浪鼠 判断依据：魔攻向，六维最高项为 魔防(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 195,
+      "family_name": "呆小路",
+      "core_form": "白发路路",
+      "core_form_id": 197,
+      "types": [
+        "草",
+        "萌"
+      ],
+      "stats": {
+        "hp": 86,
+        "atk": 100,
+        "def": 113,
+        "sp_atk": 107,
+        "sp_def": 132,
+        "speed": 95,
+        "sum": 633
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：白发路路 判断依据：耐久向，六维最高项为 魔防(132)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 198,
+      "family_name": "逗逗",
+      "core_form": "奇梦咪",
+      "core_form_id": 200,
+      "types": [
+        "萌"
+      ],
+      "stats": {
+        "hp": 81,
+        "atk": 128,
+        "def": 123,
+        "sp_atk": 119,
+        "sp_def": 123,
+        "speed": 110,
+        "sum": 684
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：奇梦咪 判断依据：双攻/高速向，六维最高项为 物攻(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 201,
+      "family_name": "花怨鳗",
+      "core_form": "鳗尾兽",
+      "core_form_id": 202,
+      "types": [
+        "地",
+        "草"
+      ],
+      "stats": {
+        "hp": 290,
+        "atk": 91,
+        "def": 138,
+        "sp_atk": 91,
+        "sp_def": 113,
+        "speed": 65,
+        "sum": 788
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力",
+      "notes": "核心形态：鳗尾兽 判断依据：耐久向，六维最高项为 精力(290)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 203,
+      "family_name": "伊雷龙",
+      "core_form": "伊兰亚龙",
+      "core_form_id": 204,
+      "types": [
+        "龙"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 91,
+        "def": 69,
+        "sp_atk": 190,
+        "sp_def": 99,
+        "speed": 90,
+        "sum": 651
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：伊兰亚龙 判断依据：魔攻向，六维最高项为 魔攻(190)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 205,
+      "family_name": "拉特",
+      "core_form": "酷拉",
+      "core_form_id": 206,
+      "types": [
+        "电"
+      ],
+      "stats": {
+        "hp": 83,
+        "atk": 100,
+        "def": 78,
+        "sp_atk": 100,
+        "sp_def": 97,
+        "speed": 125,
+        "sum": 583
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：酷拉 判断依据：双攻/高速向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 207,
+      "family_name": "闪电环",
+      "core_form": "荆棘电环",
+      "core_form_id": 209,
+      "types": [
+        "电"
+      ],
+      "stats": {
+        "hp": 106,
+        "atk": 81,
+        "def": 85,
+        "sp_atk": 81,
+        "sp_def": 84,
+        "speed": 120,
+        "sum": 557
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、物防",
+      "notes": "核心形态：荆棘电环 判断依据：魔攻向，六维最高项为 速度(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 210,
+      "family_name": "小箱怪",
+      "core_form": "迷迷箱怪",
+      "core_form_id": 211,
+      "types": [
+        "机械",
+        "幻"
+      ],
+      "stats": {
+        "hp": 138,
+        "atk": 129,
+        "def": 153,
+        "sp_atk": 129,
+        "sp_def": 153,
+        "speed": 80,
+        "sum": 782
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：迷迷箱怪 判断依据：耐久向，六维最高项为 物防(153)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 212,
+      "family_name": "古钟蛇",
+      "core_form": "寒音蛇",
+      "core_form_id": 213,
+      "types": [
+        "萌",
+        "毒"
+      ],
+      "stats": {
+        "hp": 106,
+        "atk": 87,
+        "def": 80,
+        "sp_atk": 87,
+        "sp_def": 114,
+        "speed": 100,
+        "sum": 574
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：寒音蛇 判断依据：魔攻向，六维最高项为 魔防(114)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 214,
+      "family_name": "矮脚爬爬",
+      "core_form": "恶魔红钻",
+      "core_form_id": 215,
+      "types": [
+        "虫",
+        "恶"
+      ],
+      "stats": {
+        "hp": 100,
+        "atk": 147,
+        "def": 108,
+        "sp_atk": 137,
+        "sp_def": 89,
+        "speed": 115,
+        "sum": 696
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：恶魔红钻 判断依据：双攻/高速向，六维最高项为 物攻(147)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 216,
+      "family_name": "火尾瓦特",
+      "core_form": "烈火守护",
+      "core_form_id": 218,
+      "types": [
+        "火"
+      ],
+      "stats": {
+        "hp": 105,
+        "atk": 117,
+        "def": 135,
+        "sp_atk": 49,
+        "sp_def": 93,
+        "speed": 65,
+        "sum": 564
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：烈火守护 判断依据：物攻向，六维最高项为 物防(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 219,
+      "family_name": "里拉鳐",
+      "core_form": "里拉鳐",
+      "core_form_id": 219,
+      "types": [
+        "水"
+      ],
+      "stats": {
+        "hp": 118,
+        "atk": 82,
+        "def": 103,
+        "sp_atk": 89,
+        "sp_def": 147,
+        "speed": 105,
+        "sum": 644
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：里拉鳐 判断依据：魔攻向，六维最高项为 魔防(147)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 220,
+      "family_name": "海枝枝",
+      "core_form": "海枝枝",
+      "core_form_id": 220,
+      "types": [
+        "水",
+        "幽"
+      ],
+      "stats": {
+        "hp": 78,
+        "atk": 58,
+        "def": 96,
+        "sp_atk": 148,
+        "sp_def": 120,
+        "speed": 110,
+        "sum": 610
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：海枝枝 判断依据：魔攻向，六维最高项为 魔攻(148)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 221,
+      "family_name": "多西",
+      "core_form": "波多西",
+      "core_form_id": 223,
+      "types": [
+        "机械",
+        "地"
+      ],
+      "stats": {
+        "hp": 106,
+        "atk": 122,
+        "def": 136,
+        "sp_atk": 43,
+        "sp_def": 116,
+        "speed": 50,
+        "sum": 573
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：波多西 判断依据：物攻向，六维最高项为 物防(136)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 224,
+      "family_name": "小翼龙",
+      "core_form": "翼龙",
+      "core_form_id": 225,
+      "types": [
+        "龙",
+        "翼"
+      ],
+      "stats": {
+        "hp": 83,
+        "atk": 114,
+        "def": 91,
+        "sp_atk": 31,
+        "sp_def": 79,
+        "speed": 115,
+        "sum": 513
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：翼龙 判断依据：物攻向，六维最高项为 速度(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 226,
+      "family_name": "电动长颈鹿",
+      "core_form": "波普鹿",
+      "core_form_id": 228,
+      "types": [
+        "电"
+      ],
+      "stats": {
+        "hp": 92,
+        "atk": 79,
+        "def": 108,
+        "sp_atk": 21,
+        "sp_def": 79,
+        "speed": 120,
+        "sum": 499
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：波普鹿 判断依据：物攻向，六维最高项为 速度(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 229,
+      "family_name": "缇塔",
+      "core_form": "声波缇塔",
+      "core_form_id": 230,
+      "types": [
+        "机械"
+      ],
+      "stats": {
+        "hp": 92,
+        "atk": 124,
+        "def": 122,
+        "sp_atk": 48,
+        "sp_def": 92,
+        "speed": 90,
+        "sum": 568
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：声波缇塔 判断依据：物攻向，六维最高项为 物攻(124)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 231,
+      "family_name": "小鹬",
+      "core_form": "高帽鹬者",
+      "core_form_id": 233,
+      "types": [
+        "翼"
+      ],
+      "stats": {
+        "hp": 96,
+        "atk": 106,
+        "def": 119,
+        "sp_atk": 106,
+        "sp_def": 93,
+        "speed": 115,
+        "sum": 635
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：高帽鹬者 判断依据：双攻/高速向，六维最高项为 物防(119)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 234,
+      "family_name": "脆筒甜甜",
+      "core_form": "圣代甜甜（杨桃巧克力口味）",
+      "core_form_id": 236,
+      "types": [
+        "冰"
+      ],
+      "stats": {
+        "hp": 110,
+        "atk": 116,
+        "def": 73,
+        "sp_atk": 120,
+        "sp_def": 96,
+        "speed": 100,
+        "sum": 615
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：圣代甜甜（杨桃巧克力口味） 判断依据：双攻/高速向，六维最高项为 魔攻(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 237,
+      "family_name": "刺轮砣",
+      "core_form": "月亮砣（上弦的样子）",
+      "core_form_id": 238,
+      "types": [
+        "毒",
+        "萌"
+      ],
+      "stats": {
+        "hp": 125,
+        "atk": 100,
+        "def": 100,
+        "sp_atk": 98,
+        "sp_def": 81,
+        "speed": 105,
+        "sum": 609
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：月亮砣（上弦的样子） 判断依据：双攻/高速向，六维最高项为 精力(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 239,
+      "family_name": "豆丁鱼",
+      "core_form": "龙鱼",
+      "core_form_id": 241,
+      "types": [
+        "水",
+        "龙"
+      ],
+      "stats": {
+        "hp": 89,
+        "atk": 103,
+        "def": 100,
+        "sp_atk": 109,
+        "sp_def": 104,
+        "speed": 135,
+        "sum": 640
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：龙鱼 判断依据：双攻/高速向，六维最高项为 速度(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 242,
+      "family_name": "胆小鳗鱼",
+      "core_form": "闪电鳗鱼",
+      "core_form_id": 243,
+      "types": [
+        "电",
+        "水"
+      ],
+      "stats": {
+        "hp": 85,
+        "atk": 115,
+        "def": 104,
+        "sp_atk": 115,
+        "sp_def": 112,
+        "speed": 115,
+        "sum": 646
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：闪电鳗鱼 判断依据：双攻/高速向，六维最高项为 物攻(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 244,
+      "family_name": "翡翠水母",
+      "core_form": "琉璃水母",
+      "core_form_id": 245,
+      "types": [
+        "水",
+        "毒"
+      ],
+      "stats": {
+        "hp": 134,
+        "atk": 37,
+        "def": 93,
+        "sp_atk": 85,
+        "sp_def": 136,
+        "speed": 95,
+        "sum": 580
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：琉璃水母 判断依据：魔攻向，六维最高项为 魔防(136)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 246,
+      "family_name": "裘洛",
+      "core_form": "裘卡",
+      "core_form_id": 248,
+      "types": [
+        "毒"
+      ],
+      "stats": {
+        "hp": 73,
+        "atk": 93,
+        "def": 65,
+        "sp_atk": 83,
+        "sp_def": 81,
+        "speed": 125,
+        "sum": 520
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：裘卡 判断依据：双攻/高速向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 249,
+      "family_name": "可爱猿",
+      "core_form": "火焰猿",
+      "core_form_id": 251,
+      "types": [
+        "火"
+      ],
+      "stats": {
+        "hp": 167,
+        "atk": 162,
+        "def": 143,
+        "sp_atk": 72,
+        "sp_def": 111,
+        "speed": 60,
+        "sum": 715
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：火焰猿 判断依据：物攻向，六维最高项为 精力(167)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 252,
+      "family_name": "布鲁斯",
+      "core_form": "冰钻布鲁斯",
+      "core_form_id": 254,
+      "types": [
+        "冰"
+      ],
+      "stats": {
+        "hp": 73,
+        "atk": 101,
+        "def": 114,
+        "sp_atk": 27,
+        "sp_def": 88,
+        "speed": 90,
+        "sum": 493
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：冰钻布鲁斯 判断依据：物攻向，六维最高项为 物防(114)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 255,
+      "family_name": "治愈兔",
+      "core_form": "红绒十字",
+      "core_form_id": 257,
+      "types": [
+        "火",
+        "萌"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 47,
+        "def": 100,
+        "sp_atk": 122,
+        "sp_def": 127,
+        "speed": 90,
+        "sum": 598
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：红绒十字 判断依据：魔攻向，六维最高项为 魔防(127)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 258,
+      "family_name": "乌达",
+      "core_form": "乌拉塔（极夜的样子）",
+      "core_form_id": 260,
+      "types": [
+        "恶",
+        "冰"
+      ],
+      "stats": {
+        "hp": 160,
+        "atk": 158,
+        "def": 106,
+        "sp_atk": 91,
+        "sp_def": 57,
+        "speed": 50,
+        "sum": 622
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：乌拉塔（极夜的样子） 判断依据：物攻向，六维最高项为 精力(160)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 261,
+      "family_name": "螺旋帕帕",
+      "core_form": "帕帕斯卡",
+      "core_form_id": 262,
+      "types": [
+        "机械",
+        "翼"
+      ],
+      "stats": {
+        "hp": 110,
+        "atk": 68,
+        "def": 99,
+        "sp_atk": 10,
+        "sp_def": 84,
+        "speed": 100,
+        "sum": 471
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：帕帕斯卡 判断依据：物攻向，六维最高项为 精力(110)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 263,
+      "family_name": "机械方方",
+      "core_form": "立方人",
+      "core_form_id": 265,
+      "types": [
+        "机械"
+      ],
+      "stats": {
+        "hp": 103,
+        "atk": 135,
+        "def": 127,
+        "sp_atk": 54,
+        "sp_def": 101,
+        "speed": 85,
+        "sum": 605
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：立方人 判断依据：物攻向，六维最高项为 物攻(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 266,
+      "family_name": "可立鸡",
+      "core_form": "绅士鸡",
+      "core_form_id": 268,
+      "types": [
+        "火",
+        "武"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 120,
+        "def": 102,
+        "sp_atk": 120,
+        "sp_def": 87,
+        "speed": 110,
+        "sum": 651
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：绅士鸡 判断依据：双攻/高速向，六维最高项为 物攻(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 270,
+      "family_name": "优优",
+      "core_form": "绒光优优",
+      "core_form_id": 271,
+      "types": [
+        "地",
+        "光"
+      ],
+      "stats": {
+        "hp": 101,
+        "atk": 43,
+        "def": 105,
+        "sp_atk": 111,
+        "sp_def": 130,
+        "speed": 115,
+        "sum": 605
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：绒光优优 判断依据：魔攻向，六维最高项为 魔防(130)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 272,
+      "family_name": "噼啪鸟",
+      "core_form": "噼啪鸟",
+      "core_form_id": 272,
+      "types": [
+        "电",
+        "翼"
+      ],
+      "stats": {
+        "hp": 78,
+        "atk": 116,
+        "def": 85,
+        "sp_atk": 109,
+        "sp_def": 85,
+        "speed": 145,
+        "sum": 618
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：噼啪鸟 判断依据：双攻/高速向，六维最高项为 速度(145)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 273,
+      "family_name": "深蓝鲸",
+      "core_form": "深蓝鲸",
+      "core_form_id": 273,
+      "types": [
+        "水"
+      ],
+      "stats": {
+        "hp": 137,
+        "atk": 44,
+        "def": 125,
+        "sp_atk": 121,
+        "sp_def": 141,
+        "speed": 50,
+        "sum": 618
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、物防",
+      "notes": "核心形态：深蓝鲸 判断依据：耐久向，六维最高项为 魔防(141)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 274,
+      "family_name": "格兰种子",
+      "core_form": "格兰球",
+      "core_form_id": 276,
+      "types": [
+        "草"
+      ],
+      "stats": {
+        "hp": 108,
+        "atk": 52,
+        "def": 80,
+        "sp_atk": 124,
+        "sp_def": 112,
+        "speed": 60,
+        "sum": 536
+      },
+      "nature": "保守 / 沉默",
+      "attributes": "魔攻、精力、魔防",
+      "notes": "核心形态：格兰球 判断依据：魔攻向，六维最高项为 魔攻(124)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 277,
+      "family_name": "地鼠",
+      "core_form": "遁地鼠（枯水期的样子）",
+      "core_form_id": 279,
+      "types": [
+        "地"
+      ],
+      "stats": {
+        "hp": 110,
+        "atk": 119,
+        "def": 121,
+        "sp_atk": 51,
+        "sp_def": 85,
+        "speed": 110,
+        "sum": 596
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：遁地鼠（枯水期的样子） 判断依据：物攻向，六维最高项为 物防(121)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 280,
+      "family_name": "墨鱿士",
+      "core_form": "混乱鱿彩",
+      "core_form_id": 281,
+      "types": [
+        "幽",
+        "恶"
+      ],
+      "stats": {
+        "hp": 129,
+        "atk": 122,
+        "def": 131,
+        "sp_atk": 53,
+        "sp_def": 99,
+        "speed": 70,
+        "sum": 604
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：混乱鱿彩 判断依据：物攻向，六维最高项为 物防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 283,
+      "family_name": "小甲虫",
+      "core_form": "铠甲虫",
+      "core_form_id": 284,
+      "types": [
+        "虫"
+      ],
+      "stats": {
+        "hp": 122,
+        "atk": 88,
+        "def": 121,
+        "sp_atk": 39,
+        "sp_def": 77,
+        "speed": 75,
+        "sum": 522
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：铠甲虫 判断依据：耐久向，六维最高项为 精力(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 285,
+      "family_name": "圣剑侍从",
+      "core_form": "圣剑骑士",
+      "core_form_id": 286,
+      "types": [
+        "机械"
+      ],
+      "stats": {
+        "hp": 187,
+        "atk": 154,
+        "def": 183,
+        "sp_atk": 148,
+        "sp_def": 183,
+        "speed": 65,
+        "sum": 920
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力",
+      "notes": "核心形态：圣剑骑士 判断依据：耐久向，六维最高项为 精力(187)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 287,
+      "family_name": "吸泥鸥",
+      "core_form": "淤泥乌泽",
+      "core_form_id": 288,
+      "types": [
+        "地",
+        "翼"
+      ],
+      "stats": {
+        "hp": 124,
+        "atk": 138,
+        "def": 132,
+        "sp_atk": 58,
+        "sp_def": 108,
+        "speed": 95,
+        "sum": 655
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：淤泥乌泽 判断依据：物攻向，六维最高项为 物攻(138)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 289,
+      "family_name": "大头骨龙",
+      "core_form": "寂灭骨龙",
+      "core_form_id": 290,
+      "types": [
+        "龙",
+        "幽"
+      ],
+      "stats": {
+        "hp": 120,
+        "atk": 137,
+        "def": 104,
+        "sp_atk": 50,
+        "sp_def": 81,
+        "speed": 60,
+        "sum": 552
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：寂灭骨龙 判断依据：物攻向，六维最高项为 物攻(137)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 291,
+      "family_name": "厉毒小萝",
+      "core_form": "厉毒修萝",
+      "core_form_id": 292,
+      "types": [
+        "毒",
+        "恶"
+      ],
+      "stats": {
+        "hp": 84,
+        "atk": 80,
+        "def": 101,
+        "sp_atk": 21,
+        "sp_def": 74,
+        "speed": 135,
+        "sum": 495
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：厉毒修萝 判断依据：物攻向，六维最高项为 速度(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 293,
+      "family_name": "小帕尔",
+      "core_form": "龙息帕尔",
+      "core_form_id": 295,
+      "types": [
+        "恶"
+      ],
+      "stats": {
+        "hp": 130,
+        "atk": 127,
+        "def": 131,
+        "sp_atk": 57,
+        "sp_def": 87,
+        "speed": 100,
+        "sum": 632
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：龙息帕尔 判断依据：物攻向，六维最高项为 物防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 296,
+      "family_name": "毛头小蛛",
+      "core_form": "食尘短绒",
+      "core_form_id": 298,
+      "types": [
+        "虫",
+        "地"
+      ],
+      "stats": {
+        "hp": 109,
+        "atk": 105,
+        "def": 113,
+        "sp_atk": 37,
+        "sp_def": 97,
+        "speed": 115,
+        "sum": 576
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：食尘短绒 判断依据：物攻向，六维最高项为 速度(115)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 299,
+      "family_name": "画精灵",
+      "core_form": "画间法师手",
+      "core_form_id": 301,
+      "types": [
+        "普通",
+        "幻"
+      ],
+      "stats": {
+        "hp": 101,
+        "atk": 53,
+        "def": 94,
+        "sp_atk": 131,
+        "sp_def": 120,
+        "speed": 120,
+        "sum": 619
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：画间法师手 判断依据：魔攻向，六维最高项为 魔攻(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 303,
+      "family_name": "书魔虫",
+      "core_form": "古卷执政官",
+      "core_form_id": 305,
+      "types": [
+        "普通",
+        "幻"
+      ],
+      "stats": {
+        "hp": 111,
+        "atk": 115,
+        "def": 80,
+        "sp_atk": 115,
+        "sp_def": 122,
+        "speed": 95,
+        "sum": 638
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：古卷执政官 判断依据：双攻/高速向，六维最高项为 魔防(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 307,
+      "family_name": "绒绒",
+      "core_form": "绒仙子",
+      "core_form_id": 309,
+      "types": [
+        "光",
+        "虫"
+      ],
+      "stats": {
+        "hp": 96,
+        "atk": 101,
+        "def": 81,
+        "sp_atk": 104,
+        "sp_def": 133,
+        "speed": 115,
+        "sum": 630
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：绒仙子 判断依据：双攻/高速向，六维最高项为 魔防(133)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 310,
+      "family_name": "犀角鸟",
+      "core_form": "疾光千兽",
+      "core_form_id": 312,
+      "types": [
+        "光"
+      ],
+      "stats": {
+        "hp": 104,
+        "atk": 146,
+        "def": 112,
+        "sp_atk": 67,
+        "sp_def": 73,
+        "speed": 110,
+        "sum": 612
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：疾光千兽 判断依据：物攻向，六维最高项为 物攻(146)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 313,
+      "family_name": "果冻",
+      "core_form": "熔岩布丁",
+      "core_form_id": 316,
+      "types": [
+        "水",
+        "火"
+      ],
+      "stats": {
+        "hp": 128,
+        "atk": 87,
+        "def": 112,
+        "sp_atk": 33,
+        "sp_def": 84,
+        "speed": 120,
+        "sum": 564
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：熔岩布丁 判断依据：物攻向，六维最高项为 精力(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 317,
+      "family_name": "星尘虫",
+      "core_form": "陨星虫",
+      "core_form_id": 319,
+      "types": [
+        "虫"
+      ],
+      "stats": {
+        "hp": 81,
+        "atk": 78,
+        "def": 76,
+        "sp_atk": 78,
+        "sp_def": 96,
+        "speed": 100,
+        "sum": 509
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：陨星虫 判断依据：魔攻向，六维最高项为 速度(100)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 320,
+      "family_name": "双灯鱼",
+      "core_form": "利灯鱼",
+      "core_form_id": 321,
+      "types": [
+        "水",
+        "电"
+      ],
+      "stats": {
+        "hp": 128,
+        "atk": 68,
+        "def": 71,
+        "sp_atk": 138,
+        "sp_def": 116,
+        "speed": 105,
+        "sum": 626
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：利灯鱼 判断依据：魔攻向，六维最高项为 魔攻(138)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 322,
+      "family_name": "月牙雪熊",
+      "core_form": "月牙雪熊",
+      "core_form_id": 322,
+      "types": [
+        "冰",
+        "幻"
+      ],
+      "stats": {
+        "hp": 126,
+        "atk": 97,
+        "def": 141,
+        "sp_atk": 39,
+        "sp_def": 103,
+        "speed": 80,
+        "sum": 586
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：月牙雪熊 判断依据：耐久向，六维最高项为 物防(141)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 323,
+      "family_name": "嗜光嗡嗡",
+      "core_form": "窃光蚊",
+      "core_form_id": 324,
+      "types": [
+        "恶",
+        "光"
+      ],
+      "stats": {
+        "hp": 93,
+        "atk": 113,
+        "def": 71,
+        "sp_atk": 113,
+        "sp_def": 125,
+        "speed": 115,
+        "sum": 630
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：窃光蚊 判断依据：双攻/高速向，六维最高项为 魔防(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 325,
+      "family_name": "柴渣虫",
+      "core_form": "燃薪虫",
+      "core_form_id": 326,
+      "types": [
+        "火",
+        "草"
+      ],
+      "stats": {
+        "hp": 135,
+        "atk": 120,
+        "def": 103,
+        "sp_atk": 48,
+        "sp_def": 73,
+        "speed": 100,
+        "sum": 579
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：燃薪虫 判断依据：物攻向，六维最高项为 精力(135)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 327,
+      "family_name": "空空颅",
+      "core_form": "暗夜颅主",
+      "core_form_id": 329,
+      "types": [
+        "幽"
+      ],
+      "stats": {
+        "hp": 117,
+        "atk": 5,
+        "def": 95,
+        "sp_atk": 66,
+        "sp_def": 112,
+        "speed": 80,
+        "sum": 475
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：暗夜颅主 判断依据：魔攻向，六维最高项为 精力(117)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 330,
+      "family_name": "粉粉星",
+      "core_form": "小皮球",
+      "core_form_id": 331,
+      "types": [
+        "电",
+        "幻"
+      ],
+      "stats": {
+        "hp": 116,
+        "atk": 68,
+        "def": 71,
+        "sp_atk": 127,
+        "sp_def": 126,
+        "speed": 110,
+        "sum": 618
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：小皮球 判断依据：魔攻向，六维最高项为 魔攻(127)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 332,
+      "family_name": "贝瑟",
+      "core_form": "贝古斯",
+      "core_form_id": 334,
+      "types": [
+        "机械",
+        "火"
+      ],
+      "stats": {
+        "hp": 132,
+        "atk": 76,
+        "def": 85,
+        "sp_atk": 130,
+        "sp_def": 163,
+        "speed": 55,
+        "sum": 641
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、物防",
+      "notes": "核心形态：贝古斯 判断依据：耐久向，六维最高项为 魔防(163)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 335,
+      "family_name": "粉星仔",
+      "core_form": "粉耳星兔",
+      "core_form_id": 336,
+      "types": [
+        "幻"
+      ],
+      "stats": {
+        "hp": 100,
+        "atk": 79,
+        "def": 73,
+        "sp_atk": 148,
+        "sp_def": 127,
+        "speed": 115,
+        "sum": 642
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：粉耳星兔 判断依据：魔攻向，六维最高项为 魔攻(148)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 338,
+      "family_name": "布瓜蝌",
+      "core_form": "上岸蛙",
+      "core_form_id": 339,
+      "types": [
+        "幻"
+      ],
+      "stats": {
+        "hp": 114,
+        "atk": 106,
+        "def": 101,
+        "sp_atk": 44,
+        "sp_def": 69,
+        "speed": 120,
+        "sum": 554
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：上岸蛙 判断依据：物攻向，六维最高项为 速度(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 340,
+      "family_name": "火红尾",
+      "core_form": "雅丹鬃",
+      "core_form_id": 341,
+      "types": [
+        "火"
+      ],
+      "stats": {
+        "hp": 83,
+        "atk": 70,
+        "def": 88,
+        "sp_atk": 162,
+        "sp_def": 111,
+        "speed": 125,
+        "sum": 639
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：雅丹鬃 判断依据：魔攻向，六维最高项为 魔攻(162)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 342,
+      "family_name": "春团",
+      "core_form": "春花兔",
+      "core_form_id": 344,
+      "types": [
+        "草"
+      ],
+      "stats": {
+        "hp": 79,
+        "atk": 85,
+        "def": 103,
+        "sp_atk": 95,
+        "sp_def": 90,
+        "speed": 105,
+        "sum": 557
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：春花兔 判断依据：双攻/高速向，六维最高项为 速度(105)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 345,
+      "family_name": "幽星光",
+      "core_form": "暮星辰",
+      "core_form_id": 347,
+      "types": [
+        "幻",
+        "翼"
+      ],
+      "stats": {
+        "hp": 81,
+        "atk": 35,
+        "def": 80,
+        "sp_atk": 106,
+        "sp_def": 105,
+        "speed": 125,
+        "sum": 532
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：暮星辰 判断依据：魔攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 348,
+      "family_name": "钨丝贝贝",
+      "core_form": "机幕方舟",
+      "core_form_id": 350,
+      "types": [
+        "机械"
+      ],
+      "stats": {
+        "hp": 104,
+        "atk": 113,
+        "def": 130,
+        "sp_atk": 105,
+        "sp_def": 90,
+        "speed": 55,
+        "sum": 597
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：机幕方舟 判断依据：双攻/高速向，六维最高项为 物防(130)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 351,
+      "family_name": "凡雀",
+      "core_form": "凡鹰",
+      "core_form_id": 353,
+      "types": [
+        "翼"
+      ],
+      "stats": {
+        "hp": 118,
+        "atk": 92,
+        "def": 86,
+        "sp_atk": 89,
+        "sp_def": 110,
+        "speed": 125,
+        "sum": 620
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：凡鹰 判断依据：双攻/高速向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 354,
+      "family_name": "小雪人",
+      "core_form": "雪怪",
+      "core_form_id": 355,
+      "types": [
+        "冰"
+      ],
+      "stats": {
+        "hp": 126,
+        "atk": 107,
+        "def": 98,
+        "sp_atk": 99,
+        "sp_def": 131,
+        "speed": 75,
+        "sum": 636
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：雪怪 判断依据：耐久向，六维最高项为 魔防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 356,
+      "family_name": "爆焰仔",
+      "core_form": "爆焰喷喷",
+      "core_form_id": 357,
+      "types": [
+        "火",
+        "龙"
+      ],
+      "stats": {
+        "hp": 112,
+        "atk": 127,
+        "def": 131,
+        "sp_atk": 63,
+        "sp_def": 81,
+        "speed": 110,
+        "sum": 624
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：爆焰喷喷 判断依据：物攻向，六维最高项为 物防(131)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 358,
+      "family_name": "猴麦仔",
+      "core_form": "音碟吼",
+      "core_form_id": 359,
+      "types": [
+        "普通",
+        "机械"
+      ],
+      "stats": {
+        "hp": 116,
+        "atk": 94,
+        "def": 63,
+        "sp_atk": 151,
+        "sp_def": 127,
+        "speed": 110,
+        "sum": 661
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：音碟吼 判断依据：魔攻向，六维最高项为 魔攻(151)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 360,
+      "family_name": "加油海葵",
+      "core_form": "加油蟹",
+      "core_form_id": 361,
+      "types": [
+        "水",
+        "萌"
+      ],
+      "stats": {
+        "hp": 116,
+        "atk": 108,
+        "def": 128,
+        "sp_atk": 108,
+        "sp_def": 128,
+        "speed": 95,
+        "sum": 683
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：加油蟹 判断依据：耐久向，六维最高项为 物防(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 362,
+      "family_name": "小丑豆豆",
+      "core_form": "小丑公爵",
+      "core_form_id": 364,
+      "types": [
+        "恶"
+      ],
+      "stats": {
+        "hp": 111,
+        "atk": 145,
+        "def": 82,
+        "sp_atk": 147,
+        "sp_def": 124,
+        "speed": 120,
+        "sum": 729
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：小丑公爵 判断依据：双攻/高速向，六维最高项为 魔攻(147)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 365,
+      "family_name": "烟花团",
+      "core_form": "烟花伯爵",
+      "core_form_id": 366,
+      "types": [
+        "火",
+        "毒"
+      ],
+      "stats": {
+        "hp": 76,
+        "atk": 44,
+        "def": 62,
+        "sp_atk": 111,
+        "sp_def": 97,
+        "speed": 95,
+        "sum": 485
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：烟花伯爵 判断依据：魔攻向，六维最高项为 魔攻(111)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 367,
+      "family_name": "咕咕帽",
+      "core_form": "咕德帽帽",
+      "core_form_id": 368,
+      "types": [
+        "幽"
+      ],
+      "stats": {
+        "hp": 128,
+        "atk": 92,
+        "def": 137,
+        "sp_atk": 90,
+        "sp_def": 95,
+        "speed": 100,
+        "sum": 642
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：咕德帽帽 判断依据：双攻/高速向，六维最高项为 物防(137)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 369,
+      "family_name": "炫光迪迪",
+      "core_form": "霹雳迪迪",
+      "core_form_id": 370,
+      "types": [
+        "电",
+        "光"
+      ],
+      "stats": {
+        "hp": 104,
+        "atk": 119,
+        "def": 65,
+        "sp_atk": 139,
+        "sp_def": 133,
+        "speed": 130,
+        "sum": 690
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：霹雳迪迪 判断依据：魔攻向，六维最高项为 魔攻(139)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 371,
+      "family_name": "小鼓象",
+      "core_form": "巨鼓象",
+      "core_form_id": 372,
+      "types": [
+        "机械"
+      ],
+      "stats": {
+        "hp": 130,
+        "atk": 107,
+        "def": 173,
+        "sp_atk": 70,
+        "sp_def": 80,
+        "speed": 80,
+        "sum": 640
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力、速度",
+      "notes": "核心形态：巨鼓象 判断依据：耐久向，六维最高项为 物防(173)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 373,
+      "family_name": "牵线木偶",
+      "core_form": "帅帅魔偶",
+      "core_form_id": 374,
+      "types": [
+        "幻"
+      ],
+      "stats": {
+        "hp": 97,
+        "atk": 104,
+        "def": 86,
+        "sp_atk": 111,
+        "sp_def": 133,
+        "speed": 105,
+        "sum": 636
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：帅帅魔偶 判断依据：耐久向，六维最高项为 魔防(133)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 375,
+      "family_name": "学院呱呱",
+      "core_form": "学院呱呱",
+      "core_form_id": 375,
+      "types": [
+        "武"
+      ],
+      "stats": {
+        "hp": 132,
+        "atk": 99,
+        "def": 92,
+        "sp_atk": 99,
+        "sp_def": 92,
+        "speed": 100,
+        "sum": 614
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：学院呱呱 判断依据：双攻/高速向，六维最高项为 精力(132)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 376,
+      "family_name": "烈钻鸟",
+      "core_form": "火羽",
+      "core_form_id": 378,
+      "types": [
+        "火",
+        "翼"
+      ],
+      "stats": {
+        "hp": 94,
+        "atk": 82,
+        "def": 72,
+        "sp_atk": 100,
+        "sp_def": 121,
+        "speed": 120,
+        "sum": 589
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：火羽 判断依据：魔攻向，六维最高项为 魔防(121)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 379,
+      "family_name": "叮叮卯",
+      "core_form": "飞飞钥",
+      "core_form_id": 380,
+      "types": [
+        "机械",
+        "虫"
+      ],
+      "stats": {
+        "hp": 146,
+        "atk": 57,
+        "def": 94,
+        "sp_atk": 101,
+        "sp_def": 170,
+        "speed": 60,
+        "sum": 628
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、物防",
+      "notes": "核心形态：飞飞钥 判断依据：耐久向，六维最高项为 魔防(170)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 381,
+      "family_name": "碎晶蝎",
+      "core_form": "蝎子王",
+      "core_form_id": 383,
+      "types": [
+        "恶",
+        "地"
+      ],
+      "stats": {
+        "hp": 108,
+        "atk": 126,
+        "def": 119,
+        "sp_atk": 117,
+        "sp_def": 79,
+        "speed": 95,
+        "sum": 644
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：蝎子王 判断依据：双攻/高速向，六维最高项为 物攻(126)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 384,
+      "family_name": "森豆丁",
+      "core_form": "森巨人",
+      "core_form_id": 386,
+      "types": [
+        "草"
+      ],
+      "stats": {
+        "hp": 144,
+        "atk": 155,
+        "def": 132,
+        "sp_atk": 70,
+        "sp_def": 88,
+        "speed": 70,
+        "sum": 659
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：森巨人 判断依据：物攻向，六维最高项为 物攻(155)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 387,
+      "family_name": "霹雳宝宝",
+      "core_form": "雷神之子",
+      "core_form_id": 389,
+      "types": [
+        "电"
+      ],
+      "stats": {
+        "hp": 90,
+        "atk": 110,
+        "def": 112,
+        "sp_atk": 110,
+        "sp_def": 93,
+        "speed": 120,
+        "sum": 635
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：雷神之子 判断依据：双攻/高速向，六维最高项为 速度(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 390,
+      "family_name": "雪灵兽",
+      "core_form": "饮雪狂兽",
+      "core_form_id": 392,
+      "types": [
+        "冰"
+      ],
+      "stats": {
+        "hp": 104,
+        "atk": 98,
+        "def": 111,
+        "sp_atk": 32,
+        "sp_def": 103,
+        "speed": 125,
+        "sum": 573
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：饮雪狂兽 判断依据：物攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 393,
+      "family_name": "火豆丁",
+      "core_form": "火巨人",
+      "core_form_id": 395,
+      "types": [
+        "火"
+      ],
+      "stats": {
+        "hp": 75,
+        "atk": 77,
+        "def": 81,
+        "sp_atk": 26,
+        "sp_def": 51,
+        "speed": 49,
+        "sum": 359
+      },
+      "nature": "固执 / 平和",
+      "attributes": "物攻、精力、物防",
+      "notes": "核心形态：火巨人 判断依据：物攻向，六维最高项为 物防(81)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 396,
+      "family_name": "友爱天天",
+      "core_form": "友爱星飞",
+      "core_form_id": 397,
+      "types": [
+        "普通"
+      ],
+      "stats": {
+        "hp": 108,
+        "atk": 32,
+        "def": 88,
+        "sp_atk": 102,
+        "sp_def": 100,
+        "speed": 95,
+        "sum": 525
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：友爱星飞 判断依据：魔攻向，六维最高项为 精力(108)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 398,
+      "family_name": "莫比乌乌",
+      "core_form": "克莱因龙",
+      "core_form_id": 399,
+      "types": [
+        "龙",
+        "萌"
+      ],
+      "stats": {
+        "hp": 90,
+        "atk": 45,
+        "def": 83,
+        "sp_atk": 122,
+        "sp_def": 105,
+        "speed": 100,
+        "sum": 545
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：克莱因龙 判断依据：魔攻向，六维最高项为 魔攻(122)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 400,
+      "family_name": "瑰眼仔",
+      "core_form": "邪眼巨魔",
+      "core_form_id": 402,
+      "types": [
+        "恶",
+        "虫"
+      ],
+      "stats": {
+        "hp": 111,
+        "atk": 98,
+        "def": 99,
+        "sp_atk": 99,
+        "sp_def": 119,
+        "speed": 95,
+        "sum": 621
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、速度",
+      "notes": "核心形态：邪眼巨魔 判断依据：耐久向，六维最高项为 魔防(119)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 403,
+      "family_name": "觅觅蝠",
+      "core_form": "夜游魔",
+      "core_form_id": 405,
+      "types": [
+        "翼",
+        "恶"
+      ],
+      "stats": {
+        "hp": 126,
+        "atk": 99,
+        "def": 97,
+        "sp_atk": 98,
+        "sp_def": 123,
+        "speed": 55,
+        "sum": 598
+      },
+      "nature": "狂妄 / 紧张",
+      "attributes": "魔防、精力、物防",
+      "notes": "核心形态：夜游魔 判断依据：耐久向，六维最高项为 精力(126)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 406,
+      "family_name": "芽眼魔",
+      "core_form": "障眼魔",
+      "core_form_id": 408,
+      "types": [
+        "恶",
+        "水"
+      ],
+      "stats": {
+        "hp": 113,
+        "atk": 103,
+        "def": 85,
+        "sp_atk": 98,
+        "sp_def": 98,
+        "speed": 75,
+        "sum": 572
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：障眼魔 判断依据：双攻/高速向，六维最高项为 精力(113)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 409,
+      "family_name": "星云旅者",
+      "core_form": "星云旅者",
+      "core_form_id": 409,
+      "types": [
+        "翼",
+        "幻"
+      ],
+      "stats": {
+        "hp": 104,
+        "atk": 32,
+        "def": 104,
+        "sp_atk": 129,
+        "sp_def": 83,
+        "speed": 120,
+        "sum": 572
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、物防",
+      "notes": "核心形态：星云旅者 判断依据：魔攻向，六维最高项为 魔攻(129)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 410,
+      "family_name": "点点",
+      "core_form": "珀尔鼬",
+      "core_form_id": 411,
+      "types": [
+        "萌"
+      ],
+      "stats": {
+        "hp": 117,
+        "atk": 51,
+        "def": 69,
+        "sp_atk": 105,
+        "sp_def": 117,
+        "speed": 100,
+        "sum": 559
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：珀尔鼬 判断依据：魔攻向，六维最高项为 精力(117)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 412,
+      "family_name": "不咕钟",
+      "core_form": "溯源钟",
+      "core_form_id": 413,
+      "types": [
+        "机械",
+        "幻"
+      ],
+      "stats": {
+        "hp": 85,
+        "atk": 84,
+        "def": 72,
+        "sp_atk": 86,
+        "sp_def": 116,
+        "speed": 95,
+        "sum": 538
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：溯源钟 判断依据：魔攻向，六维最高项为 魔防(116)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 414,
+      "family_name": "加灵",
+      "core_form": "黑化加尔",
+      "core_form_id": 417,
+      "types": [
+        "普通",
+        "幽"
+      ],
+      "stats": {
+        "hp": 84,
+        "atk": 35,
+        "def": 94,
+        "sp_atk": 104,
+        "sp_def": 124,
+        "speed": 110,
+        "sum": 551
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：黑化加尔 判断依据：魔攻向，六维最高项为 魔防(124)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 418,
+      "family_name": "咬咬小子",
+      "core_form": "胡桃王子",
+      "core_form_id": 419,
+      "types": [
+        "机械"
+      ],
+      "stats": {
+        "hp": 128,
+        "atk": 127,
+        "def": 60,
+        "sp_atk": 21,
+        "sp_def": 115,
+        "speed": 95,
+        "sum": 546
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、魔防",
+      "notes": "核心形态：胡桃王子 判断依据：物攻向，六维最高项为 精力(128)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 420,
+      "family_name": "足尖元件",
+      "core_form": "离心舞者",
+      "core_form_id": 421,
+      "types": [
+        "幻",
+        "机械"
+      ],
+      "stats": {
+        "hp": 114,
+        "atk": 50,
+        "def": 77,
+        "sp_atk": 110,
+        "sp_def": 120,
+        "speed": 125,
+        "sum": 596
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：离心舞者 判断依据：魔攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 422,
+      "family_name": "蝴蝶陶陶",
+      "core_form": "徘徊爪爪",
+      "core_form_id": 424,
+      "types": [
+        "萌",
+        "毒"
+      ],
+      "stats": {
+        "hp": 95,
+        "atk": 78,
+        "def": 109,
+        "sp_atk": 14,
+        "sp_def": 95,
+        "speed": 125,
+        "sum": 516
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：徘徊爪爪 判断依据：物攻向，六维最高项为 速度(125)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 425,
+      "family_name": "苞米仔",
+      "core_form": "炮米花",
+      "core_form_id": 426,
+      "types": [
+        "草",
+        "火"
+      ],
+      "stats": {
+        "hp": 107,
+        "atk": 93,
+        "def": 105,
+        "sp_atk": 95,
+        "sp_def": 105,
+        "speed": 75,
+        "sum": 580
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：炮米花 判断依据：双攻/高速向，六维最高项为 精力(107)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 427,
+      "family_name": "十字蝌蚪",
+      "core_form": "深渊蛙",
+      "core_form_id": 429,
+      "types": [
+        "水",
+        "武"
+      ],
+      "stats": {
+        "hp": 113,
+        "atk": 130,
+        "def": 106,
+        "sp_atk": 51,
+        "sp_def": 78,
+        "speed": 110,
+        "sum": 588
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：深渊蛙 判断依据：物攻向，六维最高项为 物攻(130)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 430,
+      "family_name": "卡波",
+      "core_form": "卡拉波斯",
+      "core_form_id": 431,
+      "types": [
+        "恶"
+      ],
+      "stats": {
+        "hp": 103,
+        "atk": 107,
+        "def": 65,
+        "sp_atk": 34,
+        "sp_def": 51,
+        "speed": 100,
+        "sum": 460
+      },
+      "nature": "固执 / 开朗",
+      "attributes": "物攻、速度、物防",
+      "notes": "核心形态：卡拉波斯 判断依据：物攻向，六维最高项为 物攻(107)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 432,
+      "family_name": "守夜烛",
+      "core_form": "流明坎德拉",
+      "core_form_id": 433,
+      "types": [
+        "火",
+        "光"
+      ],
+      "stats": {
+        "hp": 111,
+        "atk": 109,
+        "def": 108,
+        "sp_atk": 118,
+        "sp_def": 123,
+        "speed": 105,
+        "sum": 674
+      },
+      "nature": "急躁 / 孤僻",
+      "attributes": "速度、物攻、魔攻",
+      "notes": "核心形态：流明坎德拉 判断依据：双攻/高速向，六维最高项为 魔防(123)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 434,
+      "family_name": "蜜果骸",
+      "core_form": "半朽蜜果灵",
+      "core_form_id": 435,
+      "types": [
+        "幽",
+        "草"
+      ],
+      "stats": {
+        "hp": 115,
+        "atk": 43,
+        "def": 84,
+        "sp_atk": 120,
+        "sp_def": 106,
+        "speed": 110,
+        "sum": 578
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：半朽蜜果灵 判断依据：魔攻向，六维最高项为 魔攻(120)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 436,
+      "family_name": "稻草人",
+      "core_form": "稻草守护者",
+      "core_form_id": 437,
+      "types": [
+        "萌",
+        "武"
+      ],
+      "stats": {
+        "hp": 116,
+        "atk": 88,
+        "def": 112,
+        "sp_atk": 88,
+        "sp_def": 112,
+        "speed": 55,
+        "sum": 571
+      },
+      "nature": "悠闲 / 紧张",
+      "attributes": "物防、精力",
+      "notes": "核心形态：稻草守护者 判断依据：耐久向，六维最高项为 精力(116)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 438,
+      "family_name": "栗鼠",
+      "core_form": "壳栗丝鼠",
+      "core_form_id": 439,
+      "types": [
+        "毒",
+        "普通"
+      ],
+      "stats": {
+        "hp": 114,
+        "atk": 77,
+        "def": 77,
+        "sp_atk": 79,
+        "sp_def": 111,
+        "speed": 100,
+        "sum": 558
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：壳栗丝鼠 判断依据：魔攻向，六维最高项为 精力(114)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    },
+    {
+      "family_id": 440,
+      "family_name": "睡铃雪影娃娃",
+      "core_form": "睡铃雪影娃娃",
+      "core_form_id": 440,
+      "types": [
+        "冰",
+        "草"
+      ],
+      "stats": {
+        "hp": 116,
+        "atk": 42,
+        "def": 85,
+        "sp_atk": 104,
+        "sp_def": 116,
+        "speed": 100,
+        "sum": 563
+      },
+      "nature": "保守 / 胆小",
+      "attributes": "魔攻、速度、魔防",
+      "notes": "核心形态：睡铃雪影娃娃 判断依据：魔攻向，六维最高项为 精力(116)。 该推荐由真实六维与性格增减益规则计算，尚未加入社区配招人工校正。",
+      "confidence": "computed",
+      "source": {
+        "stats": "roco_egg_master/src/pets_data.json",
+        "nature_mechanics": "https://a.4399.cn/rocom/tools/inquiry",
+        "method": "rules-v1"
+      }
+    }
+  ]
+}

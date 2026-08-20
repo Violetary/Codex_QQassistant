@@ -16,6 +16,7 @@ class StageBody:
     big_body_range: str
     small_body_range: str
     form_id: int | None = None
+    is_egg: bool = False
     types: list[str] = field(default_factory=list)
 
     @classmethod
@@ -28,6 +29,7 @@ class StageBody:
             big_body_range=str(data.get("big_body_range", "未知")),
             small_body_range=str(data.get("small_body_range", "未知")),
             form_id=int(data["form_id"]) if data.get("form_id") not in (None, "") else None,
+            is_egg=bool(data.get("is_egg", False)),
             types=[str(item) for item in data.get("types", []) if str(item)],
         )
 

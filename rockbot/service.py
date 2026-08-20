@@ -41,17 +41,29 @@ class BotService:
             return BotReply(text=f"数据源暂时不可用：{exc}", ok=False)
 
         image_path = self.renderer.render(profile, command.query)
-        text = self._summary(profile, command)
-        return BotReply(text=text, image_path=str(Path(image_path).resolve()))
+        return BotReply(text="", image_path=str(Path(image_path).resolve()))
 
     def _get_profile(self, pet_name: str) -> PetProfile:
-        cached = self.cache.get(pet_name)
-        if cached:
-            return cached
-        profile = self.source.fetch(pet_name)
-        self.cache.delete(profile.name)
-        self.cache.set(profile)
+        try:
+            profile = self.source.fetch(pet_name)
+        except PetNotFound:
+            cached = self.cache.get(pet_name)
+            if cached and not self._is_stale_profile(cached):
+                return cached
+            raise
+        if self._should_persist_profile(profile):
+            self.cache.set(profile)
         return profile
+
+    def _is_stale_profile(self, profile: PetProfile) -> bool:
+        if not any(stage.is_egg for stage in profile.stages):
+            return True
+        if profile.pvp is None:
+            return True
+        return profile.pvp.nature == "待补充" or profile.pvp.attributes == "待补充"
+
+    def _should_persist_profile(self, profile: PetProfile) -> bool:
+        return profile.source not in {"local-seed", "sample"}
 
     def _summary(self, profile: PetProfile, command: ParsedCommand) -> str:
         if command.query == "pvp":

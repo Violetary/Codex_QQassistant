@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "source": "https://a.4399.cn/rocom/tools/inquiry",
+    "title": "洛克王国：世界精灵属性&性格查询器-4399游戏盒",
+    "count": 30
+  },
+  "natures": [
+    {
+      "id": "21",
+      "name": "天真",
+      "gain": "速度",
+      "loss": "魔防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "22",
+      "name": "浮躁",
+      "gain": "速度",
+      "loss": "精力",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "23",
+      "name": "胆小",
+      "gain": "速度",
+      "loss": "物攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "24",
+      "name": "开朗",
+      "gain": "速度",
+      "loss": "魔攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "25",
+      "name": "急躁",
+      "gain": "速度",
+      "loss": "物防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "26",
+      "name": "狂妄",
+      "gain": "魔防",
+      "loss": "速度",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "27",
+      "name": "实干",
+      "gain": "魔防",
+      "loss": "精力",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "28",
+      "name": "沉着",
+      "gain": "魔防",
+      "loss": "物攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "29",
+      "name": "慎重",
+      "gain": "魔防",
+      "loss": "魔攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "30",
+      "name": "温顺",
+      "gain": "魔防",
+      "loss": "物防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "31",
+      "name": "悠闲",
+      "gain": "物防",
+      "loss": "速度",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "32",
+      "name": "害羞",
+      "gain": "物防",
+      "loss": "精力",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "33",
+      "name": "大胆",
+      "gain": "物防",
+      "loss": "物攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "34",
+      "name": "淘气",
+      "gain": "物防",
+      "loss": "魔攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "35",
+      "name": "懒散",
+      "gain": "物防",
+      "loss": "魔防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "36",
+      "name": "冷静",
+      "gain": "魔攻",
+      "loss": "速度",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "37",
+      "name": "认真",
+      "gain": "魔攻",
+      "loss": "精力",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "38",
+      "name": "保守",
+      "gain": "魔攻",
+      "loss": "物攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "39",
+      "name": "稳重",
+      "gain": "魔攻",
+      "loss": "物防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "40",
+      "name": "马虎",
+      "gain": "魔攻",
+      "loss": "魔防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "41",
+      "name": "勇敢",
+      "gain": "物攻",
+      "loss": "速度",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "42",
+      "name": "坦率",
+      "gain": "物攻",
+      "loss": "精力",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "43",
+      "name": "固执",
+      "gain": "物攻",
+      "loss": "魔攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "44",
+      "name": "孤僻",
+      "gain": "物攻",
+      "loss": "物防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "45",
+      "name": "调皮",
+      "gain": "物攻",
+      "loss": "魔防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "46",
+      "name": "紧张",
+      "gain": "精力",
+      "loss": "速度",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "47",
+      "name": "沉默",
+      "gain": "精力",
+      "loss": "物攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "48",
+      "name": "平和",
+      "gain": "精力",
+      "loss": "魔攻",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "49",
+      "name": "理智",
+      "gain": "精力",
+      "loss": "物防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    },
+    {
+      "id": "50",
+      "name": "忧郁",
+      "gain": "精力",
+      "loss": "魔防",
+      "source": "https://a.4399.cn/rocom/tools/inquiry"
+    }
+  ]
+}

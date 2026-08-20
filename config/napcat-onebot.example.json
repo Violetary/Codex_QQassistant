@@ -1,0 +1,10 @@
+{
+  "comment": "NapCat/OneBot 配置参考，不同版本界面字段名可能略有差异。",
+  "http_post_event_url": "http://127.0.0.1:8000/onebot",
+  "http_api_base_url": "http://127.0.0.1:3000",
+  "access_token": "",
+  "bot_command_examples": [
+    "@友哈巴赫 水蓝蓝 查蛋",
+    "@友哈巴赫 波波拉 pvp"
+  ]
+}

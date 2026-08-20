@@ -25,22 +25,27 @@ def main() -> int:
         if form_count >= args.limit:
             break
         profile = build_profile(pet, body_rows)
-        if not profile["stages"]:
+        form_stages = [stage for stage in profile["stages"] if not stage.get("is_egg")]
+        if not form_stages:
             continue
-        if form_count + len(profile["stages"]) > args.limit:
-            profile["stages"] = profile["stages"][: args.limit - form_count]
-            profile["evolution_chain"] = [stage["name"] for stage in profile["stages"]]
+        if form_count + len(form_stages) > args.limit:
+            remaining = args.limit - form_count
+            kept_forms = form_stages[:remaining]
+            egg_stages = [stage for stage in profile["stages"] if stage.get("is_egg")]
+            profile["stages"] = egg_stages + kept_forms
+            profile["evolution_chain"] = [stage["name"] for stage in kept_forms]
             profile["aliases"] = sorted(set(profile["evolution_chain"]))
         families.append(profile)
-        form_count += len(profile["stages"])
+        form_count += len([stage for stage in profile["stages"] if not stage.get("is_egg")])
 
     output = {
         "meta": {
             "source": "roco_egg_master + user big-body xls reference",
             "family_count": len(families),
             "form_count": form_count,
+            "egg_count": sum(1 for family in families for stage in family["stages"] if stage.get("is_egg")),
             "target_form_count": args.limit,
-            "notes": "Every form name is indexed as an alias of its family profile.",
+            "notes": "Every form name is indexed as an alias. Egg rows are included as extra body stages and do not count toward form_count.",
         },
         "pets": families,
     }
@@ -52,7 +57,9 @@ def main() -> int:
 def build_profile(pet: dict[str, Any], body_rows: dict[str, dict[str, Any]]) -> dict[str, Any]:
     family_name = str(pet.get("name", ""))
     forms = flatten_forms(pet)
-    stages = [build_stage(form, body_rows) for form in forms if form.get("name")]
+    form_stages = [build_stage(form) for form in forms if form.get("name")]
+    egg_stage = build_egg_stage(pet, body_rows)
+    stages = ([egg_stage] if egg_stage else []) + form_stages
     aliases = sorted({stage["name"] for stage in stages} | set(flatten_chain(pet.get("evolution_chain", []))))
     return {
         "family_id": pet.get("id"),
@@ -88,18 +95,40 @@ def flatten_forms(pet: dict[str, Any]) -> list[dict[str, Any]]:
     return ordered
 
 
-def build_stage(form: dict[str, Any], body_rows: dict[str, dict[str, Any]]) -> dict[str, Any]:
+def build_egg_stage(pet: dict[str, Any], body_rows: dict[str, dict[str, Any]]) -> dict[str, Any] | None:
+    egg = pet.get("egg_data")
+    if not isinstance(egg, dict):
+        return None
+    name = str(pet.get("name", ""))
+    if not name:
+        return None
+    egg_groups = egg.get("egg_groups") or ["未知"]
+    body = body_rows.get(f"{name}蛋") or body_rows.get(name) or {}
+    return {
+        "form_id": None,
+        "name": f"{name}蛋",
+        "types": [],
+        "is_egg": True,
+        "egg_group": "、".join(str(item) for item in egg_groups),
+        "height_range": format_range(egg.get("height_min"), egg.get("height_max")),
+        "weight_range": format_range(egg.get("weight_min"), egg.get("weight_max")),
+        "big_body_range": format_number(egg.get("giant_weight_line", body.get("big_body"))),
+        "small_body_range": format_number(egg.get("tiny_weight_line")),
+    }
+
+
+def build_stage(form: dict[str, Any]) -> dict[str, Any]:
     name = str(form.get("name", ""))
-    body = body_rows.get(name, {})
     egg_groups = form.get("egg_groups") or form.get("egg_data", {}).get("egg_groups") or ["未知"]
     return {
         "form_id": form.get("id"),
         "name": name,
         "types": [str(item) for item in form.get("types", [])],
+        "is_egg": False,
         "egg_group": "、".join(str(item) for item in egg_groups),
         "height_range": format_range(form.get("height_min"), form.get("height_max")),
         "weight_range": format_range(form.get("weight_min"), form.get("weight_max")),
-        "big_body_range": format_number(body.get("big_body", form.get("giant_weight_line"))),
+        "big_body_range": format_number(form.get("giant_weight_line")),
         "small_body_range": format_number(form.get("tiny_weight_line")),
     }
 

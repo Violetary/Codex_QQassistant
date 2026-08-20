@@ -14,10 +14,13 @@ class LocalJsonSource(DataSource):
         self.path = Path(path)
         self._pets: dict[str, PetProfile] | None = None
         self._aliases: dict[str, PetProfile] | None = None
+        self._normalized_aliases: dict[str, PetProfile] | None = None
 
     def fetch(self, pet_name: str) -> PetProfile:
         aliases = self._load()
         profile = aliases.get(pet_name)
+        if profile is None:
+            profile = self._normalized_aliases.get(normalize_name(pet_name)) if self._normalized_aliases else None
         if profile is None:
             raise PetNotFound(f"本地数据库没有 {pet_name}")
         return profile
@@ -38,16 +41,34 @@ class LocalJsonSource(DataSource):
 
         pets: dict[str, PetProfile] = {}
         aliases: dict[str, PetProfile] = {}
+        normalized_aliases: dict[str, PetProfile] = {}
         for record in records:
             if not isinstance(record, dict):
                 continue
             profile = PetProfile.from_dict(record)
             if profile.name:
                 pets[profile.name] = profile
-                aliases[profile.name] = profile
+                self._add_alias(aliases, normalized_aliases, profile.name, profile)
             for alias in profile.aliases + profile.evolution_chain + [stage.name for stage in profile.stages]:
                 if alias:
-                    aliases[alias] = profile
+                    self._add_alias(aliases, normalized_aliases, alias, profile)
         self._pets = pets
         self._aliases = aliases
+        self._normalized_aliases = normalized_aliases
         return aliases
+
+    def _add_alias(
+        self,
+        aliases: dict[str, PetProfile],
+        normalized_aliases: dict[str, PetProfile],
+        alias: str,
+        profile: PetProfile,
+    ) -> None:
+        aliases[alias] = profile
+        normalized = normalize_name(alias)
+        if normalized:
+            normalized_aliases[normalized] = profile
+
+
+def normalize_name(value: str) -> str:
+    return "".join(str(value).lower().split())

@@ -33,6 +33,10 @@ dist/
 # 真实本地配置：保留 *.example.json 作为示例，实际账号/数据源配置不上传。
 config/*.json
 !config/*.example.json
+!config/*.template.json
+
+# 第三方本地运行包：NapCat、复制出的 QQ 运行目录、下载 zip 体积较大，只保留脚本说明。
+tools/
 
 # 运行缓存数据：查询结果缓存，可由程序重新获取或生成。
 data/cache/

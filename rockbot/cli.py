@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import sys
 
+from .adapters.onebot import OneBotConfig
 from .cache import JsonCache
 from .bridge import serve
 from .config import load_web_sources
@@ -37,11 +38,23 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("message", nargs="?", help="message text, for example: @友哈巴赫 奇丽草 查蛋")
     parser.add_argument("--bot-name", default="友哈巴赫")
     parser.add_argument("--cache-dir", default="data/cache")
-    parser.add_argument("--output-dir", default="outputs")
+    parser.add_argument("--output-dir", default="outputs/cards")
     parser.add_argument("--config", help="JSON config for web data sources")
     parser.add_argument("--local-db", default="data/pets.seed.json", help="local pet database JSON")
     parser.add_argument("--no-sample", dest="sample", action="store_false", help="disable built-in sample source")
     parser.add_argument("--serve", action="store_true", help="start a local HTTP bridge instead of handling one message")
+    parser.add_argument("--onebot", action="store_true", help="enable OneBot v11 HTTP POST endpoint at /onebot")
+    parser.add_argument("--onebot-api-url", default="http://127.0.0.1:3000", help="NapCat/OneBot HTTP API base URL")
+    parser.add_argument("--onebot-token", default="", help="OneBot HTTP access token, if configured")
+    parser.add_argument("--onebot-quick-reply", action="store_true", help="reply in POST response instead of calling OneBot HTTP API")
+    parser.add_argument(
+        "--onebot-image-mode",
+        choices=["base64", "file-uri", "path"],
+        default="base64",
+        help="image segment file value for OneBot replies",
+    )
+    parser.add_argument("--disable-recent-poll", action="store_true", help="disable NapCat recent-contact fallback polling")
+    parser.add_argument("--recent-poll-interval", type=float, default=0.35, help="seconds between recent-contact fallback polls")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8000)
     parser.set_defaults(sample=True)
@@ -49,8 +62,23 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.serve:
         service = build_service(args)
+        onebot_config = None
+        if args.onebot:
+            onebot_config = OneBotConfig(
+                api_base_url=args.onebot_api_url,
+                access_token=args.onebot_token,
+                bot_name=args.bot_name,
+                quick_reply=args.onebot_quick_reply,
+                image_mode=args.onebot_image_mode,
+                enable_recent_poll=not args.disable_recent_poll,
+                recent_poll_interval=args.recent_poll_interval,
+            )
         print(f"HTTP bridge listening on http://{args.host}:{args.port}")
-        serve(service, host=args.host, port=args.port)
+        if args.onebot:
+            print(f"OneBot endpoint: http://{args.host}:{args.port}/onebot")
+            print(f"OneBot API target: {args.onebot_api_url}")
+            print(f"OneBot image mode: {args.onebot_image_mode}")
+        serve(service, host=args.host, port=args.port, onebot_config=onebot_config)
         return 0
 
     if not args.message:

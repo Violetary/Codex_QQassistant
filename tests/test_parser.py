@@ -17,6 +17,11 @@ class CommandParserTest(unittest.TestCase):
         self.assertEqual(command.pet_name, "奇丽草")
         self.assertEqual(command.query, "pvp")
 
+    def test_parse_pvp_case_insensitive(self) -> None:
+        command = self.parser.parse("@友哈巴赫 水蓝蓝 PVP")
+        self.assertEqual(command.pet_name, "水蓝蓝")
+        self.assertEqual(command.query, "pvp")
+
     def test_parse_egg(self) -> None:
         command = self.parser.parse("@友哈巴赫 奇丽草 查蛋")
         self.assertEqual(command.pet_name, "奇丽草")
