@@ -16,7 +16,10 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
             cache=JsonCache(Path(tmpdir.name) / "cache"),
             renderer=CardRenderer(Path(tmpdir.name) / "outputs"),
         )
-        return OneBotHTTPAdapter(service, OneBotConfig(quick_reply=True))
+        return OneBotHTTPAdapter(
+            service,
+            OneBotConfig(quick_reply=True, runtime_log_path=str(Path(tmpdir.name) / "runtime.log")),
+        )
 
     def test_group_at_segment_triggers_reply(self) -> None:
         adapter = self.make_adapter()
@@ -39,7 +42,7 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
     def test_empty_event_falls_back_to_recent_contact(self) -> None:
         class FallbackAdapter(OneBotHTTPAdapter):
             def __init__(self, service):  # type: ignore[no-untyped-def]
-                super().__init__(service)
+                super().__init__(service, OneBotConfig(runtime_log_path=str(Path(tmpdir.name) / "runtime.log")))
                 self.contacts = [
                     {
                         "msgId": "recent-1",
@@ -81,7 +84,7 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
     def test_recent_contact_seed_then_new_message(self) -> None:
         class PollAdapter(OneBotHTTPAdapter):
             def __init__(self, service):  # type: ignore[no-untyped-def]
-                super().__init__(service)
+                super().__init__(service, OneBotConfig(runtime_log_path=str(Path(tmpdir.name) / "runtime.log")))
                 self.contacts = [
                     {
                         "msgId": "old",
@@ -143,6 +146,39 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
             }
         )
         self.assertIn("reply", result)
+
+    def test_send_reply_retries_transient_api_failure(self) -> None:
+        class RetryAdapter(OneBotHTTPAdapter):
+            def __init__(self, service, log_path):  # type: ignore[no-untyped-def]
+                super().__init__(service, OneBotConfig(send_retries=2, send_retry_delay=0, runtime_log_path=str(log_path)))
+                self.calls = 0
+
+            def _call_api(self, action, payload):  # type: ignore[no-untyped-def]
+                self.calls += 1
+                if self.calls == 1:
+                    raise RuntimeError("temporary failure")
+                return {"status": "ok", "retcode": 0}
+
+        tmpdir = tempfile.TemporaryDirectory()
+        self.addCleanup(tmpdir.cleanup)
+        service = BotService(
+            cache=JsonCache(Path(tmpdir.name) / "cache"),
+            renderer=CardRenderer(Path(tmpdir.name) / "outputs"),
+        )
+        adapter = RetryAdapter(service, Path(tmpdir.name) / "runtime.log")
+        result = adapter.handle_event(
+            {
+                "post_type": "message",
+                "message_type": "private",
+                "self_id": 10001,
+                "user_id": 10002,
+                "raw_message": "@友哈巴赫 水蓝蓝 查蛋",
+                "message": [{"type": "text", "data": {"text": "@友哈巴赫 水蓝蓝 查蛋"}}],
+            }
+        )
+        self.assertTrue(result["handled"])
+        self.assertTrue(result["ok"])
+        self.assertEqual(2, adapter.calls)
 
     def test_unmentioned_group_message_is_ignored(self) -> None:
         adapter = self.make_adapter()

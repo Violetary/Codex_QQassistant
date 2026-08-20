@@ -25,21 +25,30 @@ def main() -> int:
     parser.add_argument("--cache", default="data/raw/bwiki_dex_index.json")
     parser.add_argument("--report", default="outputs/bwiki_index_report.json")
     parser.add_argument("--force-fetch", action="store_true")
+    parser.add_argument(
+        "--allow-missing",
+        action="append",
+        default=["宝藏小狐,宝藏沙狐,精灵筛选"],
+        help="BWiki link title that is allowed to be absent locally",
+    )
     args = parser.parse_args()
 
     seed = json.loads(Path(args.seed).read_text(encoding="utf-8"))
     local_names = local_aliases(seed)
     bwiki_names = fetch_bwiki_index(Path(args.cache), force=args.force_fetch)
 
-    missing_locally = sorted(bwiki_names - local_names)
+    allowed_missing = {name.strip() for item in args.allow_missing for name in item.split(",") if name.strip()}
+    missing_locally = sorted((bwiki_names - local_names) - allowed_missing)
     not_on_bwiki = sorted(local_names - bwiki_names)
     report = {
         "ok": not missing_locally,
         "local_name_count": len(local_names),
         "bwiki_name_count": len(bwiki_names),
         "missing_locally_count": len(missing_locally),
+        "allowed_missing_count": len(allowed_missing & bwiki_names),
         "not_on_bwiki_count": len(not_on_bwiki),
         "missing_locally": missing_locally,
+        "allowed_missing": sorted(allowed_missing & bwiki_names),
         "not_on_bwiki": not_on_bwiki,
     }
     report_path = Path(args.report)

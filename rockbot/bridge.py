@@ -27,6 +27,9 @@ class BridgeHandler(BaseHTTPRequestHandler):
         if self.path == "/health":
             self._send_json(200, {"ok": True})
             return
+        if self.path == "/diagnostics":
+            self._send_json(200, self._diagnostics())
+            return
         self._send_json(404, {"ok": False, "error": "not found"})
 
     def do_POST(self) -> None:  # noqa: N802
@@ -90,6 +93,41 @@ class BridgeHandler(BaseHTTPRequestHandler):
         }
         with self.event_log_path.open("a", encoding="utf-8") as file:
             file.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+    def _diagnostics(self) -> dict[str, Any]:
+        runtime_log_path = None
+        if self.onebot is not None:
+            runtime_log_path = Path(self.onebot.config.runtime_log_path)
+        return {
+            "ok": True,
+            "onebot_enabled": self.onebot is not None,
+            "event_log": self._log_status(self.event_log_path, tail=5),
+            "runtime_log": self._log_status(runtime_log_path, tail=10) if runtime_log_path else None,
+        }
+
+    def _log_status(self, path: Path, tail: int) -> dict[str, Any]:
+        if not path.exists():
+            return {"path": str(path), "exists": False, "size": 0, "tail": []}
+        lines = self._tail_lines(path, tail)
+        parsed_tail: list[Any] = []
+        for line in lines:
+            try:
+                parsed_tail.append(json.loads(line))
+            except json.JSONDecodeError:
+                parsed_tail.append(line)
+        return {
+            "path": str(path),
+            "exists": True,
+            "size": path.stat().st_size,
+            "tail": parsed_tail,
+        }
+
+    def _tail_lines(self, path: Path, count: int) -> list[str]:
+        try:
+            lines = path.read_text(encoding="utf-8", errors="replace").splitlines()
+        except OSError:
+            return []
+        return lines[-count:]
 
     def log_message(self, format: str, *args: Any) -> None:  # noqa: A003
         return

@@ -8,6 +8,7 @@ import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Literal
 
@@ -24,6 +25,10 @@ class OneBotConfig:
     image_mode: Literal["base64", "file-uri", "path"] = "base64"
     enable_recent_poll: bool = False
     recent_poll_interval: float = 0.35
+    api_timeout: float = 15.0
+    send_retries: int = 2
+    send_retry_delay: float = 0.35
+    runtime_log_path: str = "logs/onebot-runtime.log"
 
 
 class OneBotHTTPAdapter:
@@ -50,27 +55,58 @@ class OneBotHTTPAdapter:
             self._poll_thread.join(timeout=2)
 
     def handle_event(self, event: dict[str, Any]) -> dict[str, Any]:
+        started = time.perf_counter()
         event = self._normalize_event(event)
         if not event.get("post_type"):
+            self._log("empty_event", onebot_event=event)
             fallback = self._handle_empty_event_fallback()
             if fallback is not None:
                 return fallback
         if event.get("post_type") not in {"message", "message_sent"}:
+            self._log("ignored_event", onebot_event=event, reason="unsupported_post_type")
             return {"ok": True, "handled": False}
 
         message = self._to_bot_message(event)
         if not message:
+            self._log("ignored_event", onebot_event=event, reason="not_a_command")
             return {"ok": True, "handled": False}
 
+        service_started = time.perf_counter()
         reply = self.service.handle_message(message)
+        service_ms = self._elapsed_ms(service_started)
         if reply is None:
+            self._log("ignored_event", onebot_event=event, message=message, reason="service_not_triggered")
             return {"ok": True, "handled": False}
 
         if self.config.quick_reply:
+            self._log(
+                "quick_reply",
+                onebot_event=event,
+                message=message,
+                ok=reply.ok,
+                has_text=bool(reply.text),
+                has_image=bool(reply.image_path),
+                service_ms=service_ms,
+                total_ms=self._elapsed_ms(started),
+            )
             return {"reply": self._reply_segments(reply)}
 
-        self._send_reply(event, reply)
-        return {"ok": reply.ok, "handled": True}
+        send_result = self._send_reply(event, reply)
+        total_ms = self._elapsed_ms(started)
+        self._log(
+            "handled_event",
+            onebot_event=event,
+            message=message,
+            ok=reply.ok and send_result.get("ok", True),
+            has_text=bool(reply.text),
+            has_image=bool(reply.image_path),
+            image_path=reply.image_path,
+            service_ms=service_ms,
+            send_ms=send_result.get("send_ms", 0),
+            total_ms=total_ms,
+            send_result=send_result,
+        )
+        return {"ok": reply.ok and send_result.get("ok", True), "handled": True, "service_ms": service_ms, "send_ms": send_result.get("send_ms", 0), "total_ms": total_ms}
 
     def _to_bot_message(self, event: dict[str, Any]) -> str | None:
         message_type = event.get("message_type")
@@ -133,7 +169,8 @@ class OneBotHTTPAdapter:
             )
         return str(message or "")
 
-    def _send_reply(self, event: dict[str, Any], reply: BotReply) -> None:
+    def _send_reply(self, event: dict[str, Any], reply: BotReply) -> dict[str, Any]:
+        started = time.perf_counter()
         message_type = event.get("message_type")
         if message_type == "group":
             action = "send_group_msg"
@@ -142,18 +179,21 @@ class OneBotHTTPAdapter:
             action = "send_private_msg"
             base_payload = {"user_id": event.get("user_id")}
         else:
-            return
+            return {"ok": False, "error": "unsupported_message_type", "send_ms": self._elapsed_ms(started)}
 
+        sent: list[str] = []
         if reply.text:
             text_segments = [{"type": "text", "data": {"text": reply.text}}]
-            self._call_api(action, {**base_payload, "message": text_segments})
+            self._call_api_with_retry(action, {**base_payload, "message": text_segments})
+            sent.append("text")
         if not reply.image_path:
-            return
+            return {"ok": True, "sent": sent, "send_ms": self._elapsed_ms(started)}
 
         image_path = Path(reply.image_path)
+        mode_errors: list[dict[str, str]] = []
         for mode in self._image_mode_attempts():
             try:
-                self._call_api(
+                self._call_api_with_retry(
                     action,
                     {
                         **base_payload,
@@ -165,22 +205,27 @@ class OneBotHTTPAdapter:
                         ],
                     },
                 )
-                return
-            except RuntimeError:
+                sent.append(f"image:{mode}")
+                return {"ok": True, "sent": sent, "image_mode": mode, "send_ms": self._elapsed_ms(started)}
+            except RuntimeError as exc:
+                mode_errors.append({"mode": mode, "error": str(exc)})
                 continue
 
-        self._call_api(
-            action,
-            {
-                **base_payload,
-                "message": [
-                    {
-                        "type": "text",
-                        "data": {"text": f"\n图片发送失败，本地图片已生成：{image_path.resolve()}"},
-                    }
-                ],
-            },
-        )
+        if reply.ok:
+            self._call_api_with_retry(
+                action,
+                {
+                    **base_payload,
+                    "message": [
+                        {
+                            "type": "text",
+                            "data": {"text": f"\n图片发送失败，本地图片已生成：{image_path.resolve()}"},
+                        }
+                    ],
+                },
+            )
+            sent.append("image_failure_text")
+        return {"ok": False, "sent": sent, "errors": mode_errors, "send_ms": self._elapsed_ms(started)}
 
     def _reply_segments(self, reply: BotReply) -> list[dict[str, dict[str, str]]]:
         segments: list[dict[str, dict[str, str]]] = []
@@ -223,15 +268,37 @@ class OneBotHTTPAdapter:
             },
             method="POST",
         )
+        started = time.perf_counter()
         try:
-            with urllib.request.urlopen(request, timeout=15) as response:
+            with urllib.request.urlopen(request, timeout=self.config.api_timeout) as response:
                 text = response.read().decode("utf-8")
         except urllib.error.URLError as exc:
+            self._log("api_error", action=action, error=str(exc), elapsed_ms=self._elapsed_ms(started))
             raise RuntimeError(f"OneBot API 调用失败：{exc}") from exc
         result = json.loads(text or "{}")
         if result.get("status") == "failed" or int(result.get("retcode", 0) or 0) != 0:
+            self._log("api_error", action=action, result=result, elapsed_ms=self._elapsed_ms(started))
             raise RuntimeError(f"OneBot API 调用失败：{result}")
+        self._log("api_ok", action=action, elapsed_ms=self._elapsed_ms(started))
         return result
+
+    def _call_api_with_retry(self, action: str, payload: dict[str, Any]) -> dict[str, Any]:
+        last_error: RuntimeError | None = None
+        attempts = max(1, self.config.send_retries + 1)
+        for attempt in range(1, attempts + 1):
+            try:
+                result = self._call_api(action, payload)
+                if attempt > 1:
+                    self._log("api_retry_recovered", action=action, attempt=attempt)
+                return result
+            except RuntimeError as exc:
+                last_error = exc
+                self._log("api_retry", action=action, attempt=attempt, attempts=attempts, error=str(exc))
+                if attempt < attempts:
+                    time.sleep(self.config.send_retry_delay * attempt)
+        if last_error is not None:
+            raise last_error
+        raise RuntimeError("OneBot API 调用失败")
 
     def _auth_headers(self) -> dict[str, str]:
         if not self.config.access_token:
@@ -257,6 +324,7 @@ class OneBotHTTPAdapter:
         try:
             result = self._call_api("get_recent_contact", {"count": 10})
         except RuntimeError:
+            self._log("recent_seed_failed")
             return
         for contact in result.get("data", []):
             if isinstance(contact, dict) and contact.get("msgId"):
@@ -266,6 +334,7 @@ class OneBotHTTPAdapter:
         try:
             result = self._call_api("get_recent_contact", {"count": 10})
         except RuntimeError:
+            self._log("recent_poll_failed")
             return None
 
         candidates: list[tuple[int, str, dict[str, Any]]] = []
@@ -294,7 +363,9 @@ class OneBotHTTPAdapter:
             if len(self._handled_fallback_msg_ids) > 200:
                 self._handled_fallback_msg_ids = set(list(self._handled_fallback_msg_ids)[-100:])
             if not send_reply:
+                self._log("recent_seeded_message", msg_id=msg_id)
                 return {"ok": True, "handled": True, "fallback": "seeded"}
+            self._log("recent_poll_command", msg_id=msg_id)
             return self.handle_event(event)
 
         return {"ok": True, "handled": False, "fallback": "no recent command"}
@@ -315,3 +386,28 @@ class OneBotHTTPAdapter:
             if snake_key not in normalized and camel_key in event:
                 normalized[snake_key] = event[camel_key]
         return normalized
+
+    def _log(self, event_name: str, **fields: Any) -> None:
+        path = Path(self.config.runtime_log_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        payload = {
+            "time": datetime.now().isoformat(timespec="milliseconds"),
+            "event": event_name,
+            **self._json_safe(fields),
+        }
+        with path.open("a", encoding="utf-8") as file:
+            file.write(json.dumps(payload, ensure_ascii=False) + "\n")
+
+    def _json_safe(self, value: Any) -> Any:
+        if isinstance(value, dict):
+            return {str(key): self._json_safe(item) for key, item in value.items()}
+        if isinstance(value, (list, tuple)):
+            return [self._json_safe(item) for item in value]
+        if isinstance(value, Path):
+            return str(value)
+        if isinstance(value, (str, int, float, bool)) or value is None:
+            return value
+        return str(value)
+
+    def _elapsed_ms(self, started: float) -> int:
+        return int((time.perf_counter() - started) * 1000)

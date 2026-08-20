@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 import textwrap
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
@@ -10,8 +11,17 @@ from PIL import Image, ImageDraw, ImageFont
 from .models import PetProfile, QueryKind, StageBody
 
 
+@dataclass(slots=True)
+class StageDisplayGroup:
+    stages: list[StageBody]
+
+    @property
+    def representative(self) -> StageBody:
+        return self.stages[0]
+
+
 class CardRenderer:
-    version = "v3"
+    version = "v4"
 
     def __init__(self, output_dir: str | Path = "outputs/cards") -> None:
         self.output_dir = Path(output_dir)
@@ -78,7 +88,8 @@ class CardRenderer:
         return image
 
     def _render_egg(self, profile: PetProfile) -> Image.Image:
-        stage_blocks = [self._stage_block_size(stage) for stage in profile.stages]
+        stage_groups = self._group_stages(profile.stages)
+        stage_blocks = [self._stage_group_block_size(group) for group in stage_groups]
         chain_lines = list(self._wrap(" > ".join(profile.evolution_chain), 31)) if profile.evolution_chain else []
         chain_height = 28 + len(chain_lines) * 26 if chain_lines else 0
         content_height = chain_height + sum(stage_blocks) + max(0, len(stage_blocks) - 1) * 12
@@ -95,14 +106,40 @@ class CardRenderer:
                 y += 26
             y += 4
 
-        for stage, block_height in zip(profile.stages, stage_blocks):
-            self._stage_block(draw, stage, y, block_height)
+        for group, block_height in zip(stage_groups, stage_blocks):
+            self._stage_group_block(draw, group, y, block_height)
             y += block_height + 12
         return image
 
-    def _stage_block_size(self, stage: StageBody) -> int:
+    def _group_stages(self, stages: list[StageBody]) -> list[StageDisplayGroup]:
+        groups: list[StageDisplayGroup] = []
+        by_key: dict[tuple[str, ...], StageDisplayGroup] = {}
+        for stage in stages:
+            key = self._stage_group_key(stage)
+            group = by_key.get(key)
+            if group is None:
+                group = StageDisplayGroup([stage])
+                by_key[key] = group
+                groups.append(group)
+            else:
+                group.stages.append(stage)
+        return groups
+
+    def _stage_group_key(self, stage: StageBody) -> tuple[str, ...]:
+        return (
+            "egg" if stage.is_egg else "form",
+            stage.egg_group,
+            stage.height_range,
+            stage.weight_range,
+            stage.big_body_range,
+            stage.small_body_range,
+        )
+
+    def _stage_group_block_size(self, group: StageDisplayGroup) -> int:
+        stage = group.representative
         detail_lines = self._stage_detail_lines(stage)
-        return 58 + len(detail_lines) * 27 + 18
+        title_lines = self._stage_title_lines(group)
+        return 18 + len(title_lines) * 28 + 12 + len(detail_lines) * 27 + 18
 
     def _stage_detail_lines(self, stage: StageBody) -> list[str]:
         return [
@@ -111,21 +148,54 @@ class CardRenderer:
             f"大块头  {stage.big_body_range}    小不点  {stage.small_body_range}",
         ]
 
-    def _stage_block(self, draw: ImageDraw.ImageDraw, stage: StageBody, y: int, height: int) -> None:
+    def _stage_group_block(self, draw: ImageDraw.ImageDraw, group: StageDisplayGroup, y: int, height: int) -> None:
+        stage = group.representative
         x0, x1 = 34, 686
         fill = self.colors["panel_alt"] if stage.is_egg else self.colors["panel"]
         self._round(draw, (x0, y, x1, y + height), fill)
-        name = stage.name
+        title_lines = self._stage_title_lines(group)
         tag = "蛋" if stage.is_egg else "形态"
-        draw.text((x0 + 24, y + 18), name, font=self.font_label, fill=self.colors["text"])
+        if len(group.stages) > 1 and not stage.is_egg:
+            tag = f"形态×{len(group.stages)}"
         tag_w = self._text_width(draw, tag, self.font_tiny) + 28
         draw.rounded_rectangle((x1 - tag_w - 22, y + 18, x1 - 22, y + 44), radius=8, fill="#273833")
         draw.text((x1 - tag_w - 8, y + 22), tag, font=self.font_tiny, fill=self.colors["accent_2"])
 
-        line_y = y + 58
+        title_y = y + 18
+        for line in title_lines:
+            draw.text((x0 + 24, title_y), line, font=self.font_label, fill=self.colors["text"])
+            title_y += 28
+
+        line_y = y + 18 + len(title_lines) * 28 + 12
         for line in self._stage_detail_lines(stage):
             draw.text((x0 + 24, line_y), line, font=self.font_small, fill=self.colors["muted"])
             line_y += 27
+
+    def _stage_title_lines(self, group: StageDisplayGroup) -> list[str]:
+        title = self._stage_group_title(group)
+        return self._wrap_pixels(title, self.font_label, 520)
+
+    def _stage_group_title(self, group: StageDisplayGroup) -> str:
+        names = [stage.name for stage in group.stages]
+        if len(names) == 1:
+            return names[0]
+
+        variants = [self._split_variant_name(name) for name in names]
+        bases = {base for base, _variant in variants if base}
+        if len(bases) == 1:
+            base = next(iter(bases))
+            variant_names = [self._clean_variant(variant) if variant else "原始" for _base, variant in variants]
+            return f"{base}（{'、'.join(variant_names)}）"
+        return "、".join(names)
+
+    def _split_variant_name(self, name: str) -> tuple[str, str]:
+        match = re.match(r"^(.+?)（(.+)）$", name)
+        if not match:
+            return name, ""
+        return match.group(1), match.group(2)
+
+    def _clean_variant(self, variant: str) -> str:
+        return re.sub(r"(形态|的样子)$", "", variant)
 
     def _canvas(self, height: int) -> tuple[Image.Image, ImageDraw.ImageDraw]:
         image = Image.new("RGB", (720, height), self.colors["bg"])
@@ -144,9 +214,30 @@ class CardRenderer:
     def _wrap(self, text: str, width: int) -> Iterable[str]:
         return textwrap.wrap(text, width=width, replace_whitespace=False) or []
 
+    def _wrap_pixels(self, text: str, font: ImageFont.ImageFont, max_width: int) -> list[str]:
+        if not text:
+            return []
+        lines: list[str] = []
+        current = ""
+        for char in text:
+            candidate = current + char
+            if current and self._measure_text(candidate, font) > max_width and char not in "）)]}":
+                lines.append(current)
+                current = char
+            else:
+                current = candidate
+        if current:
+            lines.append(current)
+        return lines
+
     def _text_width(self, draw: ImageDraw.ImageDraw, text: str, font: ImageFont.ImageFont) -> int:
         box = draw.textbbox((0, 0), text, font=font)
         return box[2] - box[0]
+
+    def _measure_text(self, text: str, font: ImageFont.ImageFont) -> int:
+        image = Image.new("RGB", (1, 1))
+        draw = ImageDraw.Draw(image)
+        return self._text_width(draw, text, font)
 
     def _font(self, size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
         candidates = [

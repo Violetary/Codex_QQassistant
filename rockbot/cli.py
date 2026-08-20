@@ -55,6 +55,10 @@ def main(argv: list[str] | None = None) -> int:
     )
     parser.add_argument("--disable-recent-poll", action="store_true", help="disable NapCat recent-contact fallback polling")
     parser.add_argument("--recent-poll-interval", type=float, default=0.35, help="seconds between recent-contact fallback polls")
+    parser.add_argument("--onebot-api-timeout", type=float, default=15.0, help="seconds before a OneBot API call times out")
+    parser.add_argument("--onebot-send-retries", type=int, default=2, help="retry count for OneBot send API calls")
+    parser.add_argument("--onebot-send-retry-delay", type=float, default=0.35, help="base seconds between send retries")
+    parser.add_argument("--onebot-runtime-log", default="logs/onebot-runtime.log", help="JSONL runtime diagnostics log path")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8000)
     parser.set_defaults(sample=True)
@@ -72,12 +76,17 @@ def main(argv: list[str] | None = None) -> int:
                 image_mode=args.onebot_image_mode,
                 enable_recent_poll=not args.disable_recent_poll,
                 recent_poll_interval=args.recent_poll_interval,
+                api_timeout=args.onebot_api_timeout,
+                send_retries=args.onebot_send_retries,
+                send_retry_delay=args.onebot_send_retry_delay,
+                runtime_log_path=args.onebot_runtime_log,
             )
         print(f"HTTP bridge listening on http://{args.host}:{args.port}")
         if args.onebot:
             print(f"OneBot endpoint: http://{args.host}:{args.port}/onebot")
             print(f"OneBot API target: {args.onebot_api_url}")
             print(f"OneBot image mode: {args.onebot_image_mode}")
+            print(f"OneBot runtime log: {args.onebot_runtime_log}")
         serve(service, host=args.host, port=args.port, onebot_config=onebot_config)
         return 0
 

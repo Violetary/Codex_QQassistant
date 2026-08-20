@@ -34,6 +34,7 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force-fetch", action="store_true")
+    parser.add_argument("--allow-errors", action="store_true", help="write the report but exit 0 even if BWiki has transient errors")
     args = parser.parse_args()
 
     seed_path = Path(args.seed)
@@ -113,7 +114,7 @@ def main() -> int:
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({key: report[key] for key in report if key not in {"updates", "missing", "errors"}}, ensure_ascii=False, indent=2))
-    return 0 if not errors else 1
+    return 0 if not errors or args.allow_errors else 1
 
 
 class PageMissing(RuntimeError):

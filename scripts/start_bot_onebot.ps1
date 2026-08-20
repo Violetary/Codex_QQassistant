@@ -6,7 +6,11 @@ param(
     [string]$OneBotApiUrl = "http://127.0.0.1:3000",
     [string]$OneBotToken = "",
     [ValidateSet("base64", "file-uri", "path")]
-    [string]$ImageMode = "base64"
+    [string]$ImageMode = "base64",
+    [double]$ApiTimeout = 15,
+    [int]$SendRetries = 2,
+    [double]$SendRetryDelay = 0.35,
+    [string]$RuntimeLog = "logs/onebot-runtime.log"
 )
 
 $ErrorActionPreference = "Stop"
@@ -29,7 +33,11 @@ $ArgsList = @(
     "--local-db", "data/pets.seed.json",
     "--no-sample",
     "--onebot-api-url", $OneBotApiUrl,
-    "--onebot-image-mode", $ImageMode
+    "--onebot-image-mode", $ImageMode,
+    "--onebot-api-timeout", "$ApiTimeout",
+    "--onebot-send-retries", "$SendRetries",
+    "--onebot-send-retry-delay", "$SendRetryDelay",
+    "--onebot-runtime-log", $RuntimeLog
 )
 
 if ($BotName) {
@@ -44,6 +52,7 @@ Write-Host "Starting Rock Kingdom bot..."
 Write-Host "Bridge: http://$HostAddress`:$Port/onebot"
 Write-Host "OneBot API: $OneBotApiUrl"
 Write-Host "Image mode: $ImageMode"
+Write-Host "Runtime log: $RuntimeLog"
 Write-Host ""
 
 & $PythonPath @ArgsList
