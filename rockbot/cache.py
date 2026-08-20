@@ -23,11 +23,16 @@ class JsonCache:
         return PetProfile.from_dict(data)
 
     def set(self, profile: PetProfile) -> None:
-        path = self._path_for(profile.name)
-        path.write_text(
-            json.dumps(profile.to_dict(), ensure_ascii=False, indent=2),
-            encoding="utf-8",
-        )
+        payload = json.dumps(profile.to_dict(), ensure_ascii=False, indent=2)
+        names = {profile.name, *profile.aliases, *profile.evolution_chain, *(stage.name for stage in profile.stages)}
+        for name in names:
+            path = self._path_for(name)
+            path.write_text(payload, encoding="utf-8")
+
+    def delete(self, pet_name: str) -> None:
+        path = self._path_for(pet_name)
+        if path.exists():
+            path.unlink()
 
     def _path_for(self, pet_name: str) -> Path:
         slug = re.sub(r"[^0-9A-Za-z\u4e00-\u9fff_-]+", "_", pet_name).strip("_")

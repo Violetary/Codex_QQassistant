@@ -8,13 +8,15 @@ from .bridge import serve
 from .config import load_web_sources
 from .render import CardRenderer
 from .service import BotService
-from .sources import CompositeSource, ConfigurableWebSource, SampleSource
+from .sources import CompositeSource, ConfigurableWebSource, LocalJsonSource, SampleSource
 
 
 def build_service(args: argparse.Namespace) -> BotService:
     sources = []
     if args.config:
         sources.extend(ConfigurableWebSource(config) for config in load_web_sources(args.config))
+    if args.local_db:
+        sources.append(LocalJsonSource(args.local_db))
     if args.sample:
         sources.append(SampleSource())
     source = CompositeSource(sources or [SampleSource()])
@@ -27,12 +29,17 @@ def build_service(args: argparse.Namespace) -> BotService:
 
 
 def main(argv: list[str] | None = None) -> int:
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if callable(reconfigure):
+            reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description="Rock Kingdom QQ bot offline core")
     parser.add_argument("message", nargs="?", help="message text, for example: @友哈巴赫 奇丽草 查蛋")
     parser.add_argument("--bot-name", default="友哈巴赫")
     parser.add_argument("--cache-dir", default="data/cache")
     parser.add_argument("--output-dir", default="outputs")
     parser.add_argument("--config", help="JSON config for web data sources")
+    parser.add_argument("--local-db", default="data/pets.seed.json", help="local pet database JSON")
     parser.add_argument("--no-sample", dest="sample", action="store_false", help="disable built-in sample source")
     parser.add_argument("--serve", action="store_true", help="start a local HTTP bridge instead of handling one message")
     parser.add_argument("--host", default="127.0.0.1")

@@ -26,6 +26,17 @@ class BotServiceTest(unittest.TestCase):
             self.assertIsNotNone(reply.image_path)
             self.assertTrue(os.path.exists(reply.image_path))
 
+    def test_stage_alias_returns_family_profile(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            service = BotService(
+                cache=JsonCache(Path(tmpdir) / "cache"),
+                renderer=CardRenderer(Path(tmpdir) / "outputs"),
+            )
+            reply = service.handle_message("@友哈巴赫 波波拉 查蛋")
+            self.assertTrue(reply.ok)
+            self.assertIn("水蓝蓝", reply.text)
+            self.assertIsNotNone(reply.image_path)
+
 
 if __name__ == "__main__":
     unittest.main()

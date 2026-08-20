@@ -6,7 +6,7 @@ from .cache import JsonCache
 from .models import BotReply, ParsedCommand, PetProfile
 from .parser import HELP_TEXT, CommandParser
 from .render import CardRenderer
-from .sources import CompositeSource, DataSource, PetNotFound, SampleSource, SourceError
+from .sources import CompositeSource, DataSource, LocalJsonSource, PetNotFound, SampleSource, SourceError
 
 
 class BotService:
@@ -19,7 +19,7 @@ class BotService:
     ) -> None:
         self.parser = CommandParser(bot_name=bot_name)
         self.cache = cache or JsonCache()
-        self.source = source or CompositeSource([SampleSource()])
+        self.source = source or CompositeSource([LocalJsonSource(), SampleSource()])
         self.renderer = renderer or CardRenderer()
 
     def handle_message(self, message: str) -> BotReply | None:
@@ -49,6 +49,7 @@ class BotService:
         if cached:
             return cached
         profile = self.source.fetch(pet_name)
+        self.cache.delete(profile.name)
         self.cache.set(profile)
         return profile
 
