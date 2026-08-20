@@ -69,11 +69,6 @@ def build_profile(pet: dict[str, Any], body_rows: dict[str, dict[str, Any]]) -> 
         "source": "local-seed",
         "evolution_chain": flatten_chain(pet.get("evolution_chain", [])) or [stage["name"] for stage in stages],
         "aliases": aliases,
-        "pvp": {
-            "nature": "待补充",
-            "attributes": "待补充",
-            "notes": "当前数据库先补全蛋组与体型；PVP 推荐后续单独导入。",
-        },
         "stages": stages,
     }
 

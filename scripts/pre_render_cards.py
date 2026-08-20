@@ -25,9 +25,8 @@ def main() -> int:
         if not isinstance(item, dict):
             continue
         profile = PetProfile.from_dict(item)
-        renderer.render(profile, "egg", force=args.force)
-        renderer.render(profile, "pvp", force=args.force)
-        count += 2
+        renderer.render(profile, "body", force=args.force)
+        count += 1
     print(json.dumps({"rendered": count, "output_dir": str(Path(args.output_dir).resolve())}, ensure_ascii=False))
     return 0
 

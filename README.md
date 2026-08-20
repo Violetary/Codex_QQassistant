@@ -1,22 +1,19 @@
 # QQ 洛克王国查询机器人 v1
 
-这是一个可接入 QQ 聊天的洛克王国查询机器人。核心服务负责 `@友哈巴赫` 触发、精灵数据查询、缓存和图片生成；QQ 侧推荐用 NapCatQQ + OneBot v11 HTTP 接入。
+这是一个可接入 QQ 聊天的洛克王国查询机器人。核心服务负责 `查询 精灵名` 触发、精灵体型数据查询、缓存和图片生成；QQ 侧推荐用 NapCatQQ + OneBot v11 HTTP 接入。
 
 ## 支持的指令
 
 ```text
-@友哈巴赫
-@友哈巴赫 精灵名 pvp
-@友哈巴赫 精灵名 查蛋
+查询 精灵名
 ```
 
-只 `@友哈巴赫` 时会回复格式提示。`pvp` 返回 PVP 推荐图片，`查蛋` 返回蛋组、进化链、各阶段身高体重、大块头/小不点区间图片。
+例如 `查询 水蓝蓝`。回复内容为一张身高、体重、大块头/小不点区间图片。
 
 ## 本地运行
 
 ```powershell
-& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli "@友哈巴赫 奇丽草 查蛋"
-& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli "@友哈巴赫 奇丽草 pvp"
+& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli "查询 奇丽草"
 ```
 
 生成图片会输出到 `outputs/cards/`，查询缓存会写入 `data/cache/`。
@@ -26,17 +23,15 @@
 默认读取 `data/pets.seed.json` 本地数据库。真实爬虫走 `DataSource` 接口扩展，或先用 `config/sources.example.json` 这种 JSON URL 模板接一个返回 `PetProfile` 结构的中间源。
 
 ```powershell
-& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli --config config/sources.example.json --no-sample "@友哈巴赫 奇丽草 查蛋"
+& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli --config config/sources.example.json --no-sample "查询 奇丽草"
 ```
 
 ## 本地数据库构建
 
-体型库来自 `data/raw/roco_egg_master/src/pets_data.json`，其中精灵蛋使用原始 `egg_data` 单独生成蛋行；442 个精灵形态仍单独计数。PVP 推荐库来自真实六维 + 4399 性格增减益机制，当前属于可审计的规则推荐，后续可以逐只补人工攻略来源覆盖。
+体型库来自 `data/raw/roco_egg_master/src/pets_data.json`，其中精灵蛋使用原始 `egg_data` 单独生成蛋行；442 个精灵形态仍单独计数。
 
 ```powershell
 & "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" scripts/build_pet_database.py --limit 442
-& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" scripts/extract_4399_natures.py
-& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" scripts/build_pvp_database.py
 & "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" scripts/pre_render_cards.py --force
 ```
 
@@ -122,11 +117,11 @@ Access Token：如果 NapCat 配了 token，这里启动时也加 --onebot-token
 .\scripts\check_bot_onebot.ps1
 ```
 
-群里直接 @ 登录 NapCat 的 QQ 号：
+QQ 里直接发送：
 
 ```text
-@友哈巴赫 水蓝蓝 查蛋
-@友哈巴赫 波波拉 pvp
+查询 水蓝蓝
+查询 波波拉
 ```
 
 默认图片用 OneBot `base64://` 发送，成功率比本地文件路径更稳。如果当前 NapCat 版本更偏好文件路径，可以启动机器人时改：

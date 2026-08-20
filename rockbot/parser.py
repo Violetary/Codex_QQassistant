@@ -5,7 +5,7 @@ import re
 from .models import ParsedCommand
 
 
-HELP_TEXT = "请按格式输入：@友哈巴赫 精灵名 pvp 或 @友哈巴赫 精灵名 查蛋"
+HELP_TEXT = "请按格式输入：查询 精灵名"
 
 
 class CommandParser:
@@ -14,26 +14,29 @@ class CommandParser:
         self._mention_pattern = re.compile(rf"^\s*@{re.escape(bot_name)}(?:\s+|$)(.*)$", re.IGNORECASE)
 
     def parse(self, message: str) -> ParsedCommand:
-        match = self._mention_pattern.match(message or "")
-        if not match:
-            return ParsedCommand(mentioned=False)
+        text = (message or "").strip()
+        match = self._mention_pattern.match(text)
+        if match:
+            tail = match.group(1).strip()
+            if not tail:
+                return ParsedCommand(mentioned=True, help_requested=True)
+            return self._parse_query(tail)
 
-        tail = match.group(1).strip()
-        if not tail:
-            return ParsedCommand(mentioned=True, help_requested=True)
+        if text.startswith("查询"):
+            return self._parse_query(text)
 
-        parts = tail.split()
-        if len(parts) < 2:
+        return ParsedCommand(mentioned=False)
+
+    def _parse_query(self, text: str) -> ParsedCommand:
+        if text == "查询":
             return ParsedCommand(mentioned=True, error=HELP_TEXT)
 
-        action = parts[-1].lower()
-        pet_name = " ".join(parts[:-1]).strip()
+        match = re.match(r"^查询(?:\s+|$)(.+)$", text)
+        if not match:
+            return ParsedCommand(mentioned=True, error=HELP_TEXT)
+
+        pet_name = match.group(1).strip()
         if not pet_name:
             return ParsedCommand(mentioned=True, error=HELP_TEXT)
 
-        if action in {"pvp", "性格", "性格推荐", "推荐"}:
-            return ParsedCommand(mentioned=True, query="pvp", pet_name=pet_name)
-        if action in {"查蛋", "蛋", "蛋组", "体型"}:
-            return ParsedCommand(mentioned=True, query="egg", pet_name=pet_name)
-
-        return ParsedCommand(mentioned=True, error=HELP_TEXT)
+        return ParsedCommand(mentioned=True, query="body", pet_name=pet_name)

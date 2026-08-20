@@ -58,14 +58,10 @@ class BotService:
     def _is_stale_profile(self, profile: PetProfile) -> bool:
         if not any(stage.is_egg for stage in profile.stages):
             return True
-        if profile.pvp is None:
-            return True
-        return profile.pvp.nature == "待补充" or profile.pvp.attributes == "待补充"
+        return not profile.stages
 
     def _should_persist_profile(self, profile: PetProfile) -> bool:
         return profile.source not in {"local-seed", "sample"}
 
     def _summary(self, profile: PetProfile, command: ParsedCommand) -> str:
-        if command.query == "pvp":
-            return f"{profile.name} 的 PVP 推荐已生成。"
-        return f"{profile.name} 的蛋组与体型数据已生成。"
+        return f"{profile.name} 的身高体重数据已生成。"

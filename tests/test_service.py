@@ -21,7 +21,7 @@ class BotServiceTest(unittest.TestCase):
                 cache=JsonCache(Path(tmpdir) / "cache"),
                 renderer=CardRenderer(Path(tmpdir) / "outputs"),
             )
-            reply = service.handle_message("@友哈巴赫 奇丽草 查蛋")
+            reply = service.handle_message("查询 奇丽草")
             self.assertTrue(reply.ok)
             self.assertIsNotNone(reply.image_path)
             self.assertTrue(os.path.exists(reply.image_path))
@@ -32,7 +32,7 @@ class BotServiceTest(unittest.TestCase):
                 cache=JsonCache(Path(tmpdir) / "cache"),
                 renderer=CardRenderer(Path(tmpdir) / "outputs"),
             )
-            reply = service.handle_message("@友哈巴赫 波波拉 查蛋")
+            reply = service.handle_message("查询 波波拉")
             self.assertTrue(reply.ok)
             self.assertEqual("", reply.text)
             self.assertIsNotNone(reply.image_path)
@@ -40,24 +40,13 @@ class BotServiceTest(unittest.TestCase):
             self.assertEqual("水蓝蓝", profile.name)
             self.assertTrue(any(stage.is_egg for stage in profile.stages))
 
-    def test_stage_alias_returns_pvp_recommendation(self) -> None:
-        with tempfile.TemporaryDirectory() as tmpdir:
-            service = BotService(
-                cache=JsonCache(Path(tmpdir) / "cache"),
-                renderer=CardRenderer(Path(tmpdir) / "outputs"),
-            )
-            profile = service._get_profile("波波拉")
-            self.assertIsNotNone(profile.pvp)
-            self.assertNotEqual(profile.pvp.nature, "待补充")
-            self.assertNotEqual(profile.pvp.attributes, "待补充")
-
     def test_nonexistent_short_name_does_not_guess_family(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
             service = BotService(
                 cache=JsonCache(Path(tmpdir) / "cache"),
                 renderer=CardRenderer(Path(tmpdir) / "outputs"),
             )
-            lion = service.handle_message("@友哈巴赫 狮鹫 查蛋")
+            lion = service.handle_message("查询 狮鹫")
             self.assertFalse(lion.ok)
             self.assertIn("没有查到", lion.text)
             self.assertIsNone(lion.image_path)
@@ -70,26 +59,25 @@ class BotServiceTest(unittest.TestCase):
             )
             for name in ("小狮鹫", "皇家狮鹫", "神圣狮鹫"):
                 with self.subTest(name=name):
-                    reply = service.handle_message(f"@友哈巴赫 {name} 查蛋")
+                    reply = service.handle_message(f"查询 {name}")
                     self.assertTrue(reply.ok)
                     self.assertEqual("", reply.text)
                     self.assertIsNotNone(reply.image_path)
 
-    def test_snow_doll_and_uppercase_pvp_return_images(self) -> None:
+    def test_snow_doll_returns_image_and_old_format_is_removed(self) -> None:
         with tempfile.TemporaryDirectory() as tmpdir:
             service = BotService(
                 cache=JsonCache(Path(tmpdir) / "cache"),
                 renderer=CardRenderer(Path(tmpdir) / "outputs"),
             )
-            snow = service.handle_message("@友哈巴赫 雪影娃娃 查蛋")
+            snow = service.handle_message("查询 雪影娃娃")
             self.assertTrue(snow.ok)
             self.assertEqual("", snow.text)
             self.assertIsNotNone(snow.image_path)
 
-            pvp = service.handle_message("@友哈巴赫 水蓝蓝 PVP")
-            self.assertTrue(pvp.ok)
-            self.assertEqual("", pvp.text)
-            self.assertIsNotNone(pvp.image_path)
+            old_format = service.handle_message("@友哈巴赫 水蓝蓝")
+            self.assertFalse(old_format.ok)
+            self.assertIn("请按格式输入", old_format.text)
 
 
 if __name__ == "__main__":

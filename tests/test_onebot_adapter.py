@@ -31,7 +31,7 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                 "group_id": 20002,
                 "message": [
                     {"type": "at", "data": {"qq": "10001"}},
-                    {"type": "text", "data": {"text": " 波波拉 pvp"}},
+                    {"type": "text", "data": {"text": " 查询 波波拉"}},
                 ],
             }
         )
@@ -52,9 +52,9 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                             "user_id": 10002,
                             "message_type": "private",
                             "post_type": "message",
-                            "raw_message": "@友哈巴赫 水蓝蓝 查蛋",
+                            "raw_message": "查询 水蓝蓝",
                             "message": [
-                                {"type": "text", "data": {"text": "@友哈巴赫 水蓝蓝 查蛋"}}
+                                {"type": "text", "data": {"text": "查询 水蓝蓝"}}
                             ],
                         },
                     }
@@ -94,8 +94,8 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                             "user_id": 10002,
                             "message_type": "private",
                             "post_type": "message",
-                            "raw_message": "@友哈巴赫 魔力猫 查蛋",
-                            "message": [{"type": "text", "data": {"text": "@友哈巴赫 魔力猫 查蛋"}}],
+                            "raw_message": "查询 魔力猫",
+                            "message": [{"type": "text", "data": {"text": "查询 魔力猫"}}],
                         },
                     }
                 ]
@@ -124,8 +124,8 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                     "user_id": 10002,
                     "message_type": "private",
                     "post_type": "message",
-                    "raw_message": "@友哈巴赫 雪影娃娃 查蛋",
-                    "message": [{"type": "text", "data": {"text": "@友哈巴赫 雪影娃娃 查蛋"}}],
+                    "raw_message": "查询 雪影娃娃",
+                    "message": [{"type": "text", "data": {"text": "查询 雪影娃娃"}}],
                 },
             }
         ]
@@ -141,8 +141,8 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                 "message_type": "group",
                 "self_id": 10001,
                 "group_id": 20002,
-                "raw_message": "[CQ:at,qq=10001] 水蓝蓝 查蛋",
-                "message": "[CQ:at,qq=10001] 水蓝蓝 查蛋",
+                "raw_message": "[CQ:at,qq=10001] 查询 水蓝蓝",
+                "message": "[CQ:at,qq=10001] 查询 水蓝蓝",
             }
         )
         self.assertIn("reply", result)
@@ -172,15 +172,15 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                 "message_type": "private",
                 "self_id": 10001,
                 "user_id": 10002,
-                "raw_message": "@友哈巴赫 水蓝蓝 查蛋",
-                "message": [{"type": "text", "data": {"text": "@友哈巴赫 水蓝蓝 查蛋"}}],
+                "raw_message": "查询 水蓝蓝",
+                "message": [{"type": "text", "data": {"text": "查询 水蓝蓝"}}],
             }
         )
         self.assertTrue(result["handled"])
         self.assertTrue(result["ok"])
         self.assertEqual(2, adapter.calls)
 
-    def test_unmentioned_group_message_is_ignored(self) -> None:
+    def test_plain_group_query_triggers_reply(self) -> None:
         adapter = self.make_adapter()
         result = adapter.handle_event(
             {
@@ -188,8 +188,22 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                 "message_type": "group",
                 "self_id": 10001,
                 "group_id": 20002,
-                "raw_message": "水蓝蓝 查蛋",
-                "message": [{"type": "text", "data": {"text": "水蓝蓝 查蛋"}}],
+                "raw_message": "查询 水蓝蓝",
+                "message": [{"type": "text", "data": {"text": "查询 水蓝蓝"}}],
+            }
+        )
+        self.assertIn("reply", result)
+
+    def test_unrelated_group_message_is_ignored(self) -> None:
+        adapter = self.make_adapter()
+        result = adapter.handle_event(
+            {
+                "post_type": "message",
+                "message_type": "group",
+                "self_id": 10001,
+                "group_id": 20002,
+                "raw_message": "水蓝蓝",
+                "message": [{"type": "text", "data": {"text": "水蓝蓝"}}],
             }
         )
         self.assertFalse(result["handled"])
@@ -202,8 +216,8 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                 "message_type": "group",
                 "self_id": 10001,
                 "group_id": 20002,
-                "raw_message": "@友哈巴赫 水蓝蓝 查蛋",
-                "message": [{"type": "text", "data": {"text": "@友哈巴赫 水蓝蓝 查蛋"}}],
+                "raw_message": "@友哈巴赫 查询 水蓝蓝",
+                "message": [{"type": "text", "data": {"text": "@友哈巴赫 查询 水蓝蓝"}}],
             }
         )
         self.assertIn("reply", result)
@@ -216,8 +230,8 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                 "message_type": "private",
                 "self_id": 10001,
                 "user_id": 10002,
-                "raw_message": "水蓝蓝 查蛋",
-                "message": [{"type": "text", "data": {"text": "水蓝蓝 查蛋"}}],
+                "raw_message": "查询 水蓝蓝",
+                "message": [{"type": "text", "data": {"text": "查询 水蓝蓝"}}],
             }
         )
         self.assertIn("reply", result)
@@ -230,8 +244,8 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
                 "messageType": "private",
                 "selfId": 10001,
                 "userId": 10002,
-                "rawMessage": "@友哈巴赫 水蓝蓝 查蛋",
-                "message": [{"type": "text", "data": {"text": "@友哈巴赫 水蓝蓝 查蛋"}}],
+                "rawMessage": "查询 水蓝蓝",
+                "message": [{"type": "text", "data": {"text": "查询 水蓝蓝"}}],
             }
         )
         self.assertIn("reply", result)

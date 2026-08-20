@@ -121,12 +121,20 @@ class OneBotHTTPAdapter:
             text = self._extract_text(message) or raw_message
             if text.strip().startswith("@"):
                 return text
+            if text.strip().startswith("查询"):
+                return text.strip()
             if is_self_message:
                 return None
-            return f"@{self.config.bot_name} {text.strip()}"
+            return None
 
         if message_type != "group":
             return None
+
+        plain_text = self._extract_text(message) or raw_message
+        if plain_text.strip().startswith("查询"):
+            return plain_text.strip()
+        if raw_message.strip().startswith("查询"):
+            return raw_message.strip()
 
         mentioned, text = self._extract_group_text(message, raw_message, self_id_variants)
         if not mentioned and raw_message.lstrip().startswith(f"@{self.config.bot_name}"):

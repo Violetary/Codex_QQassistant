@@ -4,7 +4,7 @@ from dataclasses import asdict, dataclass, field
 from typing import Any, Literal
 
 
-QueryKind = Literal["pvp", "egg"]
+QueryKind = Literal["body"]
 
 
 @dataclass(slots=True)
@@ -35,40 +35,22 @@ class StageBody:
 
 
 @dataclass(slots=True)
-class PvpRecommendation:
-    nature: str
-    attributes: str
-    notes: str = ""
-
-    @classmethod
-    def from_dict(cls, data: dict[str, Any]) -> "PvpRecommendation":
-        return cls(
-            nature=str(data.get("nature", "暂无推荐")),
-            attributes=str(data.get("attributes", "暂无推荐")),
-            notes=str(data.get("notes", "")),
-        )
-
-
-@dataclass(slots=True)
 class PetProfile:
     name: str
     source: str
     family_id: int | None = None
     evolution_chain: list[str] = field(default_factory=list)
     aliases: list[str] = field(default_factory=list)
-    pvp: PvpRecommendation | None = None
     stages: list[StageBody] = field(default_factory=list)
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "PetProfile":
-        pvp_data = data.get("pvp")
         return cls(
             name=str(data.get("name", "")),
             source=str(data.get("source", "unknown")),
             family_id=int(data["family_id"]) if data.get("family_id") not in (None, "") else None,
             evolution_chain=[str(item) for item in data.get("evolution_chain", [])],
             aliases=[str(item) for item in data.get("aliases", []) if str(item)],
-            pvp=PvpRecommendation.from_dict(pvp_data) if isinstance(pvp_data, dict) else None,
             stages=[StageBody.from_dict(item) for item in data.get("stages", []) if isinstance(item, dict)],
         )
 

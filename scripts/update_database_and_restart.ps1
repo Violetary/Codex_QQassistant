@@ -31,11 +31,6 @@ Write-Host '==> Build pet database'
 CheckLastExit 'Build pet database'
 
 Write-Host ''
-Write-Host '==> Build PVP recommendations'
-& $PythonPath 'scripts\build_pvp_database.py'
-CheckLastExit 'Build PVP recommendations'
-
-Write-Host ''
 Write-Host '==> Sync BWiki body data'
 & $PythonPath 'scripts\sync_body_from_bwiki.py' '--workers' '1' '--delay' '0.25' '--retries' '5' '--allow-errors'
 CheckLastExit 'Sync BWiki body data'

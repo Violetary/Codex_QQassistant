@@ -4,7 +4,7 @@
   "http_api_base_url": "http://127.0.0.1:3000",
   "access_token": "",
   "bot_command_examples": [
-    "@友哈巴赫 水蓝蓝 查蛋",
-    "@友哈巴赫 波波拉 pvp"
+    "查询 水蓝蓝",
+    "查询 波波拉"
   ]
 }

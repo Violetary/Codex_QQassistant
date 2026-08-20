@@ -12,27 +12,22 @@ class CommandParserTest(unittest.TestCase):
         self.assertTrue(command.mentioned)
         self.assertTrue(command.help_requested)
 
-    def test_parse_pvp(self) -> None:
-        command = self.parser.parse("@友哈巴赫 奇丽草 pvp")
+    def test_parse_plain_query(self) -> None:
+        command = self.parser.parse("查询 奇丽草")
         self.assertEqual(command.pet_name, "奇丽草")
-        self.assertEqual(command.query, "pvp")
+        self.assertEqual(command.query, "body")
 
-    def test_parse_pvp_case_insensitive(self) -> None:
-        command = self.parser.parse("@友哈巴赫 水蓝蓝 PVP")
+    def test_parse_mentioned_query(self) -> None:
+        command = self.parser.parse("@友哈巴赫 查询 水蓝蓝")
         self.assertEqual(command.pet_name, "水蓝蓝")
-        self.assertEqual(command.query, "pvp")
-
-    def test_parse_egg(self) -> None:
-        command = self.parser.parse("@友哈巴赫 奇丽草 查蛋")
-        self.assertEqual(command.pet_name, "奇丽草")
-        self.assertEqual(command.query, "egg")
+        self.assertEqual(command.query, "body")
 
     def test_invalid_format(self) -> None:
-        command = self.parser.parse("@友哈巴赫 奇丽草")
+        command = self.parser.parse("@友哈巴赫 水蓝蓝")
         self.assertEqual(command.error, HELP_TEXT)
 
     def test_ignore_unmentioned_message(self) -> None:
-        command = self.parser.parse("奇丽草 查蛋")
+        command = self.parser.parse("奇丽草")
         self.assertFalse(command.mentioned)
 
 

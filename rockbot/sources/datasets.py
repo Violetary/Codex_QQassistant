@@ -40,7 +40,6 @@ class PetFamily:
     family_name: str
     forms: list[FormStats] = field(default_factory=list)
     aliases: list[str] = field(default_factory=list)
-    pvp: dict[str, Any] | None = None
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "PetFamily":
@@ -48,7 +47,6 @@ class PetFamily:
             family_name=str(data.get("family_name", data.get("name", ""))),
             forms=[FormStats.from_dict(item) for item in data.get("forms", []) if isinstance(item, dict)],
             aliases=[str(item) for item in data.get("aliases", []) if str(item)],
-            pvp=data.get("pvp") if isinstance(data.get("pvp"), dict) else None,
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -57,8 +55,6 @@ class PetFamily:
             "forms": [form.to_dict() for form in self.forms],
             "aliases": self.aliases,
         }
-        if self.pvp:
-            payload["pvp"] = self.pvp
         return payload
 
 
