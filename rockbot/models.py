@@ -4,7 +4,7 @@ from dataclasses import asdict, dataclass, field
 from typing import Any, Literal
 
 
-QueryKind = Literal["body"]
+QueryKind = Literal["body", "breeding"]
 
 
 @dataclass(slots=True)

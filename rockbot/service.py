@@ -40,6 +40,9 @@ class BotService:
         except SourceError as exc:
             return BotReply(text=f"数据源暂时不可用：{exc}", ok=False)
 
+        if command.query == "breeding" and not self.renderer.can_breed(profile):
+            return BotReply(text=f"“{command.pet_name}”无法孵蛋，不能查询配种。", ok=False)
+
         image_path = self.renderer.render(profile, command.query)
         return BotReply(text="", image_path=str(Path(image_path).resolve()))
 

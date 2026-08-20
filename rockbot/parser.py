@@ -5,7 +5,7 @@ import re
 from .models import ParsedCommand
 
 
-HELP_TEXT = "请按格式输入：查询 精灵名"
+HELP_TEXT = "请按格式输入：查询 精灵名，或：配种 精灵名"
 
 
 class CommandParser:
@@ -22,21 +22,23 @@ class CommandParser:
                 return ParsedCommand(mentioned=True, help_requested=True)
             return self._parse_query(tail)
 
-        if text.startswith("查询"):
+        if text.startswith(("查询", "配种")):
             return self._parse_query(text)
 
         return ParsedCommand(mentioned=False)
 
     def _parse_query(self, text: str) -> ParsedCommand:
-        if text == "查询":
+        if text in {"查询", "配种"}:
             return ParsedCommand(mentioned=True, error=HELP_TEXT)
 
-        match = re.match(r"^查询(?:\s+|$)(.+)$", text)
+        match = re.match(r"^(查询|配种)(?:\s+|$)(.+)$", text)
         if not match:
             return ParsedCommand(mentioned=True, error=HELP_TEXT)
 
-        pet_name = match.group(1).strip()
+        kind_text = match.group(1)
+        pet_name = match.group(2).strip()
         if not pet_name:
             return ParsedCommand(mentioned=True, error=HELP_TEXT)
 
-        return ParsedCommand(mentioned=True, query="body", pet_name=pet_name)
+        query = "breeding" if kind_text == "配种" else "body"
+        return ParsedCommand(mentioned=True, query=query, pet_name=pet_name)

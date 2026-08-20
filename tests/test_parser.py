@@ -17,6 +17,11 @@ class CommandParserTest(unittest.TestCase):
         self.assertEqual(command.pet_name, "奇丽草")
         self.assertEqual(command.query, "body")
 
+    def test_parse_breeding_query(self) -> None:
+        command = self.parser.parse("配种 果冻")
+        self.assertEqual(command.pet_name, "果冻")
+        self.assertEqual(command.query, "breeding")
+
     def test_parse_mentioned_query(self) -> None:
         command = self.parser.parse("@友哈巴赫 查询 水蓝蓝")
         self.assertEqual(command.pet_name, "水蓝蓝")

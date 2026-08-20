@@ -39,6 +39,22 @@ class OneBotHTTPAdapterTest(unittest.TestCase):
         self.assertEqual(result["reply"][0]["type"], "image")
         self.assertTrue(result["reply"][0]["data"]["file"].startswith("base64://"))
 
+    def test_plain_private_breeding_query_triggers_reply(self) -> None:
+        adapter = self.make_adapter()
+        result = adapter.handle_event(
+            {
+                "post_type": "message",
+                "message_type": "private",
+                "self_id": 10001,
+                "user_id": 10002,
+                "raw_message": "配种 果冻",
+                "message": [{"type": "text", "data": {"text": "配种 果冻"}}],
+            }
+        )
+        self.assertIn("reply", result)
+        self.assertEqual(result["reply"][0]["type"], "image")
+        self.assertTrue(result["reply"][0]["data"]["file"].startswith("base64://"))
+
     def test_empty_event_falls_back_to_recent_contact(self) -> None:
         class FallbackAdapter(OneBotHTTPAdapter):
             def __init__(self, service):  # type: ignore[no-untyped-def]

@@ -1,19 +1,21 @@
 # QQ 洛克王国查询机器人 v1
 
-这是一个可接入 QQ 聊天的洛克王国查询机器人。核心服务负责 `查询 精灵名` 触发、精灵体型数据查询、缓存和图片生成；QQ 侧推荐用 NapCatQQ + OneBot v11 HTTP 接入。
+这是一个可接入 QQ 聊天的洛克王国查询机器人。当前版本包含两个功能：`查询 精灵名` 和 `配种 精灵名`。核心服务负责精灵体型数据查询、配种判断、缓存和图片生成；QQ 侧推荐用 NapCatQQ + OneBot v11 HTTP 接入。
 
 ## 支持的指令
 
 ```text
 查询 精灵名
+配种 精灵名
 ```
 
-例如 `查询 水蓝蓝`。回复内容为一张身高、体重、大块头/小不点区间图片。
+例如 `查询 水蓝蓝`、`配种 果冻`。回复内容为一张身高、体重、大块头/小不点区间图片，`配种` 会对无法孵蛋的精灵直接提示。
 
 ## 本地运行
 
 ```powershell
 & "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli "查询 奇丽草"
+& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli "配种 果冻"
 ```
 
 生成图片会输出到 `outputs/cards/`，查询缓存会写入 `data/cache/`。
@@ -24,6 +26,7 @@
 
 ```powershell
 & "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli --config config/sources.example.json --no-sample "查询 奇丽草"
+& "C:\Users\Viole\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -m rockbot.cli --config config/sources.example.json --no-sample "配种 果冻"
 ```
 
 ## 本地数据库构建
@@ -122,6 +125,7 @@ QQ 里直接发送：
 ```text
 查询 水蓝蓝
 查询 波波拉
+配种 果冻
 ```
 
 默认图片用 OneBot `base64://` 发送，成功率比本地文件路径更稳。如果当前 NapCat 版本更偏好文件路径，可以启动机器人时改：

@@ -25,7 +25,7 @@ def build_service(args: argparse.Namespace) -> BotService:
         bot_name=args.bot_name,
         cache=JsonCache(args.cache_dir),
         source=source,
-        renderer=CardRenderer(args.output_dir),
+        renderer=CardRenderer(args.output_dir, database_path=args.local_db),
     )
 
 
@@ -35,7 +35,7 @@ def main(argv: list[str] | None = None) -> int:
         if callable(reconfigure):
             reconfigure(encoding="utf-8")
     parser = argparse.ArgumentParser(description="Rock Kingdom QQ bot offline core")
-    parser.add_argument("message", nargs="?", help="message text, for example: 查询 奇丽草")
+    parser.add_argument("message", nargs="?", help="message text, for example: 查询 奇丽草 / 配种 奇丽草")
     parser.add_argument("--bot-name", default="友哈巴赫")
     parser.add_argument("--cache-dir", default="data/cache")
     parser.add_argument("--output-dir", default="outputs/cards")
@@ -97,7 +97,7 @@ def main(argv: list[str] | None = None) -> int:
     service = build_service(args)
     reply = service.handle_message(args.message)
     if reply is None:
-        print("未触发机器人。请按格式输入：查询 精灵名")
+        print("未触发机器人。请按格式输入：查询 精灵名，或：配种 精灵名")
         return 1
 
     print(reply.text)
